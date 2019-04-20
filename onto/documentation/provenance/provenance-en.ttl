@@ -1,0 +1,11 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Content Ontology Design Patterns for Representing Knowledge in the Disaster Risk Domain";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <V.1.0.0>;
+	 prov:wasGeneratedAt "12th April 2019";
+.
+:agent0 a prov:Agent; foaf:name "Allan Mazimwe".
