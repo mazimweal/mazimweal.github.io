@@ -12,5 +12,5 @@ Ontologies can be used to provide a unified semantic representation of the domai
 
 Emerging Patterns
 ==========
-To bridge the availability gap of patterns for representing disaster knowledge, we identify existing and emerging patterns that can be used to organize disaster knowledge. See URL.... for Documentation and Vowl visualization
+To bridge the availability gap of patterns for representing disaster knowledge, we identify existing and emerging patterns that can be used to organize disaster knowledge. Work in progress ... Final Ontology to be loaded soon with emerging patterns--- URL   https://mazimweal.github.io/onto/documentation/index-en.html#desc 
 
