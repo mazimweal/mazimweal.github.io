@@ -1,0 +1,400 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/cp/owl/place.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id/gicentre/onto", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://webprotege.stanford.edu/project/0xQQAXy4OncaIW5CUWUbM"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 8,
+    "objectPropertyCount" : 6,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id/gicentre/onto#RhMG1slJikRTZqKOL3RE9a",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RhMG1slJikRTZqKOL3RE9a",
+      "undefined" : "Geometry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id/gicentre/onto#R9k69W53ArFWO8yFWcV3yGE",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9k69W53ArFWO8yFWcV3yGE",
+      "undefined" : "Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place",
+      "it" : "Luogo"
+    },
+    "subClasses" : [ "0", "8" ],
+    "comment" : {
+      "undefined" : "A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a location determined by the presence of other entities ('the area close to Roma'), pivot events or signs (\"the area where the helicopter fell\"), complements of other entities ('the area under the table'), as well as physical objects conceptualized as locations as their main identity criterion ('the territory of Italy').\nIn this generic sense, a Place is an 'approximate', relative location. For an 'absolute', abstract location, cf. the pattern spaceregion.owl.\nFormally, a Place is defined by the fact of having something located in it; a Place is located in itself."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RDdpyT69tmZ7HtXbh1i3Z7d",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDdpyT69tmZ7HtXbh1i3Z7d",
+      "undefined" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#R7zFeyNLELECV4yW3hxYwRi",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7zFeyNLELECV4yW3hxYwRi",
+      "undefined" : "Duration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RDh3o5oBmRmjgpOMVrCcbiv",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDh3o5oBmRmjgpOMVrCcbiv",
+      "undefined" : "HazardEvent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RmF19j9wncZCRV4k6Hsnmf",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RmF19j9wncZCRV4k6Hsnmf",
+      "undefined" : "Admin"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "6",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "19",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id/gicentre/onto#RTOLL2UsnQUIo1cpRwCa7Y",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "RTOLL2UsnQUIo1cpRwCa7Y",
+      "undefined" : "during time"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object", "allValues" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#R9hKF6kdYUCv5SDIsmIwkNK",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R9hKF6kdYUCv5SDIsmIwkNK",
+      "undefined" : "at place"
+    },
+    "domain" : "4",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "external", "object", "allValues" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#R9hKF6kdYUCv5SDIsmIwkNK",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R9hKF6kdYUCv5SDIsmIwkNK",
+      "undefined" : "at place"
+    },
+    "domain" : "4",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RDMlLpACNHetp9N5871n2j4",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "RDMlLpACNHetp9N5871n2j4",
+      "undefined" : "has participant"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RB9AxGnwIzL1VklTZU77GPq",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "RB9AxGnwIzL1VklTZU77GPq",
+      "undefined" : "is participant in"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RB9AxGnwIzL1VklTZU77GPq",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "RB9AxGnwIzL1VklTZU77GPq",
+      "undefined" : "is participant in"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RDMlLpACNHetp9N5871n2j4",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "RDMlLpACNHetp9N5871n2j4",
+      "undefined" : "has participant"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf",
+    "inverse" : "7",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocationOf",
+      "en" : "is location of",
+      "it" : "è una localizzazione di"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'.\nAs a very general notion of localization, it is assumed as transitive.\nFor 'absolute' locations, see SpaceRegion"
+    },
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RTOLL2UsnQUIo1cpRwCa7Y",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "RTOLL2UsnQUIo1cpRwCa7Y",
+      "undefined" : "during time"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#R6a8SgKRPhptmo7eWX5Ced",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "R6a8SgKRPhptmo7eWX5Ced",
+      "undefined" : "haslocationName"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id/gicentre/onto#RDs8Okm2f2VE1R5ObQHdbKf",
+    "baseIri" : "http://w3id/gicentre/onto",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "RDs8Okm2f2VE1R5ObQHdbKf",
+      "undefined" : "hasGeolocation"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "has location",
+      "it" : "ha localizzazione"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "A generic, relative localization, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'.\nFor 'absolute' locations, see SpaceRegion"
+    },
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  } ]
+}
