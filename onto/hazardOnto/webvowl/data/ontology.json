@@ -1,0 +1,1106 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/cp/owl/place.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/gicentre/ont/plc" ],
+    "iri" : "http://webprotege.stanford.edu/project/ICWr3nZWpbkM8ieuZoWR3"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 24,
+    "objectPropertyCount" : 26,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/gicentre/ont/plc#QualityChangeType",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityChangeType",
+      "undefined" : "QualityChangeType"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#HazardLocation",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HazardLocation",
+      "undefined" : "HazardLocation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#implementerRole",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "implementerRole",
+      "undefined" : "implementerRole"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#CurrencyCode",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CurrencyCode",
+      "undefined" : "CurrencyCode"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#QualityChangeDescription",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityChangeDescription",
+      "undefined" : "QualityChangeDescription"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Agent",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#FundingAmount",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FundingAmount",
+      "undefined" : "FundingAmount"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Classifying_Concept",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classifying_Concept",
+      "undefined" : "Classifying Concept"
+    },
+    "subClasses" : [ "0", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Object",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "undefined" : "Object"
+    },
+    "subClasses" : [ "39", "8" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#EventType",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "undefined" : "EventType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Effect",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Effect",
+      "undefined" : "Effect"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Funding",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Funding",
+      "undefined" : "Funding"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Quality",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality",
+      "undefined" : "Quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place",
+      "it" : "Luogo"
+    },
+    "subClasses" : [ "5", "20" ],
+    "comment" : {
+      "undefined" : "A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a location determined by the presence of other entities ('the area close to Roma'), pivot events or signs (\"the area where the helicopter fell\"), complements of other entities ('the area under the table'), as well as physical objects conceptualized as locations as their main identity criterion ('the territory of Italy').\nIn this generic sense, a Place is an 'approximate', relative location. For an 'absolute', abstract location, cf. the pattern spaceregion.owl.\nFormally, a Place is defined by the fact of having something located in it; a Place is located in itself."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#ElementsAtRisk",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElementsAtRisk",
+      "undefined" : "ElementsAtRisk"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#InformationObject",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationObject",
+      "undefined" : "InformationObject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#TimeEntity",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeEntity",
+      "undefined" : "TimeEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Event",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#AgentRole",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgentRole",
+      "undefined" : "AgentRole"
+    },
+    "subClasses" : [ "11", "79" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#Admin",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Admin",
+      "undefined" : "Admin"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#DonorRole",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DonorRole",
+      "undefined" : "DonorRole"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#CauseQ1",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CauseQ1",
+      "undefined" : "CauseQ1"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#CauseQ2",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CauseQ2",
+      "undefined" : "CauseQ2"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/gicentre/ont/plc#has_role",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "has_role",
+      "undefined" : "has role"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "is_QualityChangeType_used_in",
+      "undefined" : "is QualityChangeType used in"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasCurrencyValue",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasCurrencyValue",
+      "undefined" : "hasCurrencyValue"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "16"
+  }, {
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#uses_QualityChangeType",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "uses_QualityChangeType",
+      "undefined" : "uses QualityChangeType"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasCurrencyCode",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasCurrencyCode",
+      "undefined" : "hasCurrencyCode"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "17",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "22"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "25",
+    "subproperty" : [ "26", "27", "22", "28", "29", "30", "31", "32", "33" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "1",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "15",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "15",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf",
+    "inverse" : "46",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocationOf",
+      "en" : "is location of",
+      "it" : "è una localizzazione di"
+    },
+    "domain" : "6",
+    "subproperty" : [ "47" ],
+    "comment" : {
+      "undefined" : "A generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'.\nAs a very general notion of localization, it is assumed as transitive.\nFor 'absolute' locations, see SpaceRegion"
+    },
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#is_role_of",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "is_role_of",
+      "undefined" : "is role of"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasFundAmount",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasFundAmount",
+      "undefined" : "hasFundAmount"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "49",
+    "subproperty" : [ "50" ],
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "has location",
+      "it" : "ha localizzazione"
+    },
+    "domain" : "45",
+    "subproperty" : [ "54" ],
+    "comment" : {
+      "undefined" : "A generic, relative localization, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'.\nFor 'absolute' locations, see SpaceRegion"
+    },
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasQuality",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "undefined" : "hasQuality"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "58",
+    "attributes" : [ "someValues", "object", "transitive", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#classifies",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "classifies",
+      "undefined" : "classifies"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "0",
+    "subproperty" : [ "61", "62" ],
+    "attributes" : [ "allValues", "object", "transitive", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#classifiesQuality",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "classifiesQuality",
+      "undefined" : "classifiesQuality"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "0",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#isFundedBy",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "isFundedBy",
+      "undefined" : "isFundedBy"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "51",
+    "subproperty" : [ "63" ],
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#has_participant",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "has_participant",
+      "undefined" : "has participant"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#at_place",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "at_place",
+      "undefined" : "at place"
+    },
+    "domain" : "52",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#has_participant",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "has_participant",
+      "undefined" : "has participant"
+    },
+    "domain" : "52",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#classifiesEvent",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "classifiesEvent",
+      "undefined" : "classifiesEvent"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "35",
+    "attributes" : [ "allValues", "object", "transitive", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasQuality",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "undefined" : "hasQuality"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "35",
+    "attributes" : [ "someValues", "object", "transitive", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#isFundedBy",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "isFundedBy",
+      "undefined" : "isFundedBy"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "49",
+    "subproperty" : [ "63" ],
+    "attributes" : [ "someValues", "object", "transitive", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#during_time",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "during_time",
+      "undefined" : "during time"
+    },
+    "domain" : "49",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#providesAgentRole",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "providesAgentRole",
+      "undefined" : "providesAgentRole"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "49",
+    "attributes" : [ "someValues", "object", "transitive", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#dependsOn",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "dependsOn",
+      "undefined" : "dependsOn"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "2",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#is_participant_in",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "is_participant_in",
+      "undefined" : "is participant in"
+    },
+    "domain" : "15",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#is_participant_in",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "is_participant_in",
+      "undefined" : "is participant in"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#isQualityOf",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isQualityOf",
+      "undefined" : "isQualityOf"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "58",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#ContainsHazardLoc",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "ContainsHazardLoc",
+      "undefined" : "ContainsHazardLoc"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "20",
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#dependsOn",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "dependsOn",
+      "undefined" : "dependsOn"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "2",
+    "attributes" : [ "someValues", "object", "transitive", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#during_time",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "during_time",
+      "undefined" : "during time"
+    },
+    "domain" : "52",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#providesAgentRole",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "providesAgentRole",
+      "undefined" : "providesAgentRole"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "49",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#classifies",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "classifies",
+      "undefined" : "classifies"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "1",
+    "subproperty" : [ "61", "62" ],
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#at_place",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "at_place",
+      "undefined" : "at place"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#is_Funding_used_in",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "is_Funding_used_in",
+      "undefined" : "is Funding used in"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "49",
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#isLocatedIn",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "undefined" : "isLocatedIn"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#during_time",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "during_time",
+      "undefined" : "during time"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#isDependedOn",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isDependedOn",
+      "undefined" : "isDependedOn"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "41",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#uses_Funding",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "uses_Funding",
+      "undefined" : "uses Funding"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "75",
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "range" : "9",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/gicentre/ont/plc#hasQuality",
+    "baseIri" : "http://w3id.org/gicentre/ont/plc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "undefined" : "hasQuality"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "15",
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "33"
+  } ]
+}
