@@ -1,0 +1,494 @@
+<http://webprotege.stanford.edu/project/ICWr3nZWpbkM8ieuZoWR3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used for exemplifying possible requirements the content pattern provides a solution for. Requirements are expressed as natural language competency questions." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property should be assigned with a URI, which points to the possible reference ontology which the annotated pattern was extracted from (i.e. the reference ontology that the ontology elements have been deeply or partially cloned by). The range is not explicit in the definition of the annotation property because it would turn the ontology to OWL Full. E.g. The participation pattern is extracted from the Dolce Ultra Lite ontology, hence the value for this annotation property is http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is useful for content ontology design patterns. Its value is a URI, which refers to another content ontology design pattern which is a component of the annotated one." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used for briefly describing the benefits and/or possible trade-offs when using the CP." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used in order to describe the intent of the content pattern." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest> <http://www.w3.org/2000/01/rdf-schema#comment> "This property can be used to annotate a unit test (e.g. in the form of a SPARQL query) to be launched to evaluate an ontology against a requirement-based task." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isCloneOf
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isCloneOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isCloneOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used for referring a cloned ontology entity to its cloning source." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is useful for content ontology design patterns and its elements. Its value is a URI, which refers either to a content ontology design pattern that is specialized by the annotated one, or to an ontology element that is specialized by the annotated one." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property should be assigned with a URI, which points to the concept schema, page, or anything else from which the annotated pattern was reengineered.  If the source does not have any URI e.g., a printed book, this property value should provide information as precise as possible in order to identify the source. This property is alternative to the extractedFrom property because it is used when the pattern come from a concept schema which is not an owl ontology. For example content ontology design patterns, which are reengineered from data model patterns, rdf schemas, etc. should be annotatd with this property. E.g. The basicpersonalfoaf pattern is extracted from the rdf FOAF specification, hence the value for this annotation property is http://xmlns.com/foaf/spec/20071002.rdf" .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property can be used to indicate other CPs (if any) that specialize, generalize, inlcude, or are components of the CP. Furthermore, this field may indicate other CPs that are typically used in conjunction with the described one. Important similarities and differences with other patterns can be also described here." .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used for describing examples of instantiation of the Content OP. For example, for the part-of Content OP (which represents part-whole relations) a possible scenario is the sentence: \"the brain is part of the human body\". Scenarios are expressed as natural language sentences." .
+# 
+# http://xd-protege.com/schemas/cpas-ext.owl#category
+<http://xd-protege.com/schemas/cpas-ext.owl#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xd-protege.com/schemas/cpas-ext.owl#category> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used in order to list the domains or categories in which a content ontology design pattern is intended to be used." .
+<http://xd-protege.com/schemas/cpas-ext.owl#category> <http://www.w3.org/2000/01/rdf-schema#label> "category" .
+<http://xd-protege.com/schemas/cpas-ext.owl#category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# http://xd-protege.com/schemas/cpas-ext.owl#hasImage
+<http://xd-protege.com/schemas/cpas-ext.owl#hasImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xd-protege.com/schemas/cpas-ext.owl#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used in order to indicate where a graphical illustration of a content ontology design pattern may be found." .
+<http://xd-protege.com/schemas/cpas-ext.owl#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "has image" .
+<http://xd-protege.com/schemas/cpas-ext.owl#hasImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# http://xd-protege.com/schemas/cpas-ext.owl#solutionDescription
+<http://xd-protege.com/schemas/cpas-ext.owl#solutionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xd-protege.com/schemas/cpas-ext.owl#solutionDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation property is used in order to describe the solution description of a content ontology design pattern." .
+<http://xd-protege.com/schemas/cpas-ext.owl#solutionDescription> <http://www.w3.org/2000/01/rdf-schema#label> "solution description" .
+<http://xd-protege.com/schemas/cpas-ext.owl#solutionDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gicentre/ont/plc#ContainsHazardLoc
+<http://w3id.org/gicentre/ont/plc#ContainsHazardLoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#ContainsHazardLoc> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> .
+<http://w3id.org/gicentre/ont/plc#ContainsHazardLoc> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Admin> .
+<http://w3id.org/gicentre/ont/plc#ContainsHazardLoc> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#HazardLocation> .
+<http://w3id.org/gicentre/ont/plc#ContainsHazardLoc> <http://www.w3.org/2000/01/rdf-schema#label> "ContainsHazardLoc" .
+# 
+# http://w3id.org/gicentre/ont/plc#at_place
+<http://w3id.org/gicentre/ont/plc#at_place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#at_place> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#at_place> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://w3id.org/gicentre/ont/plc#at_place> <http://www.w3.org/2000/01/rdf-schema#label> "at place" .
+# 
+# http://w3id.org/gicentre/ont/plc#classifies
+<http://w3id.org/gicentre/ont/plc#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#classifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Classifying_Concept> .
+<http://w3id.org/gicentre/ont/plc#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifies" .
+# 
+# http://w3id.org/gicentre/ont/plc#classifiesEvent
+<http://w3id.org/gicentre/ont/plc#classifiesEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#classifiesEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/gicentre/ont/plc#classifies> .
+<http://w3id.org/gicentre/ont/plc#classifiesEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#classifiesEvent> <http://www.w3.org/2000/01/rdf-schema#label> "classifiesEvent" .
+# 
+# http://w3id.org/gicentre/ont/plc#classifiesQuality
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/gicentre/ont/plc#classifies> .
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#classifiesQuality> <http://www.w3.org/2000/01/rdf-schema#label> "classifiesQuality" .
+# 
+# http://w3id.org/gicentre/ont/plc#dependsOn
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Effect> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#CauseQ1> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#CauseQ2> .
+<http://w3id.org/gicentre/ont/plc#dependsOn> <http://www.w3.org/2000/01/rdf-schema#label> "dependsOn" .
+# 
+# http://w3id.org/gicentre/ont/plc#during_time
+<http://w3id.org/gicentre/ont/plc#during_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#during_time> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#during_time> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#TimeEntity> .
+<http://w3id.org/gicentre/ont/plc#during_time> <http://www.w3.org/2000/01/rdf-schema#label> "during time" .
+# 
+# http://w3id.org/gicentre/ont/plc#hasCurrencyCode
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#FundingAmount> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#CurrencyCode> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrencyCode" .
+# 
+# http://w3id.org/gicentre/ont/plc#hasFundAmount
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#FundingAmount> .
+<http://w3id.org/gicentre/ont/plc#hasFundAmount> <http://www.w3.org/2000/01/rdf-schema#label> "hasFundAmount" .
+# 
+# http://w3id.org/gicentre/ont/plc#hasQuality
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuality" .
+# 
+# http://w3id.org/gicentre/ont/plc#has_participant
+<http://w3id.org/gicentre/ont/plc#has_participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#has_participant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#has_participant> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#has_participant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant" .
+# 
+# http://w3id.org/gicentre/ont/plc#has_role
+<http://w3id.org/gicentre/ont/plc#has_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#has_role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Agent> .
+<http://w3id.org/gicentre/ont/plc#has_role> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#has_role> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
+# 
+# http://w3id.org/gicentre/ont/plc#isDependedOn
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#CauseQ1> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#CauseQ2> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Effect> .
+<http://w3id.org/gicentre/ont/plc#isDependedOn> <http://www.w3.org/2000/01/rdf-schema#label> "isDependedOn" .
+# 
+# http://w3id.org/gicentre/ont/plc#isFundedBy
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#isFundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isFundedBy" .
+# 
+# http://w3id.org/gicentre/ont/plc#isLocatedIn
+<http://w3id.org/gicentre/ont/plc#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> .
+<http://w3id.org/gicentre/ont/plc#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#HazardLocation> .
+<http://w3id.org/gicentre/ont/plc#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Admin> .
+<http://w3id.org/gicentre/ont/plc#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedIn" .
+# 
+# http://w3id.org/gicentre/ont/plc#isQualityOf
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isQualityOf" .
+# 
+# http://w3id.org/gicentre/ont/plc#is_Funding_used_in
+<http://w3id.org/gicentre/ont/plc#is_Funding_used_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#is_Funding_used_in> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/gicentre/ont/plc#hasFundAmount> .
+<http://w3id.org/gicentre/ont/plc#is_Funding_used_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#is_Funding_used_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#InformationObject> .
+<http://w3id.org/gicentre/ont/plc#is_Funding_used_in> <http://www.w3.org/2000/01/rdf-schema#label> "is Funding used in" .
+# 
+# http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in
+<http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#QualityChangeDescription> .
+<http://w3id.org/gicentre/ont/plc#is_QualityChangeType_used_in> <http://www.w3.org/2000/01/rdf-schema#label> "is QualityChangeType used in" .
+# 
+# http://w3id.org/gicentre/ont/plc#is_participant_in
+<http://w3id.org/gicentre/ont/plc#is_participant_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#is_participant_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#is_participant_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#is_participant_in> <http://www.w3.org/2000/01/rdf-schema#label> "is participant in" .
+# 
+# http://w3id.org/gicentre/ont/plc#is_role_of
+<http://w3id.org/gicentre/ont/plc#is_role_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#is_role_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#is_role_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Agent> .
+<http://w3id.org/gicentre/ont/plc#is_role_of> <http://www.w3.org/2000/01/rdf-schema#label> "is role of" .
+# 
+# http://w3id.org/gicentre/ont/plc#providesAgentRole
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#providesAgentRole> <http://www.w3.org/2000/01/rdf-schema#label> "providesAgentRole" .
+# 
+# http://w3id.org/gicentre/ont/plc#uses_Funding
+<http://w3id.org/gicentre/ont/plc#uses_Funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#uses_Funding> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/gicentre/ont/plc#isFundedBy> .
+<http://w3id.org/gicentre/ont/plc#uses_Funding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#InformationObject> .
+<http://w3id.org/gicentre/ont/plc#uses_Funding> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#uses_Funding> <http://www.w3.org/2000/01/rdf-schema#label> "uses Funding" .
+# 
+# http://w3id.org/gicentre/ont/plc#uses_QualityChangeType
+<http://w3id.org/gicentre/ont/plc#uses_QualityChangeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gicentre/ont/plc#uses_QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#QualityChangeDescription> .
+<http://w3id.org/gicentre/ont/plc#uses_QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#uses_QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#label> "uses QualityChangeType" .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic, relative localization, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'.\nFor 'absolute' locations, see SpaceRegion" .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/place.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ha localizzazione"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'.\nAs a very general notion of localization, it is assumed as transitive.\nFor 'absolute' locations, see SpaceRegion" .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/place.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is location of"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "è una localizzazione di"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gicentre/ont/plc#hasCurrencyValue
+<http://w3id.org/gicentre/ont/plc#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gicentre/ont/plc#FundingAmount> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://w3id.org/gicentre/ont/plc#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrencyValue" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gicentre/ont/plc#Admin
+<http://w3id.org/gicentre/ont/plc#Admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Admin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://w3id.org/gicentre/ont/plc#Admin> <http://www.w3.org/2000/01/rdf-schema#label> "Admin" .
+# 
+# http://w3id.org/gicentre/ont/plc#Agent
+<http://w3id.org/gicentre/ont/plc#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://w3id.org/gicentre/ont/plc#AgentRole
+<http://w3id.org/gicentre/ont/plc#AgentRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#AgentRole> <http://www.w3.org/2000/01/rdf-schema#label> "AgentRole" .
+# 
+# http://w3id.org/gicentre/ont/plc#CauseQ1
+<http://w3id.org/gicentre/ont/plc#CauseQ1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#CauseQ1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#CauseQ1> <http://www.w3.org/2000/01/rdf-schema#label> "CauseQ1" .
+# 
+# http://w3id.org/gicentre/ont/plc#CauseQ2
+<http://w3id.org/gicentre/ont/plc#CauseQ2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#CauseQ2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#CauseQ2> <http://www.w3.org/2000/01/rdf-schema#label> "CauseQ2" .
+# 
+# http://w3id.org/gicentre/ont/plc#Classifying_Concept
+<http://w3id.org/gicentre/ont/plc#Classifying_Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Classifying_Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/gicentre/ont/plc#Classifying_Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Classifying Concept" .
+# 
+# http://w3id.org/gicentre/ont/plc#CurrencyCode
+<http://w3id.org/gicentre/ont/plc#CurrencyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#CurrencyCode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/gicentre/ont/plc#CurrencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "CurrencyCode" .
+# 
+# http://w3id.org/gicentre/ont/plc#DonorRole
+<http://w3id.org/gicentre/ont/plc#DonorRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#DonorRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#DonorRole> <http://www.w3.org/2000/01/rdf-schema#label> "DonorRole" .
+# 
+# http://w3id.org/gicentre/ont/plc#Effect
+<http://w3id.org/gicentre/ont/plc#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#QualityChangeType> .
+<http://w3id.org/gicentre/ont/plc#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#dependsOn> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#CauseQ1> .
+<http://w3id.org/gicentre/ont/plc#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#dependsOn> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gicentre/ont/plc#CauseQ1> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gicentre/ont/plc#CauseQ2> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://w3id.org/gicentre/ont/plc#Effect> <http://www.w3.org/2000/01/rdf-schema#label> "Effect" .
+# 
+# http://w3id.org/gicentre/ont/plc#ElementsAtRisk
+<http://w3id.org/gicentre/ont/plc#ElementsAtRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#ElementsAtRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#ElementsAtRisk> <http://www.w3.org/2000/01/rdf-schema#label> "ElementsAtRisk" .
+# 
+# http://w3id.org/gicentre/ont/plc#Event
+<http://w3id.org/gicentre/ont/plc#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#has_participant> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#Object> .
+<http://w3id.org/gicentre/ont/plc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#at_place> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://w3id.org/gicentre/ont/plc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#during_time> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gicentre/ont/plc#TimeEntity> .
+<http://w3id.org/gicentre/ont/plc#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://w3id.org/gicentre/ont/plc#EventType
+<http://w3id.org/gicentre/ont/plc#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#Classifying_Concept> .
+<http://w3id.org/gicentre/ont/plc#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#hasQuality> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#classifiesEvent> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "EventType" .
+# 
+# http://w3id.org/gicentre/ont/plc#Funding
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#during_time> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#TimeEntity> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#isFundedBy> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#Funding> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#providesAgentRole> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#hasFundAmount> .
+_:genid14 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gicentre/ont/plc#FundingAmount> .
+<http://w3id.org/gicentre/ont/plc#Funding> <http://www.w3.org/2000/01/rdf-schema#label> "Funding" .
+# 
+# http://w3id.org/gicentre/ont/plc#FundingAmount
+<http://w3id.org/gicentre/ont/plc#FundingAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#FundingAmount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/gicentre/ont/plc#FundingAmount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#hasCurrencyCode> .
+_:genid15 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gicentre/ont/plc#CurrencyCode> .
+<http://w3id.org/gicentre/ont/plc#FundingAmount> <http://www.w3.org/2000/01/rdf-schema#label> "FundingAmount" .
+# 
+# http://w3id.org/gicentre/ont/plc#HazardLocation
+<http://w3id.org/gicentre/ont/plc#HazardLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#HazardLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+<http://w3id.org/gicentre/ont/plc#HazardLocation> <http://www.w3.org/2000/01/rdf-schema#label> "HazardLocation" .
+# 
+# http://w3id.org/gicentre/ont/plc#InformationObject
+<http://w3id.org/gicentre/ont/plc#InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "InformationObject" .
+# 
+# http://w3id.org/gicentre/ont/plc#Object
+<http://w3id.org/gicentre/ont/plc#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#is_participant_in> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#Event> .
+<http://w3id.org/gicentre/ont/plc#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object" .
+# 
+# http://w3id.org/gicentre/ont/plc#Quality
+<http://w3id.org/gicentre/ont/plc#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/gicentre/ont/plc#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#hasQuality> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "Quality" .
+# 
+# http://w3id.org/gicentre/ont/plc#QualityChangeDescription
+<http://w3id.org/gicentre/ont/plc#QualityChangeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#QualityChangeDescription> <http://www.w3.org/2000/01/rdf-schema#label> "QualityChangeDescription" .
+# 
+# http://w3id.org/gicentre/ont/plc#QualityChangeType
+<http://w3id.org/gicentre/ont/plc#QualityChangeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#Classifying_Concept> .
+<http://w3id.org/gicentre/ont/plc#QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gicentre/ont/plc#classifies> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gicentre/ont/plc#Quality> .
+<http://w3id.org/gicentre/ont/plc#QualityChangeType> <http://www.w3.org/2000/01/rdf-schema#label> "QualityChangeType" .
+# 
+# http://w3id.org/gicentre/ont/plc#TimeEntity
+<http://w3id.org/gicentre/ont/plc#TimeEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#TimeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TimeEntity" .
+# 
+# http://w3id.org/gicentre/ont/plc#implementerRole
+<http://w3id.org/gicentre/ont/plc#implementerRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gicentre/ont/plc#implementerRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gicentre/ont/plc#AgentRole> .
+<http://w3id.org/gicentre/ont/plc#implementerRole> <http://www.w3.org/2000/01/rdf-schema#label> "implementerRole" .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a location determined by the presence of other entities ('the area close to Roma'), pivot events or signs (\"the area where the helicopter fell\"), complements of other entities ('the area under the table'), as well as physical objects conceptualized as locations as their main identity criterion ('the territory of Italy').\nIn this generic sense, a Place is an 'approximate', relative location. For an 'absolute', abstract location, cf. the pattern spaceregion.owl.\nFormally, a Place is defined by the fact of having something located in it; a Place is located in itself." .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/place.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Luogo"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://webprotege.stanford.edu/R8P4LK223tWmL4YcNgS3gaX> <http://www.w3.org/2000/01/rdf-schema#label> "Admin" .
+# 
+<http://xd-protege.com/schemas/cpas-ext.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an extension to the existing Content ODP annotation schema adding further needed annotation properties used by XDP." .
+<http://xd-protege.com/schemas/cpas-ext.owl> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xd-protege.com> .
+<http://xd-protege.com/schemas/cpas-ext.owl> <http://www.w3.org/2002/07/owl#versionInfo> "Created with TopBraid Composer" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
