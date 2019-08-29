@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/emdat/> .
+
+
+ds:0 ds:Start_date "https://w3id.org/gicentre/onto/emdat/1/1/1901" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/1/1/1901" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Nationwide" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1901-0001" .
+
+ds:1 ds:Start_date "https://w3id.org/gicentre/onto/emdat/1/1/1935" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/1/1/1935" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1935-0001" .
+
+ds:2 ds:Start_date "https://w3id.org/gicentre/onto/emdat/2/1/1967" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/2/1/1967" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Karamoja" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Km2" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:Damage "https://w3id.org/gicentre/onto/emdat/200" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1967-9001" .
+
+ds:3 ds:Start_date "https://w3id.org/gicentre/onto/emdat/12/2/1979" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/12/2/1979" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Karamoja" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Km2" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1979-9128" .
+
+ds:4 ds:Start_date "https://w3id.org/gicentre/onto/emdat/16/03/1982" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/16/03/1982" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1982-0408" .
+
+ds:5 ds:Start_date "https://w3id.org/gicentre/onto/emdat/4/5/1986" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/4/5/1986" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1986-0403" .
+
+ds:6 ds:Start_date "https://w3id.org/gicentre/onto/emdat/14/12/1987" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/14/12/1987" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Karamoja, Northwestern" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Km2" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Drought" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1987-9031" .
+
+ds:7 ds:Start_date "https://w3id.org/gicentre/onto/emdat/4/12/1989" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/4/12/1989" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Kampala, Mbale,  Arua" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1989-0244" .
+
+ds:8 ds:Start_date "https://w3id.org/gicentre/onto/emdat/1/1/1990" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/1/1/1990" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Location "https://w3id.org/gicentre/onto/emdat/Countrywide" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1990-0618" .
+
+ds:9 ds:Start_date "https://w3id.org/gicentre/onto/emdat/3/3/1991" ;
+	ds:End_date "https://w3id.org/gicentre/onto/emdat/3/3/1991" ;
+	ds:Country "https://w3id.org/gicentre/onto/emdat/Uganda" ;
+	ds:Magnitude_scale "https://w3id.org/gicentre/onto/emdat/Vaccinated" ;
+	ds:Event "https://w3id.org/gicentre/onto/emdat/Epidemic" ;
+	ds:Event_type "https://w3id.org/gicentre/onto/emdat/Bacterial disease" ;
+	ds:id "https://w3id.org/gicentre/onto/emdat/1991-0083" .
