@@ -1,0 +1,293 @@
+<http://example.com/joined/0> <http://example.com/joined/comments> "0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/1" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Other cause" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Thu Mar 20 00:00:00 GMT+01:00 2014" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/ADJUMANI" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/EPIDEMIC" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/6901.0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/6" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/reference/source> "https://w3id.org/gicentre/onto/reference/New Vision" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 09 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Soroti" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/1007.0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Serere" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/55612.0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/661.0" .
+<http://example.com/joined/0> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/3966.0" .
+<http://example.com/joined/1> <http://example.com/joined/comments> "1" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Tue Oct 01 00:00:00 GMT+01:00 2013" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AGAGO" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7108.0" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/OGOLE" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/WOL" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 09 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kumi" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/1389.0" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Mukongoro" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/7780.0" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/192.0" .
+<http://example.com/joined/1> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/960.0" .
+<http://example.com/joined/2> <http://example.com/joined/comments> "2" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Fri Oct 04 00:00:00 GMT+01:00 2013" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AGAGO" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7104.0" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/PACABOL" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/PAIMOL" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 10 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Katakwi" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/746.0" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Amuria" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/4476.0" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/2> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/3> <http://example.com/joined/comments> "3" .
+<http://example.com/joined/3> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/Detailed information not provided per sub-counies" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Wed May 01 00:00:00 GMT+01:00 2013" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7117.0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/reference/source> "https://w3id.org/gicentre/onto/reference/OPM" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 10 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kapchorwa " .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/701.0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Kween" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/3050.0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/3> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/4> <http://example.com/joined/comments> "4" .
+<http://example.com/joined/4> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/Material needed for construction" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7073.0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 13 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Tribal conflict" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Hoima" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/25.0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Alulu community" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/76.0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Hoima" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 13 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/25.0" .
+<http://example.com/joined/4> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/75.0" .
+<http://example.com/joined/5> <http://example.com/joined/comments> "5" .
+<http://example.com/joined/5> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/food and non food materials needed esp. construstion materials" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7072.0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/ward b" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Nodding disease" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Pader" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Angagura, Atanga, Awere, Puranga &Laguli" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/2000.0" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Gulu" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/5> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/6> <http://example.com/joined/comments> "6" .
+<http://example.com/joined/6> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/construction materials needed." .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7067.0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/Kangaror" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Drowning" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/A" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala and Hoima" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Kabaka's lake and Butyaba port" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/2.0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/Time not Recorded" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/6> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/7> <http://example.com/joined/comments> "7" .
+<http://example.com/joined/7> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/Food and non food items but specifically construction materials." .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7065.0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/kamkon" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Thu Dec 29 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Displacement" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/A" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Jinja" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/70.0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Jinja- Marine landing site-Boma Parish" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Thu Dec 29 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/7> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/8> <http://example.com/joined/comments> "8" .
+<http://example.com/joined/8> <http://example.com/joined/comments> "https://w3id.org/gicentre/onto/reference/construction materials needed,food and other non food materials." .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7054.0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/senior quaters" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 30 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Fire " .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Jinja, Kampala North" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Jinja-Napier Market and Bwaise Timber market" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/6.0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Fri Dec 30 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/8> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/9> <http://example.com/joined/comments> "9" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Wed Jun 20 00:00:00 GMT+01:00 2018" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/6907.0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Gunshots" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Luwero" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Luwero" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/1.0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<http://example.com/joined/9> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/10> <http://example.com/joined/comments> "10" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Assaults" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala  North  " .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Bwaise Katanga" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/4.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/11> <http://example.com/joined/comments> "11" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Burns" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala East " .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Bukoto" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/12> <http://example.com/joined/comments> "12" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Road accidents" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala ,\n Hoima,\n Mityana," .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Entebbe rd, Naguru, Kabalagala, Bwebajja, Ndejje, Mityana, Nakulabye, Moyo, Hoima,  Masaka" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/76.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/Time not Recorded" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/76.0" .
