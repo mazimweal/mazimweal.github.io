@@ -1,0 +1,180 @@
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 09 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Soroti" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Serere" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/1007.0" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/55612.0" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/661.0" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/3966.0" .
+<https://w3id.org/gicentre/onto/response/0> <https://w3id.org/gicentre/onto/response/comments> "0" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 09 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kumi" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Mukongoro" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/1389.0" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/7780.0" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/192.0" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/960.0" .
+<https://w3id.org/gicentre/onto/response/1> <https://w3id.org/gicentre/onto/response/comments> "1" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 10 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Katakwi" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Amuria" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/746.0" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/4476.0" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/2> <https://w3id.org/gicentre/onto/response/comments> "2" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Floods" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 10 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sun Dec 11 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Mbale" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kapchorwa " .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Kween" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/701.0" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/3050.0" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/3> <https://w3id.org/gicentre/onto/response/comments> "3" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Tribal conflict" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 13 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 13 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Hoima" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Hoima" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Alulu community" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/25.0" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/76.0" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/C" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/25.0" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/75.0" .
+<https://w3id.org/gicentre/onto/response/4> <https://w3id.org/gicentre/onto/response/comments> "4" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Nodding disease" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Gulu" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Pader" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Angagura, Atanga, Awere, Puranga &Laguli" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/2000.0" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/5> <https://w3id.org/gicentre/onto/response/comments> "5" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Drowning" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Tue Dec 27 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/Time not Recorded" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala and Hoima" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Kabaka's lake and Butyaba port" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/2.0" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/A" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/6> <https://w3id.org/gicentre/onto/response/comments> "6" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Displacement" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Thu Dec 29 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Thu Dec 29 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Jinja" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Jinja- Marine landing site-Boma Parish" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/70.0" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/A" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/7> <https://w3id.org/gicentre/onto/response/comments> "7" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Fire " .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Fri Dec 30 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Fri Dec 30 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Jinja, Kampala North" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Jinja-Napier Market and Bwaise Timber market" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/6.0" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/8> <https://w3id.org/gicentre/onto/response/comments> "8" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Gunshots" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Luwero" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Luwero" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/9> <https://w3id.org/gicentre/onto/response/comments> "9" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Assaults" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala  North  " .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Bwaise Katanga" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/4.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/B" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/10> <https://w3id.org/gicentre/onto/response/comments> "10" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Burns" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/time not Recorded" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala East " .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Bukoto" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/N" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/1.0" .
+<https://w3id.org/gicentre/onto/response/11> <https://w3id.org/gicentre/onto/response/comments> "11" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/Event> "https://w3id.org/gicentre/onto/response/Road accidents" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/Date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/response_date> "https://w3id.org/gicentre/onto/response/Sat Dec 31 00:00:00 GMT+01:00 2011" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/response_Time> "https://w3id.org/gicentre/onto/response/Time not Recorded" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/region> "https://w3id.org/gicentre/onto/response/Central" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/branch> "https://w3id.org/gicentre/onto/response/Kampala ,\n Hoima,\n Mityana," .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/location> "https://w3id.org/gicentre/onto/response/Entebbe rd, Naguru, Kabalagala, Bwebajja, Ndejje, Mityana, Nakulabye, Moyo, Hoima,  Masaka" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/households_affected> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/population> "https://w3id.org/gicentre/onto/response/76.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/elderly_affected> "https://w3id.org/gicentre/onto/response/Y" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/URCSResponse_cell> "https://w3id.org/gicentre/onto/response/D" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/targeted_household> "https://w3id.org/gicentre/onto/response/0.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/targeted_population> "https://w3id.org/gicentre/onto/response/76.0" .
+<https://w3id.org/gicentre/onto/response/12> <https://w3id.org/gicentre/onto/response/comments> "12" .
