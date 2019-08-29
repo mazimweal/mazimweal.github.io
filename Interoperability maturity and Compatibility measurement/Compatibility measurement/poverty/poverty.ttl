@@ -1,0 +1,56 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/poverty/> .
+
+
+ds:0 ds:id "https://w3id.org/gicentre/onto/poverty/d101" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/7.74" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Kalangala" .
+
+ds:1 ds:id "https://w3id.org/gicentre/onto/poverty/d102" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/4" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Kampala" .
+
+ds:2 ds:id "https://w3id.org/gicentre/onto/poverty/d103" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/34.67" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Kiboga" .
+
+ds:3 ds:id "https://w3id.org/gicentre/onto/poverty/d104" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/18.64" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Luwero" .
+
+ds:4 ds:id "https://w3id.org/gicentre/onto/poverty/d105" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/20.06" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Masaka" .
+
+ds:5 ds:id "https://w3id.org/gicentre/onto/poverty/d106" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/19.53" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Mpigi" .
+
+ds:6 ds:id "https://w3id.org/gicentre/onto/poverty/d107" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/24.55" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Mubende" .
+
+ds:7 ds:id "https://w3id.org/gicentre/onto/poverty/d108" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/16.29" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Mukono" .
+
+ds:8 ds:id "https://w3id.org/gicentre/onto/poverty/d109" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/24.35" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Nakasongola" .
+
+ds:9 ds:id "https://w3id.org/gicentre/onto/poverty/d110" ;
+	ds:year "https://w3id.org/gicentre/onto/poverty/2014" ;
+	<https://w3id.org/gicentre/onto/poverty/poverty+value> "https://w3id.org/gicentre/onto/poverty/24.25" ;
+	ds:district "https://w3id.org/gicentre/onto/poverty/Rakai" .

@@ -1,0 +1,14 @@
+<https://w3id.org/gicentre/onto/poverty/0>
+<https://w3id.org/gicentre/onto/poverty/1>
+<https://w3id.org/gicentre/onto/poverty/2>
+<https://w3id.org/gicentre/onto/poverty/3>
+<https://w3id.org/gicentre/onto/poverty/4>
+<https://w3id.org/gicentre/onto/poverty/5>
+<https://w3id.org/gicentre/onto/poverty/6>
+<https://w3id.org/gicentre/onto/poverty/7>
+<https://w3id.org/gicentre/onto/poverty/8>
+<https://w3id.org/gicentre/onto/poverty/9>
+<https://w3id.org/gicentre/onto/poverty/district>
+<https://w3id.org/gicentre/onto/poverty/id>
+<https://w3id.org/gicentre/onto/poverty/poverty+value>
+<https://w3id.org/gicentre/onto/poverty/year>
