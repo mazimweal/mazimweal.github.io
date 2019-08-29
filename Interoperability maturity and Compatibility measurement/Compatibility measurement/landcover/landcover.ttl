@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/landcover/> .
+
+
+ds:0 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/21677.0" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A6A20B4C1XXXXF2F5F10G2F2F6F10G3" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/5084.92799999999" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/NVT" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/None" .
+
+ds:1 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/20389.0" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A4A11B3C1XXXXF2F4F7G4" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/347.795" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/NVT" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/None" .
+
+ds:2 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/20306-121335/21677" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A1A11B1C1XXXXF2F4F7G4F2F5F10G2-G11/A6A20B4C1XXXXF2F5F10G2F2F6F10G3" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/1614.151" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/NVT" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/None" .
+
+ds:3 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/10769-12634(3)[Z10]" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A3B2B5C2D1D9-C3C7C19Z10" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/27271.934" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Food" .
+
+ds:4 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/20391-3719/10769-12634(3)[Z10]/10633-12626-W" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A4A11B3C1XXXXF2F4F7G4F2F5F10G2-A13B14G11/A3B2B5C2D1D9-C3C7C19Z10/A2B2B7C2D1D9-C3C7C17-W8" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/867.774999999999" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Food" .
+
+ds:5 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/10769-12634(3)[Z10]/21463" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A3B2B5C2D1D9-C3C7C19Z10/A6A20B4C1" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/4066.338" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Food" .
+
+ds:6 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/20391-3719/10809-12634(3)[Z10]" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A4A11B3C1XXXXF2F4F7G4F2F5F10G2-A13B14G11/A3B2B7C2D1D9-C3C7C19Z10" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/877.000999999999" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Food" .
+
+ds:7 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/10495-3782-W7" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A1B1B5C1D1D9-A7B3-W7" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/505.237" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Cash" .
+
+ds:8 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/10098-S13Zs2" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A3B1B5C1-S13Zs2" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/263.548999999999" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Cash" .
+
+ds:9 ds:shape "polgon" ;
+	ds:id "https://w3id.org/gicentre/onto/landcover/10098-S13Zs2" ;
+	ds:LCCLevel "https://w3id.org/gicentre/onto/landcover/A3B1B5C1-S13Zs2" ;
+	ds:Size "https://w3id.org/gicentre/onto/landcover/709.886999999999" ;
+	ds:Landcover "https://w3id.org/gicentre/onto/landcover/AG" ;
+	ds:crop_type "https://w3id.org/gicentre/onto/landcover/Cash" .

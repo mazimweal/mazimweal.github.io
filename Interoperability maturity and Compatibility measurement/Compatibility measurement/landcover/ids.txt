@@ -1,0 +1,16 @@
+<https://w3id.org/gicentre/onto/landcover/0>
+<https://w3id.org/gicentre/onto/landcover/1>
+<https://w3id.org/gicentre/onto/landcover/2>
+<https://w3id.org/gicentre/onto/landcover/3>
+<https://w3id.org/gicentre/onto/landcover/4>
+<https://w3id.org/gicentre/onto/landcover/5>
+<https://w3id.org/gicentre/onto/landcover/6>
+<https://w3id.org/gicentre/onto/landcover/7>
+<https://w3id.org/gicentre/onto/landcover/8>
+<https://w3id.org/gicentre/onto/landcover/9>
+<https://w3id.org/gicentre/onto/landcover/LCCLevel>
+<https://w3id.org/gicentre/onto/landcover/Landcover>
+<https://w3id.org/gicentre/onto/landcover/Size>
+<https://w3id.org/gicentre/onto/landcover/crop_type>
+<https://w3id.org/gicentre/onto/landcover/id>
+<https://w3id.org/gicentre/onto/landcover/shape>
