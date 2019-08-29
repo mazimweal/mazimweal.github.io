@@ -1,0 +1,11 @@
+Start date,End date,Country,ISO,Location,Latitude,Longitude,Magnitude value,Magnitude scale,Disaster type,Disaster subtype,Associated disaster,Associated disaster2,Total damage ('000 US$),Disaster name,Disaster No.
+1/1/1901,1/1/1901,Uganda,UGA,Nationwide,,,,Vaccinated,Epidemic,--,--,--,0,,1901-0001
+1/1/1935,1/1/1935,Uganda,UGA,,,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,Bubonic,1935-0001
+2/1/1967,2/1/1967,Uganda,UGA,Karamoja,,,,Km2,Drought,Drought,--,--,200,,1967-9001
+12/2/1979,12/2/1979,Uganda,UGA,Karamoja,,,,Km2,Drought,Drought,--,--,0,,1979-9128
+16/03/1982,16/03/1982,Uganda,UGA,,,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,Plague,1982-0408
+4/5/1986,4/5/1986,Uganda,UGA,,,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,Plague,1986-0403
+14/12/1987,14/12/1987,Uganda,UGA,"Karamoja, Northwestern",,,,Km2,Drought,Drought,--,--,0,,1987-9031
+4/12/1989,4/12/1989,Uganda,UGA,"Kampala, Mbale,  Arua",,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,Meningococcal disease,1989-0244
+1/1/1990,1/1/1990,Uganda,UGA,Countrywide,,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,Meningococcal disease,1990-0618
+3/3/1991,3/3/1991,Uganda,UGA,,,,,Vaccinated,Epidemic,Bacterial disease,--,--,0,,1991-0083
