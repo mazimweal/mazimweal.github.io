@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/reference/> .
+
+
+ds:0 ds:id "https://w3id.org/gicentre/onto/reference/6901.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/EPIDEMIC" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/ADJUMANI" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Thu Mar 20 00:00:00 GMT+01:00 2014" ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Other cause" ;
+	ds:source "https://w3id.org/gicentre/onto/reference/New Vision" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/1" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/6" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:1 ds:id "https://w3id.org/gicentre/onto/reference/7108.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/FLOOD" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AGAGO" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/WOL" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/OGOLE" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Tue Oct 01 00:00:00 GMT+01:00 2013" .
+
+ds:2 ds:id "https://w3id.org/gicentre/onto/reference/7104.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/FLOOD" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AGAGO" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/PAIMOL" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/PACABOL" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Fri Oct 04 00:00:00 GMT+01:00 2013" .
+
+ds:3 ds:id "https://w3id.org/gicentre/onto/reference/7117.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/FLOOD" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Wed May 01 00:00:00 GMT+01:00 2013" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/Detailed information not provided per sub-counies" ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:source "https://w3id.org/gicentre/onto/reference/OPM" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:4 ds:id "https://w3id.org/gicentre/onto/reference/7073.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/STORM" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/Material needed for construction" ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:5 ds:id "https://w3id.org/gicentre/onto/reference/7072.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/STORM" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:location "https://w3id.org/gicentre/onto/reference/ward b" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/food and non food materials needed esp. construstion materials" ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:6 ds:id "https://w3id.org/gicentre/onto/reference/7067.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/STORM" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:location "https://w3id.org/gicentre/onto/reference/Kangaror" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/construction materials needed." ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:7 ds:id "https://w3id.org/gicentre/onto/reference/7065.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/STORM" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:location "https://w3id.org/gicentre/onto/reference/kamkon" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/Food and non food items but specifically construction materials." ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:8 ds:id "https://w3id.org/gicentre/onto/reference/7054.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/STORM" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:subcounty "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:parish "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:location "https://w3id.org/gicentre/onto/reference/senior quaters" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" ;
+	ds:comments "https://w3id.org/gicentre/onto/reference/construction materials needed,food and other non food materials." ;
+	ds:cause "https://w3id.org/gicentre/onto/reference/Heavy Rain" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
+
+ds:9 ds:id "https://w3id.org/gicentre/onto/reference/6907.0" ;
+	ds:event "https://w3id.org/gicentre/onto/reference/FLOOD" ;
+	ds:district "https://w3id.org/gicentre/onto/reference/AMUDAT" ;
+	ds:date "https://w3id.org/gicentre/onto/reference/Wed Jun 20 00:00:00 GMT+01:00 2018" ;
+	ds:Duration "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Death "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:injured "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Damaged_property "https://w3id.org/gicentre/onto/reference/0" ;
+	ds:Crops_damaged "https://w3id.org/gicentre/onto/reference/0" .
