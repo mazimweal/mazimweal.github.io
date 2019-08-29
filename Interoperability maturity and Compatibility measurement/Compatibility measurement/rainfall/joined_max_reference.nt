@@ -1,0 +1,163 @@
+<https://w3id.org/gicentre/onto/rainfall/0> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/BUIKWE" .
+<https://w3id.org/gicentre/onto/rainfall/0> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/6.48605" .
+<https://w3id.org/gicentre/onto/rainfall/0> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/11.11071667" .
+<https://w3id.org/gicentre/onto/rainfall/0> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/1.0" .
+<https://w3id.org/gicentre/onto/rainfall/0> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/1> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/BUKOMANSIMBI" .
+<https://w3id.org/gicentre/onto/rainfall/1> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/12.8153" .
+<https://w3id.org/gicentre/onto/rainfall/1> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/8.857783333" .
+<https://w3id.org/gicentre/onto/rainfall/1> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/2.0" .
+<https://w3id.org/gicentre/onto/rainfall/1> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/2> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/BUTAMBALA" .
+<https://w3id.org/gicentre/onto/rainfall/2> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/9.424916667" .
+<https://w3id.org/gicentre/onto/rainfall/2> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/11.0128" .
+<https://w3id.org/gicentre/onto/rainfall/2> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/3.0" .
+<https://w3id.org/gicentre/onto/rainfall/2> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/3> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/BUVUMA " .
+<https://w3id.org/gicentre/onto/rainfall/3> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/6.610033333" .
+<https://w3id.org/gicentre/onto/rainfall/3> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/12.54471667" .
+<https://w3id.org/gicentre/onto/rainfall/3> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/4.0" .
+<https://w3id.org/gicentre/onto/rainfall/3> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/4> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/GOMBA" .
+<https://w3id.org/gicentre/onto/rainfall/4> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/11.2046" .
+<https://w3id.org/gicentre/onto/rainfall/4> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/9.123583333" .
+<https://w3id.org/gicentre/onto/rainfall/4> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/5.0" .
+<https://w3id.org/gicentre/onto/rainfall/4> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/5> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/KALANGALA " .
+<https://w3id.org/gicentre/onto/rainfall/5> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/12.17821667" .
+<https://w3id.org/gicentre/onto/rainfall/5> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/15.34666667" .
+<https://w3id.org/gicentre/onto/rainfall/5> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/6.0" .
+<https://w3id.org/gicentre/onto/rainfall/5> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/6> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/KALUNGU" .
+<https://w3id.org/gicentre/onto/rainfall/6> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/11.61501667" .
+<https://w3id.org/gicentre/onto/rainfall/6> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/9.727366667" .
+<https://w3id.org/gicentre/onto/rainfall/6> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/7.0" .
+<https://w3id.org/gicentre/onto/rainfall/6> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/7> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/KAMPALA" .
+<https://w3id.org/gicentre/onto/rainfall/7> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/7.8687" .
+<https://w3id.org/gicentre/onto/rainfall/7> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/10.43266667" .
+<https://w3id.org/gicentre/onto/rainfall/7> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/8.0" .
+<https://w3id.org/gicentre/onto/rainfall/7> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/8> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/KAYUNGA" .
+<https://w3id.org/gicentre/onto/rainfall/8> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/3.627216667" .
+<https://w3id.org/gicentre/onto/rainfall/8> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/6.726583333" .
+<https://w3id.org/gicentre/onto/rainfall/8> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/9.0" .
+<https://w3id.org/gicentre/onto/rainfall/8> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/rainfall/9> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/rainfall/KIBOGA" .
+<https://w3id.org/gicentre/onto/rainfall/9> <https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall> "https://w3id.org/gicentre/onto/rainfall/6.240266667" .
+<https://w3id.org/gicentre/onto/rainfall/9> <https://w3id.org/gicentre/onto/rainfall/average_rainfall> "https://w3id.org/gicentre/onto/rainfall/6.206566667" .
+<https://w3id.org/gicentre/onto/rainfall/9> <https://w3id.org/gicentre/onto/rainfall/id> "https://w3id.org/gicentre/onto/rainfall/10.0" .
+<https://w3id.org/gicentre/onto/rainfall/9> <https://w3id.org/gicentre/onto/rainfall/region> "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+<https://w3id.org/gicentre/onto/reference/0> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/ADJUMANI" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/1" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Other cause" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Thu Mar 20 00:00:00 GMT+01:00 2014" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/EPIDEMIC" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/6901.0" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/6" .
+<https://w3id.org/gicentre/onto/reference/0> <https://w3id.org/gicentre/onto/reference/source> "https://w3id.org/gicentre/onto/reference/New Vision" .
+<https://w3id.org/gicentre/onto/reference/1> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AGAGO" .
+<https://w3id.org/gicentre/onto/reference/1> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Tue Oct 01 00:00:00 GMT+01:00 2013" .
+<https://w3id.org/gicentre/onto/reference/1> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<https://w3id.org/gicentre/onto/reference/1> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7108.0" .
+<https://w3id.org/gicentre/onto/reference/1> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/OGOLE" .
+<https://w3id.org/gicentre/onto/reference/1> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/WOL" .
+<https://w3id.org/gicentre/onto/reference/2> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AGAGO" .
+<https://w3id.org/gicentre/onto/reference/2> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Fri Oct 04 00:00:00 GMT+01:00 2013" .
+<https://w3id.org/gicentre/onto/reference/2> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<https://w3id.org/gicentre/onto/reference/2> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7104.0" .
+<https://w3id.org/gicentre/onto/reference/2> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/PACABOL" .
+<https://w3id.org/gicentre/onto/reference/2> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/PAIMOL" .
+<https://w3id.org/gicentre/onto/reference/3> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/Detailed information not provided per sub-counies" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Wed May 01 00:00:00 GMT+01:00 2013" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7117.0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/3> <https://w3id.org/gicentre/onto/reference/source> "https://w3id.org/gicentre/onto/reference/OPM" .
+<https://w3id.org/gicentre/onto/reference/4> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/Material needed for construction" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7073.0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/4> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/5> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/food and non food materials needed esp. construstion materials" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7072.0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/ward b" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/5> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/6> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/construction materials needed." .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7067.0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/Kangaror" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/6> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/7> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/Food and non food items but specifically construction materials." .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7065.0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/kamkon" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/7> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/8> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/cause> "https://w3id.org/gicentre/onto/reference/Heavy Rain" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/comments> "https://w3id.org/gicentre/onto/reference/construction materials needed,food and other non food materials." .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Mon Nov 14 00:00:00 GMT+01:00 2016" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/STORM" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/7054.0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/location> "https://w3id.org/gicentre/onto/reference/senior quaters" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/parish> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/8> <https://w3id.org/gicentre/onto/reference/subcounty> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/9> <http://example.com/joined/district> "https://w3id.org/gicentre/onto/reference/AMUDAT" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/Crops_damaged> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/Damaged_property> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/Death> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/Duration> "https://w3id.org/gicentre/onto/reference/0" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/date> "https://w3id.org/gicentre/onto/reference/Wed Jun 20 00:00:00 GMT+01:00 2018" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/event> "https://w3id.org/gicentre/onto/reference/FLOOD" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/id> "https://w3id.org/gicentre/onto/reference/6907.0" .
+<https://w3id.org/gicentre/onto/reference/9> <https://w3id.org/gicentre/onto/reference/injured> "https://w3id.org/gicentre/onto/reference/0" .

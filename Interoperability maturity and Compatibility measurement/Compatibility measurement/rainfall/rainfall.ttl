@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/rainfall/> .
+
+
+ds:0 ds:id "https://w3id.org/gicentre/onto/rainfall/1.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/BUIKWE" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/11.11071667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/6.48605" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:1 ds:id "https://w3id.org/gicentre/onto/rainfall/2.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/BUKOMANSIMBI" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/8.857783333" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/12.8153" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:2 ds:id "https://w3id.org/gicentre/onto/rainfall/3.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/BUTAMBALA" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/11.0128" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/9.424916667" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:3 ds:id "https://w3id.org/gicentre/onto/rainfall/4.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/BUVUMA " ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/12.54471667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/6.610033333" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:4 ds:id "https://w3id.org/gicentre/onto/rainfall/5.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/GOMBA" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/9.123583333" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/11.2046" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:5 ds:id "https://w3id.org/gicentre/onto/rainfall/6.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/KALANGALA " ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/15.34666667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/12.17821667" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:6 ds:id "https://w3id.org/gicentre/onto/rainfall/7.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/KALUNGU" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/9.727366667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/11.61501667" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:7 ds:id "https://w3id.org/gicentre/onto/rainfall/8.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/KAMPALA" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/10.43266667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/7.8687" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:8 ds:id "https://w3id.org/gicentre/onto/rainfall/9.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/KAYUNGA" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/6.726583333" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/3.627216667" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .
+
+ds:9 ds:id "https://w3id.org/gicentre/onto/rainfall/10.0" ;
+	ds:district "https://w3id.org/gicentre/onto/rainfall/KIBOGA" ;
+	ds:average_rainfall "https://w3id.org/gicentre/onto/rainfall/6.206566667" ;
+	ds:averageMonthly_rainfall "https://w3id.org/gicentre/onto/rainfall/6.240266667" ;
+	ds:region "https://w3id.org/gicentre/onto/rainfall/CENTRAL" .

@@ -1,0 +1,15 @@
+<https://w3id.org/gicentre/onto/rainfall/0>
+<https://w3id.org/gicentre/onto/rainfall/1>
+<https://w3id.org/gicentre/onto/rainfall/2>
+<https://w3id.org/gicentre/onto/rainfall/3>
+<https://w3id.org/gicentre/onto/rainfall/4>
+<https://w3id.org/gicentre/onto/rainfall/5>
+<https://w3id.org/gicentre/onto/rainfall/6>
+<https://w3id.org/gicentre/onto/rainfall/7>
+<https://w3id.org/gicentre/onto/rainfall/8>
+<https://w3id.org/gicentre/onto/rainfall/9>
+<https://w3id.org/gicentre/onto/rainfall/averageMonthly_rainfall>
+<https://w3id.org/gicentre/onto/rainfall/average_rainfall>
+<https://w3id.org/gicentre/onto/rainfall/district>
+<https://w3id.org/gicentre/onto/rainfall/id>
+<https://w3id.org/gicentre/onto/rainfall/region>
