@@ -1,0 +1,201 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ds: <https://w3id.org/gicentre/onto/riskdata/> .
+
+
+ds:0 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA012009" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Masaka" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.8002" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.8724" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/3.1617" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/5.6763" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/3.7483" .
+
+ds:1 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA003004" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Butebo" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/4.8834" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.4972" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.574" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.6674" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.1071" .
+
+ds:2 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA003002" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Busia" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/7.3406" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/9.1999" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/5.6497" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/5.4137" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/6.8273" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/6.0029" .
+
+ds:3 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA005011" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Namutumba" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/4.3516" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/2.541" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.915" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.8475" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.5004" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.1863" .
+
+ds:4 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA010001" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Alebtong" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/2.4279" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.6684" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/0.825" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/6.8837" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/8.356" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/6.1814" .
+
+ds:5 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA013002" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Bukedea" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/2.8733" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.3494" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/0.8828" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/5.6885" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.9241" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.4989" .
+
+ds:6 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA008005" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Moroto" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/4.2804" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.3494" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.3508" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/10" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/8.8198" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/8.193" .
+
+ds:7 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA014003" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Kabarole" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/7.2003" ;
+	ds:Earthquake_exposure "https://w3id.org/gicentre/onto/riskdata/https://w3id.org/gicentre/onto/riskdata/4.1136" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/3.4871" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.3388" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/6.5859" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/4.952" .
+
+ds:8 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA004008" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Masindi" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/3.5594" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.9618" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.2483" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.9789" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/6.9456" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/4.7953" .
+
+ds:9 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA011001" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Buikwe" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.7977" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/2.541" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/2.4521" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/3.5369" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/5.8778" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/4.1096" .
+
+ds:10 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA005007" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Kamuli" ;
+	ds:violence "https://w3id.org/gicentre/onto/riskdata/1.68" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.4648" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/3.5028" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/4.5262" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/5.5067" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.0434" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.7964" .
+
+ds:11 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA003001" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Budaka" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/2.94" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/0.8218" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.6334" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.555" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/4.9224" .
+
+ds:12 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA015004" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Maracha" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/6.1263" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/2.0176" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/6.5553" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/8.4472" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/6.3145" .
+
+ds:13 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA010002" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Amolatar" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/1.6036" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/2.7199" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.149" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/6.331" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.6718" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.6398" .
+
+ds:14 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA003007" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Tororo" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/6.8948" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.6684" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/2.5246" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/5.4826" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.0621" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.3054" .
+
+ds:15 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA004003" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Kagadi" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/0.9755" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.9618" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/0.4954" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.8853" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.7869" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.077" .
+
+ds:16 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA012004" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Kalangala" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.5921" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/6.5684" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/3.6522" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/5.739" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/6.188" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.2898" .
+
+ds:17 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA011007" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Luwero" ;
+	ds:violence "https://w3id.org/gicentre/onto/riskdata/1.7698" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.8713" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.6684" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/4.138" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/3.5472" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/6.3042" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/4.7819" .
+
+ds:18 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA010005" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Kole" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/3.3356" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/0.9486" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/6.2864" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/8.4593" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/6.045" .
+
+ds:19 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA001005" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Lamwo" ;
+	ds:refugees "https://w3id.org/gicentre/onto/riskdata/36770" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/3.5319" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/1.0134" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/7.3958" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.8658" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/6.1548" .
+
+ds:20 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA002003" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Ibanda" ;
+	ds:violence "https://w3id.org/gicentre/onto/riskdata/3.3269" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/5.0219" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/4.0646" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/4.993" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/7.185" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/5.5795" .
+
+ds:21 ds:id "https://w3id.org/gicentre/onto/riskdata/21UGA011013" ;
+	ds:district "https://w3id.org/gicentre/onto/riskdata/Wakiso" ;
+	ds:violence "https://w3id.org/gicentre/onto/riskdata/0.6476" ;
+	ds:Drought_exposure "https://w3id.org/gicentre/onto/riskdata/7.5554" ;
+	ds:flood_exposure "https://w3id.org/gicentre/onto/riskdata/0.3494" ;
+	ds:hazard_exposure "https://w3id.org/gicentre/onto/riskdata/4.3694" ;
+	ds:vulnerability "https://w3id.org/gicentre/onto/riskdata/2.4642" ;
+	ds:Lack_copingCapacity "https://w3id.org/gicentre/onto/riskdata/4.2912" ;
+	ds:risk "https://w3id.org/gicentre/onto/riskdata/3.758" .
