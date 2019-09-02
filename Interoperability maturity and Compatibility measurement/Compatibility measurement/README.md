@@ -14,7 +14,7 @@ The results of the questionnaire can be found here: TBA
 
 ## Step 1: Transforming the data towards triples
 
-Tools such as open refine can be used to transform the datasets into triples. Each time, every id is concatenated with the URI of the dataset (e.g., https://w3id.org/onto/emdat/7062 for the identifier of the first row or  https://w3id.org/onto/emdat/7062/long as the identifier of the concept of longitude).
+Tools such as open refine can be used to transform the datasets into triples. Each time, every id is concatenated with the URI of the dataset (e.g., https://w3id.org/onto/emdat/7062 for the identifier of the first row or  https://w3id.org/onto/emdat/long as the identifier of the concept of longitude).
 
 Tools like [Open Refine](http://openrefine.org), [RML](http://semweb.mmlab.be/ns/rml) or [DataLift](http://datalift.org) can be used. These tools map data towards triples.
 
@@ -40,7 +40,7 @@ This generated this amount of triples:
 
 Dataset | number of triples
 :------:|-------------------:
-refence| 133
+reference| 133
 emdat| 76
 response | 180
 riskdata | 174
