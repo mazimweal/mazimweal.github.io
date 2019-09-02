@@ -10,10 +10,8 @@ Pattern   | Name |Competency questions
 1| Event Pattern | 1-Where did hazard occur in 2013? <br/> 2-Which hazards occurred between 2013 and 2018 in Uganda? <br/> 3-When did the 2010 hazard (e.g landslide) take place? when is it expected to occur
 2|Place Pattern | 1-Where did hazard event occur? <br/> 2-Which areas are prone to hazards?
 3|Organisation, agent Role patterns| 1-Which organizations are stakeholders in disaster Organisation, management? e.g Government of Uganda <br/> 2-Who are the actors/agents involved in disaster management? <br/> 3-What role do the actors perform? E.g donors, response etc. 
-4|Activity Specificaction patterns|1-What event is likely to be triggered by changes Activity in another event e.g Extreme weather event specification (EWE)? (Cascading/compound/complex disasters) <br/> 2-What activity is triggered by a change in weather events? e.g rockfall triggered by EWE <br/> 3-What activity triggers an event/state? e.g rockfall triggers landslide <br/> What class of objects could satisfy
-precondition for rockfall? e.g above average rainfall leads to a rockfall <br/> 4- What triggers DRF for a hazard event?
-5|value partitions pattern | 1-What are the elements at risk when the hazard occurs? E.g crops, built up areas <br/> quantified with land cover/ land use
-
-
-
-
+4|Activity Specificaction patterns|1-What event is likely to be triggered by changes Activity in another event e.g Extreme weather event specification (EWE)? (Cascading/compound/complex disasters) <br/> 2-What activity is triggered by a change in weather events? e.g rockfall triggered by EWE <br/> 3-What activity triggers an event/state? e.g rockfall triggers landslide <br/> 4 -What class of objects could satisfy precondition for rockfall? e.g above average rainfall leads to a rockfall <br/> 4- What triggers DRF for a hazard event?
+5|value partitions pattern | 1-What are the elements at risk when the hazard occurs? E.g crops, built up areas  quantified with land cover/ land use
+6|News Reporting Pattern| 1-Which communities need to be sensitized News about what? when? which media? Reporting<br/> Which media should be used for sensitization? e.g radio, TV, News bulletins etc<br/>2- Who reports the actual event? <br/> 3- What is the affiliation of the reporter <br/>4- When was a hazard event reported for the first time
+7|Funding pattern| 1-How was the disaster/emergency funded? Funding,<br/> 2-E.g. who funded compensations? <br/>3- What role do the actors perform E.g. PI, donor, AgencyProgrameManager <br/> 4- Which communities/households should receive disaster risk financing (DRF)?
+8| Quality, participation patterns|1- Which communities are more vulnerable to impacts of a given hazard? <br/> 2- What fragilities does the community Quality, that participates in hazard event exhibit?<br/> 3- What coping/adaptive mechanisms are used Participation to reduce vulnerability of an object participating in hazard event?
