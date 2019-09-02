@@ -25,10 +25,8 @@ Pattern Name ... | Dissemination Pattern
 :------:|-------------------:
 Context|Making sure that stakeholders/ users are aware of existing information, services etc is important in the context of disaster management
 Problem  | to provide effective, efficient and continual dissemination of information about best practices, standards and new approaches to all disaster sector stakeholders.this pattern allows you to allows the construct of certain specific solutions by combining these three parameters depending on the context
-Solution | There are three key parts to this pattern:,br/>- Type of dissemination ‘channels’ for delivering information, such as \
-Web, direct mail, or handouts at events;– Type of medium for disseminating information such as online or paper documents, machine readable format, audio, video or presentation slides;
-
+Solution | There are three key parts to this pattern:<br/>- Type of dissemination ‘channels’ for delivering information, such as Web, direct mail, or handouts at events;– Type of medium for disseminating information such as online or paper documents, machine readable format, audio, video or presentation slides;
 known uses | Health  information interoperability
-Example solution | an Example on use of the different types of rights of a “data user” role for an Disaster data, e.g 1) has rights to obtain access disaster information based on freedom of information or privacy legislation 2)Does not have the right to modify the information etc
+Example solution |publishing  early warning alerts on web, or broadcast alerts etc 
 
 xx  | XX
