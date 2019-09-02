@@ -1,7 +1,3 @@
-A list of these patterns can be found at http://ontologydesignpatterns.org/wiki/Category:ProposedContentOP
-
-A List of patterns that can be reused to organise disaster data in the context of uganda have been elaborated the publication the Authors presented at the 28th WETICE IEEE conference (June 12-15 Anacapri-Napoli,Italy)
-
 <b>Context</b>
  disaster related information held by different stakeholders is heterogeneous and described in multiple schemas, markup languages,
 with different vocabularies and conceptualizations. Ontologies can be used to provide a unified semantic representation of the domain, along with superior capabilities in querying and information retrieval.
@@ -16,7 +12,8 @@ Finally, to overcome these limitations, ontology design patterns have been propo
 
 Research Challenge: While the Ontology Design patterns(ODPs) community has a portal that lends support to ontology engineering with ODPs, there is still lack of critical mass of patterns/proven best practices . Identification of these patterns could go a long way to supporting ontology engineering, thereby bridging the gap between the demand and availability of ODPs while representing disaster knowledge
 
-some of these patterns  are listed here.
+A List of patterns that can be reused to organise disaster data in the context of uganda have been elaborated the publication the Authors presented at the 28th WETICE IEEE conference (June 12-15 Anacapri-Napoli,Italy)
+some of these patterns  are listed here. A list of these patterns can be found at http://ontologydesignpatterns.org/wiki/Category:ProposedContentOP
 
 
 Pattern   | Name |Competency questions
