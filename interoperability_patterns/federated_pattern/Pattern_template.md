@@ -7,6 +7,6 @@ Context|In order to cope with impacts of hazards events, organizations require r
 Problem  | disaster related data or information is held by different stakeholders in heterogeneous, multiple schemas, making it difficult to access over a single interface.
 Solution | a user is able to access multiple disaster data repositories based on a single query using a single interface
 known uses | data integration, SOA 
-xx | XX
+Example solution | e.g A user using a query to integrate impact data from  DesInventar, Em-database and Average rainfall from the meteorological department to generate early warnings for potentially risk areas. 
 xx  | XX
 
