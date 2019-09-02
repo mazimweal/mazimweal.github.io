@@ -21,5 +21,7 @@ No | Question
 13 | Which data policy applies when sharing information in your agency?
 14 | a) How has the use of different definitions  for terms  in the disaster community affected your ability to understand and reuse disaster data shared by another organization? Probe: have you heard about RDF, OWl
 14 | Probe:  list any scenarios where difference in terminology affects your ability to reuse  disaster data?
-15 | What challenges do you face when sharing data ( these could be technical, semantic/terminology or organisational issues)? 
-16 | 
+15 | What challenges do you face when sharing data ( these could be technical, semantic/terminology or organisational issues)? Probe: do you find any issues with data shared. 
+16 | What are your recommendations for sharing disaster data in the disaster community in Uganda?
+17 | how much do you know about  the adoption of open  data  principles for relation to disaster data in your organisation?
+18 | Any other comments on disaster data sharing in Uganda?
