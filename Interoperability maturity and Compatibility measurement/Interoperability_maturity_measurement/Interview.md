@@ -5,7 +5,7 @@ Note: data was define as raw or derived data i.e data obtained after processing 
 No | Question
 :------:|-------------------:
 1 | Describe the nature of the institution where you work?
-2 | Which of the following best describes your role in disaster management <br/>  Disaster management expert- (Response, preparedness, Early warning, prevention)
+2 | Which of the following best describes your role in disaster management <br/>  Disaster management expert- (Response, preparedness, Early warning, prevention)- Information manage, Consultant in government- etc
 3 | a) How  is disaster related data stored in your organization? (e.g html websites, csv, excel, pdf, docx, doc, txt, shapefile - list as many as you can) Probe : have you heard about XML, RDF , GML etc
 3 | b) If  disaster data is hosted in a database,  in which format  is it downloaded?  (e.g csv,excel, pdf, docx, doc, txt, shapefile -list as many as you can)
 4 | Do your datasets have a licence attached to them? tell us more about regulations regarding sharing your data
