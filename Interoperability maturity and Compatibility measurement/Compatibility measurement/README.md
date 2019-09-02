@@ -188,7 +188,7 @@ The relevance ratio is the ratio of the relevance over the sum of both triple co
 The end results is this table:
 
 Reference and ... | Relevance of stringmatching IDs| Relevance of real-world concepts | Relevance  ratio  | Expert opinion  
-:----------------:|-----------------:|------------------:|------------------:|-----------------:|-------------------:
+:----------------:|-----------------:|------------------:|------------------:|-----------------:
 Landcover           |              |                |                0% | low
 Rainfall           |             |                |                 100% | high 
 emdat           |              |                 |                69.7% |medium 
