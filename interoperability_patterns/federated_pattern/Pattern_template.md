@@ -1,7 +1,6 @@
 Name: Federated Pattern
 
 
-<centre>
 Pattern Name ... | Federated Pattern
 :------:|-------------------:
 Context|In order to cope with impacts of hazards events, organizations require resources and capabilities of other stakeholder institutions thus making effective collaboration and interoperation essential. Disaster management stakeholders  need to be able to discover, access, integrate and analyze task-appropriate disaster data for effective management of pre and post disaster issues. 
@@ -10,4 +9,4 @@ Solution | a user is able to access multiple disaster data repositories based on
 known uses | data integration
 xx | XX
 xx  | XX
-</centre>
+
