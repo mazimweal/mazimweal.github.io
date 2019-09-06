@@ -3,7 +3,7 @@
 
 Patterns that can be re-used to  solve the following disaster data interoperability in Uganda include
 
-How do we find additional relevant data from the web? <br/>
-How can the quality of data or a data model be improved over time?<br/>
-How do we handle the potentially messy or incomplete data we use from the web?
+"Follow Your Nose pattern"- How do we find additional relevant data from the web? <br/>
+"Progressive Enrichment--pattern" How can the quality of data or a data model be improved over time?<br/>
+"Missing Isn't Broken--pattern" How do we handle the potentially messy or incomplete data we use from the web?
  
