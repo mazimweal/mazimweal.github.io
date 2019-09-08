@@ -189,12 +189,12 @@ The end results is this table:
 
 Reference and ... | Relevance of stringmatching IDs| Relevance of real-world concepts | Relevance  ratio  | Expert opinion  
 :----------------:|-----------------:|------------------:|------------------:|-----------------:
-Landcover           |              |                |                0% | low
-Rainfall           |             |                |                 100% | high 
-emdat           |              |                 |                69.7% |medium 
-Risk data       |             |                 |                100% | high            
-Response data |             |                |                 81%|  high
-Poverty data |             |                  |                 100% | high
+Landcover           |    0          |        0        |                0% | low
+Rainfall           |     20        |       20         |                 100% | high 
+emdat           |        209      |    300             |                69.7% |medium 
+Risk data       |      32       |         32        |                100% | high            
+Response data |       270      |        330        |                 81%|  high
+Poverty data |      38       |          38        |                 100% | high
 ## Step 5: Processing feedback
 
 The list of IIOP statements is a great opportunity to process feedback. Both the `iiop:notSameAs`as the `iiop:sameAs` statements are interesting for feedback towards the dataset maintainer. Each `iiop:sameAs` link can be considered as an opportunity to use the same identifiers across datasets.
