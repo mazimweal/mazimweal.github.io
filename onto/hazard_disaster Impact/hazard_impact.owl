@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/HazardImpact#"
+     xml:base="http://w3id.org/gicentre/onto/HazardImpact"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:hazardimpact="http://w3id.org/gicentre/onto/HazardImpact#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/HazardImpact"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#containsImpactIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#containsImpactIndicator"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#containsLocation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#containsLocation">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#District"/>
+        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#hasLocaction -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#hasLocaction"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#hasLocation">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isLocationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#hasReport -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#hasReport"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#hasSpatialFootPrint -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#hasSpatialFootPrint"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#isAgentRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#isAgentRoleIn">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#providesAgentRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasLocation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardLocation"/>
+        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#District"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#isLocationOf"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#isPerfomedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#isPerfomedBy">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#performsRoleIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#occursAt -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#occursAt"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#occursAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#occursAtTime"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#performsRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#performsRoleIn"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#providesAgentRole -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#providesAgentRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#hasValue"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#originatesFrom -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardImpact#originatesFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#Agent -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#performsRoleIn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Geometry"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#AgentRole -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#AgentRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isAgentRoleIn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isPerfomedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isAgentRoleIn"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isPerfomedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Geometry"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#AuthorRole -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#AuthorRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#District -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#District">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#Event -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasReport"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAt"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAtTime"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasReport"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAt"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAtTime"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Geometry"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#Geometry -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#Geometry">
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#HazardLocation -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#HazardLocation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#HazardReport -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#HazardReport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#containsImpactIndicator"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#containsImpactIndicator"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#originatesFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#Organisation -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#Organisation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#Place -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#Place">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasSpatialFootPrint"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#ReportedTerminalEvent -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#ReportedTerminalEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#ReportingRole -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#ReportingRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardImpact#TimeEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasLocation"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#containsImpactIndicator"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasReport"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasSpatialFootPrint"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isAgentRoleIn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isLocationOf"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#isPerfomedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAt"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#occursAtTime"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#TimeEntity"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#performsRoleIn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#Agent"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#providesAgentRole"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#AgentRole"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#hasValue"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#ImpactIndicator"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#originatesFrom"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardImpact#HazardReport"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
