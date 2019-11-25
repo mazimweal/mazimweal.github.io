@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/qc#"
+     xml:base="http://w3id.org/gicentre/onto/qc"
+     xmlns:qc="http://w3id.org/gicentre/onto/qc#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/qc"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#defines -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/qc#defines"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/qc#hasQuality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Cause_Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Cause_Quality">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/qc#Effect_Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Effect_Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Effect_Quality">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Cause_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Cause_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Object -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/qc#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Quality">
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#QualityChangeDescription -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#QualityChangeDescription">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#defines"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#defines"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#QualityChangeType -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#QualityChangeType">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Resilience -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Resilience">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Cause_Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Suceptability -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Suceptability">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Cause_Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/qc#Vulnerability -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/qc#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Effect_Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#defines"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeType"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#QualityChangeDescription"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#dependsOn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Cause_Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Effect_Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/qc#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/qc#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/qc#Object"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
