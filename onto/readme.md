@@ -36,6 +36,10 @@ https://mazimweal.inrupt.net/public/WeatherData.ttl
 Example of Vulnerability data organised using quality using the quality causation
 
 
+Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
+
+
+
 Emerging Patterns
 ==========
 To bridge the availability gap of patterns for representing disaster knowledge, we identify existing and emerging patterns that can be used to organize disaster knowledge. Work in progress .. Ontology  with emerging patterns found at--- URL   https://mazimweal.github.io/onto/hazardOnto/webvowl/index.html# 
