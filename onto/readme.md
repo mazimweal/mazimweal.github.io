@@ -27,13 +27,13 @@ Pattern   | Name |Competency questions
 9| Quality, participation patterns|1- Which communities are more vulnerable to impacts of a given hazard? <br/> 2- What fragilities does the community Quality, that participates in hazard event exhibit?<br/> 3- What coping/adaptive mechanisms are used Participation to reduce vulnerability of an object participating in hazard event?
 10 | Quality Causation pattern|1-Which qualities of the community could cause change in vulnerability of the same community?,<br/> 2- What is the interpretation of the causation relationship between vulnerability, susceptibility/fragility/sensitivity and resilience of a community?
 
-Example of impact data from Office of prime minister organised using Event, place, AgentRole patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
+Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
 
 Example of  organising  early warning information(using a case of a drought) from Meterological Authority using....Event, event type, quality, region/parameter patterns
 https://mazimweal.inrupt.net/public/WeatherData.ttl
 
 
-Example of Vulnerability data organised using quality using the quality causation
+Example of Vulnerability data organised using quality using the quality causation, quality, objectParticipation, RegionParameter
 
 
 Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
