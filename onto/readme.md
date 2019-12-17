@@ -37,7 +37,35 @@ Example of Vulnerability data organised using quality using the quality causatio
 
 
 Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
+```federatedQuery
+#61.query hazard impact data_OPM and weather information from UNMA
+#Datasource: http://localhost:5000/impactsdata1  http://localhost:5000/WeatherData
 
+select ?past_Event ?place ?location ?report ?dead ?cropsInHectares ?classifying_concept ?magnitude ?spi_indexValue ?parameter
+where {?subject rdfs:subClassOf hazardimpact:ReportedEvent.
+             ?past_Event   rdf:type ?subject;
+                  hazardimpact:occursAtPlace ?place;
+      hazardimpact:hasLocation ?location;
+      #rdfs:comment ?coment;
+      hazardimpact:hasReport ?report.
+      ?report hazardimpact:containsImpactIndicator ?ind.
+  ?ind hazardimpact:number_dead ?dead;
+       hazardimpact:crops_damaged ?cropsInHectares.
+      
+      
+      ?y rdf:type sat1:WeatherEvent ;
+	           sat1:IsClassifiedBy ?classifying_concept;
+                 sat1:occursAtPlace ?place;
+                 sat1:hasLocation ?location.
+      ?classifying_concept sat1:hasQuality ?magnitude.
+    	?magnitude sat1:hasRegion ?spi.
+    	?spi sat1:hasRegionValue ?spi_indexValue.
+    	?spi sat1:hasParameter ?parameter.
+    	?classifying_concept sat1:isParameterizedBy ?Parameter.
+      filter(?parameter=sat1:Extremely_dry)
+                 
+} 
+```
 
 
 Emerging Patterns
