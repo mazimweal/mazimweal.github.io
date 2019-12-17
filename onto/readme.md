@@ -28,6 +28,22 @@ Pattern   | Name |Competency questions
 10 | Quality Causation pattern|1-Which qualities of the community could cause change in vulnerability of the same community?,<br/> 2- What is the interpretation of the causation relationship between vulnerability, susceptibility/fragility/sensitivity and resilience of a community?
 
 Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
+```federatedQuery
+#60.Hazardevents with ODPs_impact data
+# Datasource: http://localhost:5000/impactsdata1
+
+select *
+where {?subject rdfs:subClassOf hazardimpact:ReportedEvent.
+             ?x   rdf:type ?subject;
+                  hazardimpact:occursAtPlace ?place;
+                  hazardimpact:hasReport ?report.
+  ?report hazardimpact:containsImpactIndicator ?ind.
+  ?ind hazardimpact:number_dead ?dead;
+       hazardimpact:crops_damaged ?cropsInHectares.
+  filter(?subject=hazardimpact:DROUGHT) 
+
+}
+```
 
 Example of  organising  early warning information(using a case of a drought) from Meterological Authority using....Event, event type, quality, region/parameter patterns
 https://mazimweal.inrupt.net/public/WeatherData.ttl
