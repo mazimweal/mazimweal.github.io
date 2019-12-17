@@ -46,7 +46,7 @@ WHERE {
     	?spi sat1:hasParameter ?parameter.
     	?classifying_concept sat1:isParameterizedBy ?Parameter.
       
-filter(?Parameter=sat1:Drought_event && ?parameter=sat1:Severely_dry)
+filter(parameter=sat1:Severely_dry)
 }
 ```
 
