@@ -31,7 +31,24 @@ Example of impact data from Office of prime minister organised using Event, plac
 
 Example of  organising  early warning information(using a case of a drought) from Meterological Authority using....Event, event type, quality, region/parameter patterns
 https://mazimweal.inrupt.net/public/WeatherData.ttl
+```Query weather data
+ #61.Weather data
+#Datasource: <http://localhost:5000/WeatherData#>
 
+SELECT  ?x ?place ?classifying_concept ?spi ?spi_indexValue 
+WHERE {
+	    ?x rdf:type sat1:WeatherEvent ;
+	           sat1:IsClassifiedBy ?classifying_concept;
+                 sat1:occursAtPlace ?place.
+    	?classifying_concept sat1:hasQuality ?magnitude.
+    	?magnitude sat1:hasRegion ?spi.
+    	?spi sat1:hasRegionValue ?spi_indexValue.
+    	?spi sat1:hasParameter ?parameter.
+    	?classifying_concept sat1:isParameterizedBy ?Parameter.
+      
+filter(?Parameter=sat1:Drought_event && ?parameter=sat1:Severely_dry)
+}
+```
 
 Example of Vulnerability data organised using quality using the quality causation, quality, objectParticipation, RegionParameter
 
