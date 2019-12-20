@@ -101,7 +101,5 @@ where {?subject rdfs:subClassOf hazardimpact:ReportedEvent.
 ```
 
 
-Emerging Patterns
-==========
-To bridge the availability gap of patterns for representing disaster knowledge, we identify existing and emerging patterns that can be used to organize disaster knowledge. Work in progress .. Ontology  with emerging patterns found at--- URL   https://mazimweal.github.io/onto/hazardOnto/webvowl/index.html# 
+
 
