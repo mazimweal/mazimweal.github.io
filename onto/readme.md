@@ -31,7 +31,7 @@ Pattern   | Name |Competency questions
 ``https://github.com/LinkedDataFragments/Server.js``
 b) create a configuration file ``config.json``
 
-2- Download the Linked data Fragments  client browser-- a) configure the ``settings.json`` to add data sources, b)to the queries folder, Add queries to be executed  as illustrated in examples below to query disaster related data from multiple stakeholders.
+2- Download the Linked data Fragments  client browser ``https://github.com/LinkedDataFragments/jQuery-Widget.js``-- a) configure the ``settings.json`` to add data sources, b)to the queries folder, Add queries to be executed  as illustrated in examples below to query disaster related data from multiple stakeholders.
 
 Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
 ```hazardQuery
