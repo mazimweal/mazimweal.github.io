@@ -27,6 +27,45 @@ Pattern   | Name |Competency questions
 9| Quality, participation patterns|1- Which communities are more vulnerable to impacts of a given hazard? <br/> 2- What fragilities does the community Quality, that participates in hazard event exhibit?<br/> 3- What coping/adaptive mechanisms are used Participation to reduce vulnerability of an object participating in hazard event?
 10 | Quality Causation pattern|1-Which qualities of the community could cause change in vulnerability of the same community?,<br/> 2- What is the interpretation of the causation relationship between vulnerability, susceptibility/fragility/sensitivity and resilience of a community?
 
+1 a) -Install the Triple fragments server using instructions from 
+``https://github.com/LinkedDataFragments/Server.js``
+b) create a configuration file config.json
+
+``{
+  "title": "Linked disaster Data Fragments server",
+  
+  "datasources": {
+    "impactsdata1": {
+      "title": "hazard data",
+      "type": "TurtleDatasource",
+      "description": "Desinventar Impact data from Office of prime minister",
+      "settings": { "url": "https://mazimweal.inrupt.net/public/impactsdata1.ttl" }
+    },
+	
+	"WeatherData": {
+      "title": "dummy weather data",
+      "type": "TurtleDatasource",
+      "description": "weather data from meteorologicalAuthority",
+      "settings": { "url": "https://mazimweal.inrupt.net/public/weatherData.ttl" }
+    }
+	
+  },
+ 
+  "prefixes": {
+  "owl": "http://www.w3.org/2002/07/owl#", 
+  "hazardimpact": "http://w3id.org/gicentre/onto/HazardImpact#",
+  "sat1": "http://w3id.org/gicentre/onto/sat1#",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "xml": "http://www.w3.org/XML/1998/namespace",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  
+  }
+}
+``
+
+2- 
+
 Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
 ```hazardQuery
 #60.Hazardevents with ODPs_impact data
