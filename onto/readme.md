@@ -29,9 +29,9 @@ Pattern   | Name |Competency questions
 
 1 a) -Install the Triple fragments server using instructions from 
 ``https://github.com/LinkedDataFragments/Server.js``
-b) create a configuration file config.json
+b) create a configuration file ``config.json``
 
-2- 
+2- Download the Linked data Fragments  client browser-- a) configure the ``settings.json`` to add data sources, b)to the queries folder, Add queries to be executed  as illustrated in examples below to query disaster related data from multiple stakeholders.
 
 Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
 ```hazardQuery
