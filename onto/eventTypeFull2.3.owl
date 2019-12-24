@@ -1,13 +1,39 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://w3id.org/gicentre/onto/eventTypeFull#"
-     xml:base="http://w3id.org/gicentre/onto/eventTypeFull"
-     xmlns:eventtypefull="http://w3id.org/gicentre/onto/eventTypeFull#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/sat1#"
+     xml:base="http://w3id.org/gicentre/onto/sat1"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/eventTypeFull"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sat1="http://w3id.org/gicentre/onto/sat1#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/sat1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
     
 
 
@@ -22,108 +48,119 @@
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#classifies -->
+    <!-- http://w3id.org/gicentre/onto/sat1#IsClassifiedBy -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#classifies"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#IsClassifiedBy"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#containsLocation -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Parameterizes -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#containsLocation">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#isLocationOf"/>
-        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#District"/>
-        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#EventLocation"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#Parameterizes">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#endsAt -->
+    <!-- http://w3id.org/gicentre/onto/sat1#containsLocation -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#endsAt">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#containsLocation">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/sat1#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasLocation -->
+    <!-- http://w3id.org/gicentre/onto/sat1#endsAt -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasLocation"/>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasParameter -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasParameter">
-        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#isParameterOf"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#endsAt">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasQuality -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasLocation -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasQuality"/>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasSpatialFootPrint -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasSpatialFootPrint"/>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasregion -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasregion">
-        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#isRegionOf"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasLocation">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/sat1#isLocationOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#isLocationOf -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasParameter -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#isLocationOf"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#isParameterOf -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasQuality -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#isParameterOf"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#isRegionOf -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasRegion -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#isRegionOf"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#islocatedIn -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasSpatialFootPrint -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#islocatedIn">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasLocation"/>
-        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#EventLocation"/>
-        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#District"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasSpatialFootPrint"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/sat1#hasLocation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#occursAtPlace -->
+    <!-- http://w3id.org/gicentre/onto/sat1#isLocationOf -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#occursAtPlace"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#isLocationOf"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime -->
+    <!-- http://w3id.org/gicentre/onto/sat1#isParameterizedBy -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#isParameterizedBy">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/sat1#is_Parameter_for"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#startsAt -->
+    <!-- http://w3id.org/gicentre/onto/sat1#is_Parameter_for -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#startsAt">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#is_Parameter_for">
+        <rdfs:domain rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+        <rdfs:range rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#occursAtPlace -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#occursAtPlace"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#occursAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#startsAt -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/sat1#startsAt">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
     </owl:ObjectProperty>
     
 
@@ -139,21 +176,21 @@
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasDateValue -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasDateValue -->
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasDateValue"/>
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasDateValue"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasParameterValue -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasParameterValue -->
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasParameterValue"/>
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasParameterValue"/>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#hasRegionValue -->
+    <!-- http://w3id.org/gicentre/onto/sat1#hasRegionValue -->
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#hasRegionValue"/>
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
     
 
 
@@ -168,102 +205,103 @@
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Concept -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Concept -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Concept">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#EventType"/>
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Concept">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#classifies"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasQuality"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#classifies"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasQuality"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Geometry"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Geometry"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concept is a SocialObject, and isDefinedIn a Description . 
+Once defined, a Concept can be used in other descriptions. 
+The classifies relation relates concepts to entities at some time</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#District -->
+    <!-- http://w3id.org/gicentre/onto/sat1#District -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#District">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#District">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is - a territorial division (as for administrative or electoral purposes).</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Event -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Event -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Event">
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Event">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtPlace"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtPlace"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#endsAt"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#IsClassifiedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtPlace"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#endsAt"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeInstant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtPlace"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#startsAt"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#EventType"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Geometry"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>Any physical, social, or mental process, event, or state.
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#startsAt"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeInstant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#IsClassifiedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Geometry"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any physical, social, or mental process, event, or state.
 
 More theoretically, events can be classified in different ways, possibly based on &apos;aspect&apos; (e.g. stative, continuous, accomplishement, achievement, etc.), on &apos;agentivity&apos; (e.g. intentional, natural, etc.), or on &apos;typical participants&apos; (e.g. human, physical, abstract, food, etc.).
 Here no special direction is taken, and the following explains why: events are related to observable situations, and they can have different views at a same time.
@@ -300,99 +338,125 @@ For this reason, in this ontology both events and situations are allowed, togeth
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#EventLocation -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Geometry -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#EventLocation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Geometry">
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#EventType -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Hazard_Location -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#EventType">
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Geometry"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>A Concept that classifies an Event . An event type describes how an Event should be interpreted, executed, expected, seen, etc., according to the Description that the EventType isDefinedIn (or used in)</rdfs:comment>
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Hazard_Location">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particular with spatial positions where hazards occur. these locations are located in particular administrative areas e.g districts</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Geometry -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Magnitude -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Geometry">
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Parameter -->
-
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Parameter">
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Magnitude">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasParameterValue"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It measures the departure from the threshold and reflects unusualness or extremity of the event. It is computed based on an index, or a set of indices, exceeding or below certain threshold(s). Thresholds can be an absolute value or percentiles.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/gicentre/onto/sat1#parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Parameter -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Parameter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameterizes"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameterValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>A Concept that classifies a Region; the difference between a Region and a Parameter is that regions represent sets of observable values, e.g. the height  of a given building, while parameters represent constraints or selections on observable values, e.g. &apos;VeryHigh&apos;. Therefore, parameters can also be used to constrain regions, e.g. VeryHigh on a subset of values of the Region Height applied to buildings, or to add an external selection criterion , such as measurement units, to regions, e.g. Meter on a subset of values from the Region Length applied to the Region Length applied to roads.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameterValue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept that classifies something having a certain value, e.g. &apos;High&apos; can be said of people taller than 185 cm.
+However, in order to formally represent this constraint, we need to add an anonymous type to a parameter instance, using a property that convey the semantics of the parameter, e.g.:
+High rdf:type Person and (some hasHeight (Height and (oneOf isTallerThan 185) and (oneOf hasUnitOfMeasure centimeter)))
+
+For instance ... The categorization of SPI values is based on the definition given by McKee (1993) as follows:
+2.00 ≤ SPI : extremely wet
+1.5 &lt; SPI &lt; 2 : severely wet
+1 &lt; SPI &lt; 1.5 : moderately wet
+−1&lt; SPI &lt; 1 : near normal
+−1.5 &lt; SPI &lt; −1 : moderately dry
+−2 &lt; SPI &lt; −1.5 : severely dry
+SPI ≤ −2 : extremely dry</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parameter</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Place -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Place -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Place">
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Place">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasSpatialFootPrint"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Geometry"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasSpatialFootPrint"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Geometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities (&quot;the area close to Roma&quot;), pivot events or signs (&quot;the area where the helicopter fell&quot;), complements of other entities (&quot;the area under the table&quot;), etc. 
-In this generic sense, a Place is an &quot;approximate&quot; location. For an &quot;absolute&quot; location, see the class SpaceRegion</rdfs:comment>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a basic pattern, useful to represent generic locations for anything, which becomes a place when is assumed as a reference location. We can represent, transitively, where something is located. It remains unspecified what kind of location relation we are trying to represent: reference location, partial location, physical location, social or metaphoric location, etc.
+Moreover, temporal location is not caught with this pattern (you need a placement situation for that).
+
+Scenarios:	The Colosseum is located in Rome.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/place.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Quality -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Quality -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Quality">
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Quality">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasregion"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasregion"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
 From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
 For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
 On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as &apos;anomalies&apos;.</rdfs:comment>
@@ -400,47 +464,65 @@ On the other hand, in an antiques context, the individual aspects for a specific
     
 
 
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#Region -->
+    <!-- http://w3id.org/gicentre/onto/sat1#Region -->
 
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#Region">
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#Region">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasParameter"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasRegionValue"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:comment>Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
-Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity -->
-
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity">
-        <rdfs:isDefinedBy>a dimensional space that aims at representing time.</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant -->
-
-    <owl:Class rdf:about="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasDateValue"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
+Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#SPIndex -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#SPIndex">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard Precipitation Index (SPI) is used to characterize meteorological droughts. When using SPI drought is considered to have started when the SPI value is ≤ −1.0 and drought ends when the SPI value becomes positive.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#TimeEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#TimeEntity">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration (D) of drought in a location is the number of consecutive months with SPI values less than −1.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#TimeInstant -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#TimeInstant">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasDateValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Class>
     
 
@@ -450,11 +532,848 @@ Regions are not data values in the ordinary knowledge representation sense; in o
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasLocation"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasLocation"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/page/Bushenyi -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Bushenyi">
+        <owl:sameAs rdf:resource="http://w3id.org/gicentre/onto/sat1#bushenyi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#Kangaror"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#wardb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Drought_event -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Drought_event">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent12">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent13 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent13">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/sat1#magnitude_dr9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Extremely_dry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Extremely_dry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Kabarole -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Kabarole">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#MALIGO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Kangaror -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Kangaror">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Katikekile -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Katikekile">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#MALIGO -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#MALIGO">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#Kabarole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Moderately_dry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Moderately_dry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Moderately_wet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Moderately_wet">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#Katikekile"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#katikekile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Near_normal -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Near_normal">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Severely_dry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Severely_dry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#Severely_wet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#Severely_wet">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr01 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr01">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent1"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#wardb"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#Amudat"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr02 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr02">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent2"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#Kangaror"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#Amudat"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#2ndJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr03 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr03">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent3"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#makerere"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#kampala"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr04 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr04">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent4"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#bushenyiTown"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#bushenyi"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr05 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr05">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent5"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#serere"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#serere"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#21stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr06 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr06">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent6"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#katikekile"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#Moroto"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr07 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr07">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent7"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#namulonge"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#wakiso"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr08 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr08">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent8"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stMarch2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#mbararaTown"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#mbarara"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr09 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr09">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent9"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#MALIGO"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#Kabarole"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent10"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#kilembe"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#kasese"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent11"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#wakisoTown"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#wakiso"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr12">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent12"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#sorotiMunicipality"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#soroti"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr13 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#WeatherEvent_dr13">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#WeatherEvent"/>
+        <IsClassifiedBy rdf:resource="http://w3id.org/gicentre/onto/sat1#ExtremeWeatherEvent13"/>
+        <endsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+        <hasLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#Katikekile"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/sat1#Moroto"/>
+        <startsAt rdf:resource="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#bushenyi -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#bushenyi">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#bushenyiTown"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/Bushenyi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#bushenyiTown -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#bushenyiTown">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#bushenyi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#extremely_wet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#extremely_wet">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#kampala -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#kampala">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#makerere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#kasese -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#kasese">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#kilembe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#katikekile -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#katikekile">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#kilembe -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#kilembe">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#kasese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr12">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr13 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr13">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#magnitude_dr9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#magnitude_dr9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Magnitude"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#makerere -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#makerere">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#kampala"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#mbarara -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#mbarara">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#mbararaTown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#mbararaTown -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#mbararaTown">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#mbarara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#namulonge -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#namulonge">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#wakiso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#serere -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#serere">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#serere"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#serere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#soroti -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#soroti">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#sorotiMunicipality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#sorotiMunicipality -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#sorotiMunicipality">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#soroti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4490154648293507</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9396655595657564</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.077341109804532</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent12">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0976562257864966</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent13 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent13">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.1275253787899744</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.4429992105664743</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.622255837720845</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7087500066010821</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.42701388090139136</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-8.405731044090007</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.787774656040467</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1236539378428168</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#spi_WeatherEvent9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+        <hasRegionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.344626468860101</hasRegionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#wakiso -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#wakiso">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#District"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#namulonge"/>
+        <containsLocation rdf:resource="http://w3id.org/gicentre/onto/sat1#wakisoTown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#wakisoTown -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#wakisoTown">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#wakiso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#wardb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#wardb">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/sat1#Hazard_Location"/>
+        <isLocatedIn rdf:resource="http://w3id.org/gicentre/onto/sat1#Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#1stJan2018 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#1stJan2018"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#2ndJan2018 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#2ndJan2018"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#21stJan2018 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#21stJan2018"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#31stJan2018 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#31stJan2018"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/sat1#31stMarch2018 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/sat1#31stMarch2018"/>
     
 
 
@@ -467,73 +1386,1167 @@ Regions are not data values in the ordinary knowledge representation sense; in o
      -->
 
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#classifies"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Concept"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#IsClassifiedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#endsAt"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameterizes"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasParameter"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#endsAt"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeInstant"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasQuality"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Concept"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasSpatialFootPrint"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Geometry"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasregion"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Quality"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasSpatialFootPrint"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#isLocationOf"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#isLocationOf"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtPlace"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Place"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtPlace"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#occursAtTime"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeEntity"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#occursAtTime"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeEntity"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#startsAt"/>
-        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Event"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#startsAt"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeInstant"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasDateValue"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasDateValue"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#TimeInstant"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#TimeInstant"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasParameterValue"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameterValue"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#hasRegionValue"/>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/eventTypeFull#Region"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/sat1#Region"/>
     </owl:Restriction>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://w3id.org/gicentre/onto/sat1#con">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/gicentre/onto/sat1#qual">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/gicentre/onto/sat1#spi">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/gicentre/onto/sat1#value">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __moderately wet conditions</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Moderately_wet"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Moderately_wet"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __severely wet conditions</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Severely_wet"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Severely_wet"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __drought condition</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Drought_event"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#is_Parameter_for"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Drought_event"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Drought_event"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __extremely dry condition</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-2</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Extremely_dry"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Extremely_dry"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __near Normal condition</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Near_normal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Near_normal"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __moderately dry condition</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Moderately_dry"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Moderately_dry"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorization of SPI values __severely dry condition</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Concept"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegion"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#SPIndex"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-2</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Quality"/>
+                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasQuality"/>
+                                                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#qual"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasRegionValue"/>
+                                                                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                                                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#value"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#Parameter"/>
+                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Severely_dry"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#hasParameter"/>
+                                <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#spi"/>
+                                <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#Severely_dry"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://w3id.org/gicentre/onto/sat1#is_Parameter_for"/>
+                                        <swrl:argument1 rdf:resource="http://w3id.org/gicentre/onto/sat1#Severely_dry"/>
+                                        <swrl:argument2 rdf:resource="http://w3id.org/gicentre/onto/sat1#con"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
 
