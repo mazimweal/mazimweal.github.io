@@ -31,7 +31,8 @@ Pattern   | Name |Competency questions
 ``https://github.com/LinkedDataFragments/Server.js``
 b) create a configuration file config.json
 
-``{
+``
+{
   "title": "Linked disaster Data Fragments server",
   
   "datasources": {
