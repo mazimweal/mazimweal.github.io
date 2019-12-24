@@ -51,7 +51,7 @@ where {?subject rdfs:subClassOf hazardimpact:ReportedEvent.
 }
 ```
 
-Example of  organising  early warning information(using a case of a drought) from Meterological Authority using....Event, event type, quality, region/parameter patterns
+Example of  organising  early warning information(using a case of a drought) from Meterological Authority using....Event, event type, quality, region/parameter patterns together with semantic web rule Language implementations (see ontology ``mazimweal.github.io/onto/eventTypeFull2.3.owl``)
 https://mazimweal.inrupt.net/public/WeatherData.ttl
 ```Query weather data
  #61.Weather data
