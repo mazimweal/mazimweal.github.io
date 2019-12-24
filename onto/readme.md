@@ -31,40 +31,6 @@ Pattern   | Name |Competency questions
 ``https://github.com/LinkedDataFragments/Server.js``
 b) create a configuration file config.json
 
-``
-{
-  "title": "Linked disaster Data Fragments server",
-  
-  "datasources": {
-    "impactsdata1": {
-      "title": "hazard data",
-      "type": "TurtleDatasource",
-      "description": "Desinventar Impact data from Office of prime minister",
-      "settings": { "url": "https://mazimweal.inrupt.net/public/impactsdata1.ttl" }
-    },
-	
-	"WeatherData": {
-      "title": "dummy weather data",
-      "type": "TurtleDatasource",
-      "description": "weather data from meteorologicalAuthority",
-      "settings": { "url": "https://mazimweal.inrupt.net/public/weatherData.ttl" }
-    }
-	
-  },
- 
-  "prefixes": {
-  "owl": "http://www.w3.org/2002/07/owl#", 
-  "hazardimpact": "http://w3id.org/gicentre/onto/HazardImpact#",
-  "sat1": "http://w3id.org/gicentre/onto/sat1#",
-  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-  "xml": "http://www.w3.org/XML/1998/namespace",
-  "xsd": "http://www.w3.org/2001/XMLSchema#",
-  "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
-  
-  }
-}
-``
-
 2- 
 
 Example of impact data from Office of prime minister organised using Event, place, AgentRole, organisation patterns --https://mazimweal.inrupt.net/public/impactsdata1.ttl
