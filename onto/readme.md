@@ -73,6 +73,8 @@ filter(parameter=sat1:Severely_dry)
 ```
 
 Example of Vulnerability data organised using quality using the quality causation, quality, objectParticipation, RegionParameter
+https://mazimweal.inrupt.net/public/Vulnerability.ttl
+
 
 
 Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
