@@ -94,8 +94,8 @@ Integration of data using Ontology design patterns and access by Federated query
 In this federated query --we establish all places 
 
      1-with past hazard events as well as their impact
-     2-and experience weather events that is classified as a Drought hazard
-     3-and examine what is the main cause of vulnerability to impacts of the hazard
+     2-and experience extreme weather events that are classified as a Drought 
+     3-and To what extent are communities vulnerable(based on parameterization), examine what is the main cause of vulnerability to impacts of the hazard
      
 A combination of such information is important for implementing proactive measures to disaster management i.e prevention, mitigation and preparedness 
 
