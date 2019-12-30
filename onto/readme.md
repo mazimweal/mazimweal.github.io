@@ -75,7 +75,22 @@ filter(parameter=sat1:Severely_dry)
 Example of Vulnerability data organised using quality using the quality causation, quality, objectParticipation, RegionParameter
 https://mazimweal.inrupt.net/public/Vulnerability.ttl
 
+``query vulnerability data
 
+select distinct ?community ?qual  ?event ?region ?value ?description  where {
+  ####query vulnerability at distinct places
+	  ?community a qual:Agent;
+		qual:hasQuality ?qual;
+		qual:participates ?event. 
+  ?event qual:occursAtPlace ?place.
+  ?qual qual:hasRegion ?region.
+  ?region qual:hasRegionValue ?value.
+  ?causalfactor qual:classifies ?qual.
+                 ?effect qual:dependsOn ?causalfactor.
+          ?description qual:describes ?causalfactor.		
+}
+
+``
 
 Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
 In this federated query --we establish all places 
