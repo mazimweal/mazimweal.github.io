@@ -92,6 +92,7 @@ select distinct ?community ?qual  ?event ?region ?value ?description  where {
 
 Integration of data using Ontology design patterns and access by Federated query over Linked data fragments
 In this federated query --we establish all places 
+
      1-with past hazard events as well as their impact
      2-and experience weather events that is classified as a Drought hazard
      3-and examine what is the main cause of vulnerability to impacts of the hazard
