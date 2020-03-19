@@ -1,0 +1,115 @@
+.FormContainer {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-self: center;
+  border: 1px solid black;
+  background-color: #ddd;
+  overflow-y: auto;
+}
+
+.FormContainer hr {
+  width: 100%;
+  background-color: inherit;
+	border-top: 2px dashed #8c8b8b;
+}
+
+.FormHeading {
+  margin-top: 1rem;
+  color: rgb(99, 99, 161);
+}
+
+.FormHeading h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.FormDataSourceArea {
+  margin-top: 1rem; 
+}
+
+.FormDataSourceArea p, .FormQueryArea p {
+  color: rgb(99, 99, 161);
+  font-size: 1rem;
+}
+
+.FormQueryArea {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.FormQueryAreaButtons {
+  margin-top: 1rem;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.FormQueryArea .InputError {
+  border-radius: 25px;
+  margin-top: 1rem;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgb(255, 0, 0, 0.4);
+  color: rgb(29, 26, 26);
+}
+
+.FormContainer::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+.FormContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.FormContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.FormContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.FormQueryResults{
+  margin-top: 1rem;
+}
+
+.FormQueryResults h2 {
+  color: rgb(99, 99, 161);
+}
+
+.QueryResultsDisplay {
+  padding: 1rem;
+  border: 1px solid rgb(99, 99, 161);
+  background-color: white;
+  color: rgb(0, 0, 0, 0.7);
+  height: 500px;
+  overflow-y: auto;
+}
+
+.QueryResultsDisplay::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+.QueryResultsDisplay::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.QueryResultsDisplay::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.QueryResultsDisplay::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.QueryResultHeading1 {
+  display: inline;
+  color: red;
+}
+
+.QueryResultHeading2 {
+  display: inline;
+  color: blue;
+}

@@ -1,0 +1,19 @@
+.QueryTextAreaContainer {
+  width: 100%;
+  background-color: white;
+}
+
+textarea.QueryTextArea {
+  background: url(http://i.imgur.com/2cOaJ.png);
+  background-attachment: local;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-top: 10px;
+  border-color: #ccc;
+  line-height: 16px;
+  /* force  textarea width to 100 and stop it from overflowing */
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
