@@ -125,11 +125,19 @@ export default class FormDisplay extends React.Component {
     }
 
     // input validation
-    // if (!this.state.query || !datasources.length > 0) {
-    //   this.setState({
-    //     inputError: 'Please select datasource & enter query'
-    //   });
-    // } else {
+    if (!this.state.query && !datasources.length > 0) {
+      this.setState({
+        inputError: 'Datasource(s) and a query are required'
+      });
+    } else if (this.state.query && !datasources.length > 0) {
+      this.setState({
+        inputError: 'Please select at least one datasource'
+      });
+    } else if (!this.state.query && datasources.length > 0) {
+      this.setState({
+        inputError: 'Please select or type a query'
+      });
+    } else {
       const query = {
         datasources,
         query: queryToExecute
@@ -147,7 +155,7 @@ export default class FormDisplay extends React.Component {
           this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
           console.log(error)
         });
-    // }
+    }
   }
 
   mapQuery() {
