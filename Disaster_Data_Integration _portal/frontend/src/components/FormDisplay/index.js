@@ -138,17 +138,15 @@ export default class FormDisplay extends React.Component {
       window.location.href = '#query-results';
       this.setState({ loading: true, results: [] });
 
-console.log(query)
-
-      // axios.post('/api/query', query)
-      //   .then(response => {
-      //     this.setState({ loading: false, results: response.data.data });
-      //     console.log(response.data.data);
-      //   })
-      //   .catch(error => {
-      //     this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
-      //     console.log(error)
-      //   });
+      axios.post('/api/query', query)
+        .then(response => {
+          this.setState({ loading: false, results: response.data.data });
+          console.log(response.data.data);
+        })
+        .catch(error => {
+          this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
+          console.log(error)
+        });
     // }
   }
 
@@ -246,9 +244,6 @@ console.log(query)
           <QueryTextArea
             name="query"
             value={this.state.isQuerySelected ? this.state.query : this.state.query}
-            // queryValue={this.state.query}
-            // selectionIsActive={this.state.isQuerySelected}
-            deactivateSelection={this.toggleOffSelectedQuery}
             onChange={(e) => this.handleTextInputChange(e)}
           />
 
