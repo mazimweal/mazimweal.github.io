@@ -1,6 +1,5 @@
 {
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "owl": "http://www.w3.org/2002/07/owl#",
   "skos": "http://www.w3.org/2004/02/skos/core#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -19,5 +18,16 @@
   "sf": "http://www.opengis.net/ont/sf#",
   "geontology": "http://linkedgeodata.org/ontology#",
   "onto": "http://linkedgeodata.org/ontology/",
-  "hazardonto": "http://w3id.org/gicentre/onto#"
+  "hazardonto": "http://w3id.org/gicentre/onto#",
+  "opla": "http://ontologydesignpatterns.org/opla#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "Admin": "http://w3id.org/gicentre/onto/Admin#",
+  "region": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#",
+  "geosparql": "http://www.opengis.net/ont/geosparql#",
+  "parameter": "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#",
+  "hazardousevent": "http://w3id.org/gicentre/onto/HazardousEvent#",
+  "parameterregion": "http://www.ontologydesignpatterns.org/cp/owl/parameterregion.owl#",
+  "cpannotationschema": "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#",
+  "dr": "http://w3id.org/gicentre/onto/HazardousEvent#",
+  "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
 }
