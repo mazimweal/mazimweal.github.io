@@ -71,14 +71,15 @@ export default class FormDisplay extends React.Component {
     });
   }
 
-  handleTextInputChange(input) {
+  handleTextInputChange(e) {
+    this.toggleOffSelectedQuery();
     if (this.state.inputError) {
       this.setState({
         inputError: ''
       });
     }
     this.setState({
-      query: input
+      [e.target.name]: e.target.value
     });
   }
 
@@ -137,15 +138,17 @@ export default class FormDisplay extends React.Component {
       window.location.href = '#query-results';
       this.setState({ loading: true, results: [] });
 
-      axios.post('/api/query', query)
-        .then(response => {
-          this.setState({ loading: false, results: response.data.data });
-          console.log(response.data.data);
-        })
-        .catch(error => {
-          this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
-          console.log(error)
-        });
+console.log(query)
+
+      // axios.post('/api/query', query)
+      //   .then(response => {
+      //     this.setState({ loading: false, results: response.data.data });
+      //     console.log(response.data.data);
+      //   })
+      //   .catch(error => {
+      //     this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
+      //     console.log(error)
+      //   });
     // }
   }
 
@@ -241,10 +244,12 @@ export default class FormDisplay extends React.Component {
 
           <p>...Or type a query below</p>
           <QueryTextArea
-            queryValue={this.state.query}
-            selectionIsActive={this.state.isQuerySelected}
+            name="query"
+            value={this.state.isQuerySelected ? this.state.query : this.state.query}
+            // queryValue={this.state.query}
+            // selectionIsActive={this.state.isQuerySelected}
             deactivateSelection={this.toggleOffSelectedQuery}
-            onTextChange={this.handleTextInputChange}
+            onChange={(e) => this.handleTextInputChange(e)}
           />
 
           <div className="FormQueryAreaButtons">
