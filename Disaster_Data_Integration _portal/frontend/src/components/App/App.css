@@ -1,4 +1,9 @@
-.AppContent {
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.AppRowOne {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

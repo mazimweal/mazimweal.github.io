@@ -33,7 +33,7 @@ class App extends React.Component {
     console.log(points);
   }
 
-  getResults(error, queryResults){
+  getResults(error, queryResults) {
     this.setState({
       resultsError: error,
       results: queryResults
@@ -43,7 +43,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="AppContainer">
-        <div className="AppContent">
+        <div className="AppRowOne">
           <FormDisplay
             hasPolygons={this.getPolygons}
             hasPoints={this.getPoints}
@@ -53,6 +53,8 @@ class App extends React.Component {
             polygonsToPlot={this.state.polygon}
             pointsToPlot={this.state.points}
           />
+        </div>
+        <div className="AppRowTwo">
           <ResultsArea
             results={this.state.results}
             error={this.state.resultsError}

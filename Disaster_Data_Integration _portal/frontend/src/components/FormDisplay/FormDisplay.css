@@ -1,6 +1,5 @@
 .FormContainer {
   width: 80%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1rem;

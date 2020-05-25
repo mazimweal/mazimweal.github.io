@@ -1,8 +1,9 @@
 import React from 'react';
+import './ResultsArea.css'
 
 const ResultsArea = ({ results, error }) => {
   return (
-    <div>
+    <div className="ResultsArea">
       <div className="FormQueryResults">
         <h2>Query results</h2>
         <div className="QueryResultsDisplay">
