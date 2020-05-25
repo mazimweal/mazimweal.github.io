@@ -8,7 +8,6 @@ import { FaRocket, FaStopCircle, FaMapPin } from 'react-icons/fa';
 import wkt from 'terraformer-wkt-parser';
 import prefixes from '../../helpers/prefixes.json';
 import './FormDisplay.css';
-import Spinner from '../Spinner';
 
 export default class FormDisplay extends React.Component {
   constructor(props) {
@@ -143,17 +142,18 @@ export default class FormDisplay extends React.Component {
         query: queryToExecute
       }
 
-      window.location.href = '#query-results';
       this.setState({ loading: true, results: [] });
 
       axios.post('/api/query', query)
         .then(response => {
           this.setState({ loading: false, results: response.data.data });
           console.log(response.data.data);
+          this.props.hasResults(this.state.error, this.state.results);
         })
         .catch(error => {
           this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
-          console.log(error)
+          console.log(error);
+          this.props.hasResults(this.state.error, this.state.results);
         });
     }
   }
@@ -288,32 +288,6 @@ export default class FormDisplay extends React.Component {
           )}
 
           <hr />
-        </div>
-
-
-        <div id="query-results" className="FormQueryResults">
-          <h2>Query results</h2>
-          <div className="QueryResultsDisplay">
-            {this.state.loading && <Spinner />}
-            {this.state.error ? this.state.error : (
-              this.state.results.map((result, index) => (
-                <div key={index}>
-                  {Object.keys(result).map((keyName, index) => (
-                    <div key={index}><p className="QueryResultHeading1">{keyName}&nbsp;:</p> {
-                      Object.keys(result[keyName]).map((keyName2, index) => (
-                        typeof result[keyName][keyName2] !== 'object' ?
-                          <div key={index}><p className="QueryResultHeading2">{keyName2}&nbsp;:</p> {result[keyName][keyName2]}</div> :
-                          Object.keys(result[keyName][keyName2]).map((keyName3, index) => (
-                            <div key={index}>{keyName3}: {result[keyName][keyName2][keyName3]}</div>
-                          ))
-                      ))
-                    } <br key={index} /></div>
-                  ))}
-                </div>
-              )
-              )
-            )}
-          </div>
         </div>
       </div>
     )
