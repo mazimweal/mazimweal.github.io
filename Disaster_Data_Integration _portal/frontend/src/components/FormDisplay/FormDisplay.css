@@ -7,6 +7,9 @@
   border-bottom: none;
   background-color: #ddd;
   overflow-y: auto;
+  resize: horizontal;
+  max-width: 600px;
+  min-width: 380px;
 }
 
 .FormContainer hr {
