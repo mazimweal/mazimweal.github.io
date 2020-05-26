@@ -25,28 +25,40 @@ app.use(router);
 const myEngine = newEngine();
 
 const getResult = async (datasources, query, res) => {
+  try {
+    // 2. querying 
+    const result = await myEngine.query(
+      query,
+      { sources: datasources }
+    );
 
-  // 2. querying 
-  const result = await myEngine.query(
-    query,
-    { sources: datasources }
-  );
+    let results = [];
 
-  let results = [];
-
-  // 3. compile results
-  result.bindingsStream.on('data', (data) => {
-    results.push(data);
-    console.log(data.toObject());
-    console.log('/////////////////////////////////////////////////////////');
-  });
-
-  // 4. send results in response
-  result.bindingsStream.on('end', () => {
-    res.send({
-      data: results
+    // 3. compile results
+    result.bindingsStream.on('data', (data) => {
+      results.push(data);
+      console.log(data.toObject());
+      console.log('/////////////////////////////////////////////////////////');
     });
-  });
+
+    // 4. send results in response
+    result.bindingsStream.on('end', () => {
+      res.send({
+        data: results
+      });
+    });
+
+    result.bindingsStream.on('error', (error) => {
+      console.error(error)
+    });
+  } catch (error) {
+      res.status(400).send({
+        message: 'Parse error'
+      });
+      console.log('// ++ ///////////////////////////////////////////////////////');
+      console.error(error)
+      console.log('// ++ ///////////////////////////////////////////////////////');
+  }
 };
 
 
