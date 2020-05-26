@@ -157,13 +157,11 @@ export default class FormDisplay extends React.Component {
       })
         .then(response => {
           this.setState({ loading: false, results: response.data.data });
-          console.log(response);
           this.props.hasResults(this.state.error, this.state.results);
         })
         .catch(error => {
           if (axios.isCancel(error)) {
             this.setState({ loading: false, error: 'Request cancelled' });
-            console.log('Request cancelled');
             this.props.hasResults(this.state.error, this.state.results);
           } else {
             if (error.response.status === 400 && error.response.data.message === "Parse error") {
@@ -172,7 +170,6 @@ export default class FormDisplay extends React.Component {
               this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
             }
             this.props.hasResults(this.state.error, this.state.results);
-            console.log(error.response)
           }
         });
     }
@@ -181,6 +178,7 @@ export default class FormDisplay extends React.Component {
   mapQuery() {
     const resultsArray = this.state.results;
     let multipolygonArray = [];
+    let polygonsArray = [];
     let pointsArray = [];
     let namesArray = [];
     let pointsWithNames = [];
@@ -218,6 +216,24 @@ export default class FormDisplay extends React.Component {
               console.log("Coordinates array not found");
             }
           }
+        }
+
+        // FOR POLYGONS
+        if (resultObject.hasOwnProperty("?polygon")) {
+          let coordinatesString = resultObject["?polygon"]["value"].toString();
+
+          if (coordinatesString.includes('POLYGON')) {
+            coordinatesString = `POLYGON ${coordinatesString.split("POLYGON").pop()}`;
+            const formattedPolygon = wkt.parse(coordinatesString);
+
+            if (formattedPolygon.hasOwnProperty("coordinates")) {
+              let latLongPolygon = [];
+              latLongPolygon.push(formattedPolygon["coordinates"][0][0][1], formattedPolygon["coordinates"][0][0][0]);
+              polygonsArray.push(latLongPolygon);
+            } else {
+              console.log("Coordinates array not found");
+            }
+          }
 
         }
 
@@ -227,9 +243,14 @@ export default class FormDisplay extends React.Component {
         }
       });
 
-      // if polygons, calls this
+      // if multipolygons, calls this
       if (multipolygonArray.length > 0) {
         this.props.hasPolygons(multipolygonArray);
+      }
+
+      // if polygons, calls this
+      if (polygonsArray.length > 0) {
+        this.props.hasPolygons(polygonsArray);
       }
 
       // if points, call this instead

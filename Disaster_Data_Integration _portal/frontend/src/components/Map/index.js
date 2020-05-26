@@ -10,7 +10,6 @@ export const icon = new Icon({
 })
 
 const LeafletMap = (props) => {
-
   const [activePark, setActivePark] = React.useState(null);
 
   return (

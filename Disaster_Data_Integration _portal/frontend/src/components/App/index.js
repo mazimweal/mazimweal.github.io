@@ -30,7 +30,6 @@ class App extends React.Component {
     this.setState({
       points: points
     });
-    console.log(points);
   }
 
   getResults(error, queryResults) {
