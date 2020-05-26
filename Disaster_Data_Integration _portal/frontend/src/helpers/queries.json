@@ -1,5 +1,10 @@
 [
   {
+    "name": "Hazardous events",
+    "queryFormat": "sparql",
+    "query": "SELECT distinct ?x ?place ?spi ?par ?hazardous  ?c ?polygon WHERE {\n ?x  a dr:Event;\n dr:hasPotential ?potential;\n dr:occursAtPlace ?place.\n ?potential dr:hasIndex ?index. \n?index dr:hasSPI_Data_Value ?spi;\n dr:isParametrizedBy ?par.\n ?par dr:isParameterFor ?hazardous.\n ?c owl:sameAs ?place;\n geosparql:hasGeometry ?geom.\n ?geom geosparql:asWKT ?polygon.\n }"
+  },
+  {
     "name": "Hospitals query",
     "queryFormat": "sparql",
     "query": "SELECT ?x  ?name ?xgeom ?xwkt\n Where{\n ?x rdf:type hazardonto:hospitals; \n hazardonto:name ?name;\n geo:hasGeometry ?xgeom.\n  ?xgeom geo:asWKT ?xwkt\n } LIMIT 10"
