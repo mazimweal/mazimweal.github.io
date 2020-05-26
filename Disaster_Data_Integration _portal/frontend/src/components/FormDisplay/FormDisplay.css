@@ -1,10 +1,10 @@
 .FormContainer {
-  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   justify-self: center;
   border: 1px solid black;
+  border-bottom: none;
   background-color: #ddd;
   overflow-y: auto;
 }
@@ -16,7 +16,7 @@
 }
 
 .FormHeading {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   color: rgb(99, 99, 161);
 }
 
@@ -27,7 +27,7 @@
 }
 
 .FormDataSourceArea {
-  margin-top: 1rem; 
+  /* margin-top: 1rem; */ 
 }
 
 .FormDataSourceArea p, .FormQueryArea p {
@@ -38,12 +38,12 @@
 .FormQueryArea {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   width: 100%;
 }
 
 .FormQueryAreaButtons {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
   float: left;
   justify-content: space-between;
@@ -51,7 +51,7 @@
 
 .FormQueryArea .InputError {
   border-radius: 25px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 10px 0;
   text-align: center;
   background-color: rgb(255, 0, 0, 0.4);
@@ -59,7 +59,7 @@
 }
 
 .FormContainer::-webkit-scrollbar {
-  width: 4px;
+  width: 10px;
   height: 0px;
 }
 .FormContainer::-webkit-scrollbar-track {
@@ -73,7 +73,7 @@
 }
 
 .FormQueryResults{
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .FormQueryResults h2 {
@@ -85,7 +85,7 @@
   border: 1px solid rgb(99, 99, 161);
   background-color: white;
   color: rgb(0, 0, 0, 0.7);
-  height: 500px;
+  flex-grow: 1;
   overflow-y: auto;
 }
 

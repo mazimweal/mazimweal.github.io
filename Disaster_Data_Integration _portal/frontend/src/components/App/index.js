@@ -42,7 +42,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="AppContainer">
+      <div className="full-height-grow AppContainer">
         <div className="AppRowOne">
           <FormDisplay
             hasPolygons={this.getPolygons}

@@ -1,9 +1,15 @@
 .AppContainer {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .AppRowOne {
+  height: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+.AppRowTwo {
+  height: 20%;
+  flex-grow: 1;
+  border: 1px solid black;
 }
