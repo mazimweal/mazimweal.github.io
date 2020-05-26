@@ -9,6 +9,9 @@ import wkt from 'terraformer-wkt-parser';
 import prefixes from '../../helpers/prefixes.json';
 import './FormDisplay.css';
 
+let cancel;
+const CancelToken = axios.CancelToken;
+
 export default class FormDisplay extends React.Component {
   constructor(props) {
     super(props);
@@ -30,6 +33,7 @@ export default class FormDisplay extends React.Component {
     this.handleDatasourceChange = this.handleDatasourceChange.bind(this);
     this.compileDataSources = this.compileDataSources.bind(this);
     this.mapQuery = this.mapQuery.bind(this);
+    this.stopQuery = this.stopQuery.bind(this);
   }
 
   handleDatasourceChange(input) {
@@ -117,10 +121,12 @@ export default class FormDisplay extends React.Component {
     // if there was an error
     if (this.state.error) {
       this.setState({ error: '' });
+      this.props.hasResults(this.state.error, []);
     }
     // or if there were results
     if (this.state.results.length > 0) {
       this.setState({ results: [] });
+      this.props.hasResults(this.state.error, []);
     }
 
     // input validation
@@ -144,16 +150,30 @@ export default class FormDisplay extends React.Component {
 
       this.setState({ loading: true, results: [] });
 
-      axios.post('/api/query', query)
+      axios.post('/api/query', query, {
+        cancelToken: new CancelToken(function executor(c) {
+          cancel = c;
+        }),
+      })
         .then(response => {
           this.setState({ loading: false, results: response.data.data });
-          console.log(response.data.data);
+          console.log(response);
           this.props.hasResults(this.state.error, this.state.results);
         })
         .catch(error => {
-          this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
-          console.log(error);
-          this.props.hasResults(this.state.error, this.state.results);
+          if (axios.isCancel(error)) {
+            this.setState({ loading: false, error: 'Request cancelled' });
+            console.log('Request cancelled');
+            this.props.hasResults(this.state.error, this.state.results);
+          } else {
+            if (error.response.status === 400 && error.response.data.message === "Parse error") {
+              this.setState({ loading: false, error: 'Parse error in query. Cross-check and try again!' });
+            } else {
+              this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
+            }
+            this.props.hasResults(this.state.error, this.state.results);
+            console.log(error.response)
+          }
         });
     }
   }
@@ -227,6 +247,11 @@ export default class FormDisplay extends React.Component {
     }
   }
 
+  stopQuery() {
+    this.setState({ loading: false, results: [] });
+    cancel();
+  }
+
   render() {
     return (
       <div className="FormContainer">
@@ -268,7 +293,7 @@ export default class FormDisplay extends React.Component {
               this.state.loading &&
               <Button
                 styleType='Stop'
-                onClick={this.executeQuery}
+                onClick={this.stopQuery}
                 label='stop'
                 iconComponent={<FaStopCircle />}
               />
