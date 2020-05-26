@@ -4,7 +4,7 @@ import MultiSearch from '../MultiSearch';
 import SingleSearch from '../SingleSearch';
 import QueryTextArea from '../QueryTextArea';
 import Button from '../Button';
-import { FaRocket, FaStopCircle, FaMapPin } from 'react-icons/fa';
+import { FaPlay, FaStopCircle, FaMapPin } from 'react-icons/fa';
 import wkt from 'terraformer-wkt-parser';
 import prefixes from '../../helpers/prefixes.json';
 import './FormDisplay.css';
@@ -257,10 +257,11 @@ export default class FormDisplay extends React.Component {
 
           <div className="FormQueryAreaButtons">
             <Button
+              loading={this.state.loading}
               styleType='Execute'
               onClick={this.executeQuery}
-              label='execute'
-              iconComponent={<FaRocket />}
+              label='run'
+              iconComponent={<FaPlay />}
             />
 
             {
@@ -276,7 +277,7 @@ export default class FormDisplay extends React.Component {
             <Button
               styleType='Map'
               onClick={this.mapQuery}
-              label='map query'
+              label='map'
               iconComponent={<FaMapPin />}
             />
           </div>

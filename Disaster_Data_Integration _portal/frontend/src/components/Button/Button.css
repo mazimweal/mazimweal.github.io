@@ -8,6 +8,8 @@
   padding: .5rem 2rem;
   border: none;
   cursor: pointer;
+  height: 2rem;
+  display: flex;
 }
 
 .ButtonExecute {

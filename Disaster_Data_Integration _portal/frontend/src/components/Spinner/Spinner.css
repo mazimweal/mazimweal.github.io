@@ -24,7 +24,7 @@
   stroke-dasharray: var(--offset);
   stroke-dashoffset: 0;
   transform-origin: center;
-  stroke: rgb(99, 99, 161);
+  stroke: white;
   animation: dash var(--duration) ease-in-out infinite;
 }
 

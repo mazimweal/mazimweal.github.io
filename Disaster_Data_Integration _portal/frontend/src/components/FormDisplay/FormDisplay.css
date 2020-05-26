@@ -46,7 +46,7 @@
 }
 
 .FormQueryAreaButtons {
-  /* margin-top: 1rem; */
+  padding: .5rem 0;
   display: flex;
   float: left;
   justify-content: space-between;

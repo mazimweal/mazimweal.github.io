@@ -1,5 +1,5 @@
 import React from 'react';
-import './ResultsArea.css'
+import './ResultsArea.css';
 
 const ResultsArea = ({ results, error }) => {
   return (
