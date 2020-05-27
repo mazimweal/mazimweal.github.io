@@ -240,7 +240,6 @@ export default class FormDisplay extends React.Component {
 
               const coordinatesArray = findCoordinatesArray(coordinates);
 
-              console.log(coordinatesArray)
               coordinatesArray.forEach((coordinateParentArray) => {
                 let latLongCoordinate = [];
                 if (coordinateParentArray.length === 2) {
@@ -254,7 +253,6 @@ export default class FormDisplay extends React.Component {
                 }
               });
 
-              // console.log(latLongPolygon)
               polygonsArray.push(latLongPolygon);
             } else {
               console.log("Coordinates array not found");
@@ -276,7 +274,6 @@ export default class FormDisplay extends React.Component {
 
       // if polygons, calls this
       if (polygonsArray.length > 0) {
-        // console.log(polygonsArray)
         this.props.hasPolygons(polygonsArray);
       }
 
