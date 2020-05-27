@@ -1,0 +1,1643 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/HazardousEvent#"
+     xml:base="http://w3id.org/gicentre/onto/HazardousEvent"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:opla="http://ontologydesignpatterns.org/opla#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:region="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
+     xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
+     xmlns:hazardousevent="http://w3id.org/gicentre/onto/HazardousEvent#"
+     xmlns:parameterregion="http://www.ontologydesignpatterns.org/cp/owl/parameterregion.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:untitled-ontology-148="http://w3id.org/gicentre/onto/2020/4/untitled-ontology-148#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/HazardousEvent">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:scenarios>This ontology illustrates instantiation of Event classiffication pattern using extreme weather events that are classified as hazards. such events have qualities such as place, time, probability, and magnitude.
+e.g a drought  hazard event occurs in a given spatial-temporal probability with a given magitude probability</cpannotationschema:scenarios>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#isNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla#isNativeTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#classifies -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#classifies">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isClassifiedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#endsAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#endsAtTime">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasIndex -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isIndexFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasParameter">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isParameterFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasPotential -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasPotential">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isPotentialOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasPrimaryIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasPrimaryIdentifier"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasSpatialFootPrint -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasSpatialFootPrint"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isClassifiedBy">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isDescribedBy"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isIndexFor -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isIndexFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isParameterFor -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isParameterFor"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isParametrizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isParametrizedBy">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#parametrizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#isPotentialOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#isPotentialOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#occursAtPlace -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#occursAtPlace"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#parametrizes -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#parametrizes"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startsAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startsAtTime">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasDateTime"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasDescription"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasSPI_Data_Value -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasSPI_Data_Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#hasWebPage -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#hasWebPage"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#District -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#District">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administrative unit in uganda</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Event -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Event">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasPotential"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtPlace"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasPotential"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isClassifiedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtPlace"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startsAtTime"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.geolink.org/dev/event#</opla:isNativeTo>
+        <cpannotationschema:isSpecializationOf></cpannotationschema:isSpecializationOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Geometry -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Geometry">
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines Geometry for features based on OGC Geosparql Standard</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasIndex"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasIndex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The likelihood that a specific event o will cause harm at a given magnitude/ intensity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Hazardous -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasParameter"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hazard is a potentially damaging physical event, phenomenon or human activity that may cause the loss of life or injury, property damage, social and economic disruption or environmental degradation. This event has a probability of occurrence within a specified period of time and within a given area, and has a given intensity. 
+Therefore, hazardous is concept that defines an event that has a probability of occurrence at a given time and place with a certain magnitude\intensity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Identifier -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Identifier">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">captures arbitrary identifiers that a data provider may use on their data. This is especially useful for non-URI identifiers such as local catalog numbers, et</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#InformationObject -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasPrimaryIdentifier"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasDescription"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasWebPage"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">models the additional information assigned to an object. Essentially, anything can be described by an information object, and the information object in turn carries adornment, such as descriptions and webpages, about the target thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Parameter -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Parameter">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <opla:isNativeTo>http://ontologydesignpatterns.org/cp/owl/parameterregion.owl</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Place -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Place">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasSpatialFootPrint"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isDescribedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isDescribedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologydesignpatterns.org/cp/owl/place.owl</opla:isNativeTo>
+        <cpannotationschema:isSpecializationOf rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.geolink.org/dev/place#</cpannotationschema:isSpecializationOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities (&quot;the area close to Roma&quot;), pivot events or signs (&quot;the area where the helicopter fell&quot;), complements of other entities (&quot;the area under the table&quot;), etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isIndexFor"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isParametrizedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasSPI_Data_Value"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The standard Precipitation index(SPIIndex) is a region of the drought hazard potential. the computation of the SPI values takes into consideration the probability and magnitude of a drought hazard event. For characterizing a drought event, SPI is calculated over a period 1-3 months</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasDateTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/classification.owl</opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concept is a socio object that classifies an event such as Hazardous event, risky event ; at some Time interval etc</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept that classifies a Region; the difference between a Region and a Parameter is that regions represent sets of observable values, e.g. the height  of a given building, while parameters represent constraints or selections on observable values, e.g. &apos;VeryHigh&apos;. Therefore, parameters can also be used to constrain regions, e.g. VeryHigh on a subset of values of the Region Height applied to buildings, or to add an external selection criterion , such as measurement units, to regions, e.g. Meter on a subset of values from the Region Length applied to the Region Length applied to roads.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality">
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+
+In the Disaster risk reduction context a hazardous event has qualities such as space, time , potential , magnitude/intensity etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo>http://ontologydesignpatterns.org/cp/owl/parameterregion.owl</opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
+Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue
+
+For instance a  quality of hazard potential in the context of a drought has a region known as standard precipitation index (SPI) which has an region data value (i.e the SPI data value)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Abim"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Agago"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE1"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE1_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Agago"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE1"/>
+        <rdfs:comment>Extreme weather event 1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE10"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE10_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Otuke"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE10"/>
+        <rdfs:comment>extreme weather event 10</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE10_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE10_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE11"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE11_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Amudat"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE11"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 11</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE11_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE11_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE1_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE1_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE2"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE2_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Kitgum"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE2"/>
+        <rdfs:comment>extreme weather event 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE2_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE2_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE3"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE3_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Kaabong"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE3"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 3</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE3_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE3_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE4"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE4_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Pader"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE4"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE4_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE4_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE5"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE5_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Kotido"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE5"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 5</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE5_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE5_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE6"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE6_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Napak"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE6"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 6</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE6_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE6_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE7"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE7_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Moroto"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE7"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 7</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE7_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE7_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE8"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE8_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Abim"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE8"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 8</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE8_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE8_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <endsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE9"/>
+        <hasPotential rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE9_potential"/>
+        <occursAtPlace rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Nakapipirit"/>
+        <startsAtTime rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE9"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme weather event 9</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EWE9_potential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EWE9_potential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <hasIndex rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#EndTime_EWE9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Kaabong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Kitgum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Kotido"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Nakapipirit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Napak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Otuke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#District"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#information_Pader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.54</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#moderatelyDry"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.3</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#extremelyDry"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.4</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#severlyDry"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.8</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#severlyWet"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#moderatelyDry"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#SPIndex_EWE9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#severlyDry"/>
+        <hasSPI_Data_Value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.6</hasSPI_Data_Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#drought -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#drought">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE11"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE3"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE5"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE7"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#drySpell -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#drySpell">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#extremelyDry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#extremelyDry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#drought"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Abim</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Agago</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Amudat</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Kaabong</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Kitgum</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Kotido</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Moroto</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Nakapipirit</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Napak</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Otuke</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#information_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#information_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <hasWebPage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Pader</hasWebPage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#moderatelyDry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#moderatelyDry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#drought"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#nearNormal -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#nearNormal">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#drySpell"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#normal -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#normal">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE1"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE10"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE2"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#severlyDry -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#severlyDry">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#drought"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#severlyWet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#severlyWet">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <isParameterFor rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#wetSeason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-08-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#startTime_EWE9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-01</hasDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/HazardousEvent#wetSeason -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#wetSeason">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <classifies rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#EWE6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#endsAtTime"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasIndex"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasParameter"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasPotential"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazard_Potential"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasPrimaryIdentifier"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Identifier"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasSpatialFootPrint"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isClassifiedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Hazardous"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isDescribedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#isParametrizedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtPlace"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#occursAtTime"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#startsAtTime"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"/>
+        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"/>
+        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasDateTime"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#TimeInstant"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasDescription"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasSPI_Data_Value"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#SPIIndex"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#hasWebPage"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+    </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Geometry"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Event"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#TimeEntity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Identifier"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#InformationObject"/>
+            <rdf:Description rdf:about="http://w3id.org/gicentre/onto/HazardousEvent#Place"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
