@@ -228,7 +228,33 @@ export default class FormDisplay extends React.Component {
 
             if (formattedPolygon.hasOwnProperty("coordinates")) {
               let latLongPolygon = [];
-              latLongPolygon.push(formattedPolygon["coordinates"][0][0][1], formattedPolygon["coordinates"][0][0][0]);
+              let coordinates = formattedPolygon['coordinates'][0];
+
+              const findCoordinatesArray = (array) => {
+                if (array.length > 1) {
+                  return array;
+                } else {
+                  findCoordinatesArray(array[0])
+                }
+              }
+
+              const coordinatesArray = findCoordinatesArray(coordinates);
+
+              console.log(coordinatesArray)
+              coordinatesArray.forEach((coordinateParentArray) => {
+                let latLongCoordinate = [];
+                if (coordinateParentArray.length === 2) {
+                  latLongCoordinate.push(coordinateParentArray[1], coordinateParentArray[0]);
+                  latLongPolygon.push(latLongCoordinate);
+                } else {
+                  coordinateParentArray.forEach((coordinateChildArray) => {
+                    latLongPolygon.push(coordinateChildArray[1], coordinateChildArray[0]);
+                    latLongPolygon.push(latLongCoordinate);
+                  });
+                }
+              });
+
+              // console.log(latLongPolygon)
               polygonsArray.push(latLongPolygon);
             } else {
               console.log("Coordinates array not found");
@@ -250,6 +276,7 @@ export default class FormDisplay extends React.Component {
 
       // if polygons, calls this
       if (polygonsArray.length > 0) {
+        // console.log(polygonsArray)
         this.props.hasPolygons(polygonsArray);
       }
 
