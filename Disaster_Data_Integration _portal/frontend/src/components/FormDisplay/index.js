@@ -179,6 +179,10 @@ export default class FormDisplay extends React.Component {
     const resultsArray = this.state.results;
     let multipolygonArray = [];
     let polygonsArray = [];
+    let geojsonObject = {
+      type: 'FeatureCollection',
+      features: []
+    };
     let pointsArray = [];
     let namesArray = [];
     let pointsWithNames = [];
@@ -247,7 +251,7 @@ export default class FormDisplay extends React.Component {
                   latLongPolygon.push(latLongCoordinate);
                 } else {
                   coordinateParentArray.forEach((coordinateChildArray) => {
-                    latLongPolygon.push(coordinateChildArray[1], coordinateChildArray[0]);
+                    latLongCoordinate.push(coordinateChildArray[1], coordinateChildArray[0]);
                     latLongPolygon.push(latLongCoordinate);
                   });
                 }
@@ -258,7 +262,62 @@ export default class FormDisplay extends React.Component {
               console.log("Coordinates array not found");
             }
           }
+        }
 
+        // FOR CHOROPLETHS
+        if (resultObject.hasOwnProperty("?polygon") && resultObject.hasOwnProperty("?spi")) {
+          let coordinatesString = resultObject["?polygon"]["value"].toString();
+          const spiValue = parseInt(resultObject["?spi"]["value"], 10);      
+          const areaName = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop(); // obtained by getting link in ?place.value and picking only Substring at the end
+
+          if (coordinatesString.includes('POLYGON')) {
+            coordinatesString = `POLYGON ${coordinatesString.split("POLYGON").pop()}`;
+            const formattedPolygon = wkt.parse(coordinatesString);
+
+            if (formattedPolygon.hasOwnProperty("coordinates")) {
+              let latLongPolygon = [];
+              let coordinates = formattedPolygon['coordinates'][0];
+
+              const findCoordinatesArray = (array) => {
+                if (array.length > 1) {
+                  return array;
+                } else {
+                  findCoordinatesArray(array[0])
+                }
+              }
+
+              const coordinatesArray = findCoordinatesArray(coordinates);
+
+              coordinatesArray.forEach((coordinateParentArray) => {
+                let latLongCoordinate = [];
+                if (coordinateParentArray.length === 2) {
+                  latLongCoordinate.push(coordinateParentArray[1], coordinateParentArray[0]);
+                  latLongPolygon.push(latLongCoordinate);
+                } else {
+                  coordinateParentArray.forEach((coordinateChildArray) => {
+                    latLongCoordinate.push(coordinateChildArray[1], coordinateChildArray[0]);
+                    latLongPolygon.push(latLongCoordinate);
+                  });
+                }
+              });
+
+              let feature = {
+                type: 'Feature',
+                geometry: {
+                  type: 'Polygon',
+                  coordinates: [latLongPolygon]
+                },
+                properties: {
+                  area: areaName,
+                  value: spiValue
+                }
+              }
+
+              geojsonObject.features.push(feature)
+            } else {
+              console.log("Coordinates array not found");
+            }
+          }
         }
 
         if (resultObject.hasOwnProperty("?name")) {
@@ -275,6 +334,11 @@ export default class FormDisplay extends React.Component {
       // if polygons, calls this
       if (polygonsArray.length > 0) {
         this.props.hasPolygons(polygonsArray);
+      }
+
+      // if choropleth, call this
+      if (geojsonObject.features.length > 0) {
+        this.props.hasChoropleth(geojsonObject);
       }
 
       // if points, call this instead

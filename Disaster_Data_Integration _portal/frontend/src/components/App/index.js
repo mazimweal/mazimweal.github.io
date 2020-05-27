@@ -12,12 +12,14 @@ class App extends React.Component {
       polygon: [],
       points: [],
       results: [],
-      resultsError: ''
+      resultsError: '',
+      geojson: null
     };
 
-    this.getPolygons = this.getPolygons.bind(this)
-    this.getPoints = this.getPoints.bind(this)
-    this.getResults = this.getResults.bind(this)
+    this.getPolygons = this.getPolygons.bind(this);
+    this.getPoints = this.getPoints.bind(this);
+    this.getResults = this.getResults.bind(this);
+    this.getGeojsonObject = this.getGeojsonObject.bind(this);
   }
 
   getPolygons(polygons) {
@@ -39,6 +41,12 @@ class App extends React.Component {
     })
   }
 
+  getGeojsonObject(geoJsonObject) {
+    this.setState({
+      geojson: geoJsonObject
+    })
+  }
+
   render() {
     return (
       <div className="full-height-grow AppContainer">
@@ -47,10 +55,12 @@ class App extends React.Component {
             hasPolygons={this.getPolygons}
             hasPoints={this.getPoints}
             hasResults={this.getResults}
+            hasChoropleth={this.getGeojsonObject}
           />
           <LeafletMap
             polygonsToPlot={this.state.polygon}
             pointsToPlot={this.state.points}
+            geojson={this.state.geojson}
           />
         </div>
         <div className="AppRowTwo">
