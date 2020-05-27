@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/EventClassification#"
+     xml:base="http://w3id.org/gicentre/onto/EventClassification"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:eventclassification_v1.0="http://w3id.org/gicentre/onto/EventClassification_v1.0#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/EventClassification">
+        <owl:versionIRI rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:isSpecializationOf>http://www.ontologydesignpatterns.org/cp/owl/classification.owl</cpannotationschema:isSpecializationOf>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification#classifies -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/EventClassification#classifies">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#isClassified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification#isQualityOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/EventClassification#isQualityOf">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification_v1.0#isClassified -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/EventClassification_v1.0#isClassified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification_v1.0#Concept -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/EventClassification_v1.0#Concept">
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Event"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">A concept is a socio object that classifies an event such as Hazardous event, risky event ; at some Time interval etc</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification_v1.0#Event -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/EventClassification_v1.0#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#isClassified"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+
+In the Disaster risk reduction context a hazardous event has qualities such as space, time , potential , magnitude/intensity etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification#EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/EventClassification#EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Event"/>
+        <eventclassification_v1.0:hasQuality rdf:resource="http://w3id.org/gicentre/onto/EventClassification#hazardPotential"/>
+        <eventclassification_v1.0:isClassified rdf:resource="http://w3id.org/gicentre/onto/EventClassification#droughtHazard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification#droughtHazard -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/EventClassification#droughtHazard">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/EventClassification#hazardPotential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/EventClassification#hazardPotential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Event"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#isClassified"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/EventClassification_v1.0#Event"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
