@@ -304,8 +304,8 @@ export default class FormDisplay extends React.Component {
               let feature = {
                 type: 'Feature',
                 geometry: {
-                  type: 'Polygon',
-                  coordinates: [latLongPolygon]
+                  type: 'MultiPolygon',
+                  coordinates: [[latLongPolygon]]
                 },
                 properties: {
                   area: areaName,
