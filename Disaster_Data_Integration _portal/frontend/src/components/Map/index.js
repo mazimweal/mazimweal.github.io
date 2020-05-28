@@ -29,6 +29,30 @@ class LeafletMap extends React.Component {
     }).addTo(this.map);
 
     this.mapGeoJson = mapGeoJson;
+
+    const legend = L.control({ position: "bottomright" });
+
+    legend.onAdd = () => {
+      const div = L.DomUtil.create("div", "info legend");
+      const grades = [-1.3, -1.0, 0, 1.0, 1.2];
+      let labels = [];
+      let from;
+      let to;
+
+      for (let i = 0; i < grades.length; i++) {
+        from = parseFloat(grades[i]).toFixed(1);
+        to = parseFloat(grades[i + 1]).toFixed(1);
+
+        labels.push(
+          '<div style="backround-color: white; display: flex;"><div style="margin-right: .5rem; width: 1rem; height: 1rem; background:' + this.getColor(from + 1) + '"></div> ' + from + (parseInt(to, 10) ? "&ndash;" + to : "+") + '</div>'
+        );
+      }
+
+      div.innerHTML = labels.join("<br>");
+      return div;
+    };
+
+    legend.addTo(this.map);
   }
 
   componentDidUpdate(prevProps) {
@@ -62,7 +86,7 @@ class LeafletMap extends React.Component {
 
   render() {
     return (
-        <div id='map' className="MapContainer" />
+      <div id='map' className="MapContainer" />
     );
   }
 }

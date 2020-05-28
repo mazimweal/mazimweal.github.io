@@ -449,7 +449,7 @@ export default class FormDisplay extends React.Component {
             </div>
           )}
 
-          {this.state.results > 0 && (
+          {this.state.results.length > 0 && (
             <div className="CounterContainer">
               <div className="CounterInfo">
                 <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>
