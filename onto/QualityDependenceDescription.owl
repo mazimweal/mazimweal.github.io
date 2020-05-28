@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/dependencePattern#"
+     xml:base="http://w3id.org/gicentre/onto/dependencePattern"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dependencepattern="http://w3id.org/gicentre/onto/dependencePattern#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/dependencePattern">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/dependencePattern#dependsOn"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/dependencePattern#hasQuality"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/dependencePattern#isDescribedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/dependencePattern#hasDescription"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#DamagePotential -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#DamagePotential">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#SEValue"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Vunerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#InformationObject -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#InformationObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#hasDescription"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Object"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#SEValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely realized.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#Object -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <rdfs:comment>Any physical, social, or mental object, or a substance. Following DOLCE Full, objects are always participating in some event (at least their own life), and are spatially located</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#Quality">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#dependsOn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#dependsOn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#isDescribedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#isDescribedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
+For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
+On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as &apos;anomalies&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#SEValue -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#SEValue">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Vunerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#Vunerability -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/dependencePattern#Vunerability">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#CropDamagePotential -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#CropDamagePotential">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Crop_vulnerability"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#ValueofCrops"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#damageInformationObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#Crop_vulnerability -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#Crop_vulnerability">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Vunerability"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#VulnerabilityInformationObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#Crops -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#Crops">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Object"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#CropDamagePotential"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Crop_vulnerability"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#ValueofCrops"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#CropvalueInformationObject -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#CropvalueInformationObject">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value of crops calculated in Dollars</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#ValueofCrops -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#ValueofCrops">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#SEValue"/>
+        <isDescribedBy rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#CropvalueInformationObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#VulnerabilityInformationObject -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#VulnerabilityInformationObject">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes vulnerability as a function of resilience, succeptability and exposure</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/dependencePattern#damageInformationObject -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/dependencePattern#damageInformationObject">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes damage potential as a function of vulnerability and socio economic value of crop</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#dependsOn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Object"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#isDescribedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#hasDescription"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/dependencePattern#InformationObject"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
