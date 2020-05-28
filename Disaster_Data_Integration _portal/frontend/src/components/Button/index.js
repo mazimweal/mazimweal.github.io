@@ -4,7 +4,10 @@ import './Button.css';
 
 const Button = (props) => {
   return (
-    <button className={`ButtonDefault Button${props.styleType}`} onClick={props.onClick}>
+    <button
+    className={`ButtonDefault Button${props.styleType} ${props.disable && 'ButtonDisabled'}`}
+    onClick={props.onClick}
+    disabled={props.disable}>
       {props.loading ? (
         <Spinner />
       ) : (

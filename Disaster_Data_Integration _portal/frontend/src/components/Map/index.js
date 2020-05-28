@@ -7,7 +7,6 @@ const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym
 
 class LeafletMap extends React.Component {
   componentDidMount() {
-    console.log(this.props.geojson)
     this.map = L.map('map', {
       center: [1, 34],
       zoom: 8,
@@ -23,26 +22,36 @@ class LeafletMap extends React.Component {
 
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
-      onEachFeature: this.onEachFeature
+      onEachFeature: (feature, layer) => {
+        layer.bindPopup(`${feature.properties.area} District <br> 
+          ${feature.properties.value.toLocaleString()} hazard events`)
+      }
     }).addTo(this.map);
 
     this.mapGeoJson = mapGeoJson;
-    this.mapGeoJson(statesData)
   }
 
-  componentDidUpdate(prevProps){
-    if(this.props.geojson !== prevProps.geojson) {
+  componentDidUpdate(prevProps) {
+    if (this.props.geojson !== prevProps.geojson) {
+      console.log(this.props.geojson)
       this.mapGeoJson(this.props.geojson)
     }
+
+    // if(this.props.polygonsToPlot !== prevProps.polygonsToPlot) {
+    //   this.mapGeoJson(this.props.polygonsToPlot)
+    // }
   }
 
   getColor(d) {
-    return d > 200 ? 'yellow' : 'red';
+    return d < -1.3 ? '#ffff00' :
+      d < -1 ? '#ffae00' :
+        d < 0 ? '#00ff40' :
+          d < 1 ? '#ff4800' : 'red';
   }
 
   style(feature) {
     return {
-      fillColor: this.getColor(feature.properties.density),
+      fillColor: this.getColor(feature.properties.value),
       weight: 2,
       opacity: 1,
       color: 'white',
@@ -51,42 +60,9 @@ class LeafletMap extends React.Component {
     };
   }
 
-  highlightFeature(e) {
-    const layer = e.target;
-
-    console.log(layer);
-
-    layer.setStyle({
-      weight: 5,
-      color: '#666',
-      dashArray: '',
-      fillOpacity: 0.7
-    });
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-      layer.bringToFront();
-    }
-  }
-
-  // resetHighlight(e) {
-  //   this.geojson.resetStyle(e.target);
-  // }
-
-  zoomToFeature(e) {
-    this.map.fitBounds(e.target.getBounds());
-  }
-
-  onEachFeature(feature, layer) {
-    layer.on({
-      mouseover: this.highlightFeature,
-      // mouseout: this.resetHighlight,
-      click: this.zoomToFeature
-    });
-  }
-
   render() {
     return (
-      <div id='map' className="MapContainer" />
+        <div id='map' className="MapContainer" />
     );
   }
 }

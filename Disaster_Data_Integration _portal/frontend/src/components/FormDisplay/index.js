@@ -115,7 +115,7 @@ export default class FormDisplay extends React.Component {
   // send compiled query to backend
   executeQuery() {
     const datasources = this.compileDataSources();
-    const queryToExecute = this.compileQuery();
+    const queryToExecute = this.compileQuery(); 
 
     // clear/reset results area
     // if there was an error
@@ -179,10 +179,7 @@ export default class FormDisplay extends React.Component {
     const resultsArray = this.state.results;
     let multipolygonArray = [];
     let polygonsArray = [];
-    let geojsonObject = {
-      type: 'FeatureCollection',
-      features: []
-    };
+    let geojsonArray = [];
     let pointsArray = [];
     let namesArray = [];
     let pointsWithNames = [];
@@ -234,17 +231,7 @@ export default class FormDisplay extends React.Component {
               let latLongPolygon = [];
               let coordinates = formattedPolygon['coordinates'][0];
 
-              const findCoordinatesArray = (array) => {
-                if (array.length > 1) {
-                  return array;
-                } else {
-                  findCoordinatesArray(array[0])
-                }
-              }
-
-              const coordinatesArray = findCoordinatesArray(coordinates);
-
-              coordinatesArray.forEach((coordinateParentArray) => {
+              coordinates.forEach((coordinateParentArray) => {
                 let latLongCoordinate = [];
                 if (coordinateParentArray.length === 2) {
                   latLongCoordinate.push(coordinateParentArray[1], coordinateParentArray[0]);
@@ -264,10 +251,10 @@ export default class FormDisplay extends React.Component {
           }
         }
 
-        // FOR CHOROPLETHS
+        // FOR CHOROPLETHS WITH POLYGONS
         if (resultObject.hasOwnProperty("?polygon") && resultObject.hasOwnProperty("?spi")) {
           let coordinatesString = resultObject["?polygon"]["value"].toString();
-          const spiValue = parseInt(resultObject["?spi"]["value"], 10);      
+          const spiValue = parseFloat(resultObject["?spi"]["value"]).toFixed(4);
           const areaName = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop(); // obtained by getting link in ?place.value and picking only Substring at the end
 
           if (coordinatesString.includes('POLYGON')) {
@@ -278,24 +265,14 @@ export default class FormDisplay extends React.Component {
               let latLongPolygon = [];
               let coordinates = formattedPolygon['coordinates'][0];
 
-              const findCoordinatesArray = (array) => {
-                if (array.length > 1) {
-                  return array;
-                } else {
-                  findCoordinatesArray(array[0])
-                }
-              }
-
-              const coordinatesArray = findCoordinatesArray(coordinates);
-
-              coordinatesArray.forEach((coordinateParentArray) => {
+              coordinates.forEach((coordinateParentArray) => {
                 let latLongCoordinate = [];
                 if (coordinateParentArray.length === 2) {
-                  latLongCoordinate.push(coordinateParentArray[1], coordinateParentArray[0]);
+                  latLongCoordinate.push(coordinateParentArray[0], coordinateParentArray[1]);
                   latLongPolygon.push(latLongCoordinate);
                 } else {
                   coordinateParentArray.forEach((coordinateChildArray) => {
-                    latLongCoordinate.push(coordinateChildArray[1], coordinateChildArray[0]);
+                    latLongCoordinate.push(coordinateChildArray[0], coordinateChildArray[1]);
                     latLongPolygon.push(latLongCoordinate);
                   });
                 }
@@ -313,7 +290,7 @@ export default class FormDisplay extends React.Component {
                 }
               }
 
-              geojsonObject.features.push(feature)
+              geojsonArray.push(feature);
             } else {
               console.log("Coordinates array not found");
             }
@@ -337,8 +314,8 @@ export default class FormDisplay extends React.Component {
       }
 
       // if choropleth, call this
-      if (geojsonObject.features.length > 0) {
-        this.props.hasChoropleth(geojsonObject);
+      if (geojsonArray.length > 0) {
+        this.props.hasChoropleth(geojsonArray);
       }
 
       // if points, call this instead
@@ -391,6 +368,7 @@ export default class FormDisplay extends React.Component {
 
           <div className="FormQueryAreaButtons">
             <Button
+              disable={false}
               loading={this.state.loading}
               styleType='Execute'
               onClick={this.executeQuery}
@@ -401,6 +379,7 @@ export default class FormDisplay extends React.Component {
             {
               this.state.loading &&
               <Button
+                disable={false}
                 styleType='Stop'
                 onClick={this.stopQuery}
                 label='stop'
@@ -409,6 +388,7 @@ export default class FormDisplay extends React.Component {
             }
 
             <Button
+              disable={this.state.results.length > 0 ? false : true}
               styleType='Map'
               onClick={this.mapQuery}
               label='map'

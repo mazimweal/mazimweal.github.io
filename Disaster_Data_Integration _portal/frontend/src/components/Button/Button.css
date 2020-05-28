@@ -19,3 +19,9 @@
 .ButtonStop {
   background-color: rgba(245, 71, 71, 0.993);
 }
+
+.ButtonDisabled {
+  border: 2px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

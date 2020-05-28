@@ -3,13 +3,19 @@
 }
 
 .AppRowOne {
-  height: 80%;
+  height: 70%;
   display: grid;
   grid-template-columns: 2fr 5fr;
+  transition: all 1s;
+}
+
+.AppRowOne.AppRowOne-FullHeight {
+  height: 100%;
 }
 
 .AppRowTwo {
-  height: 20%;
+  height: 30%;
   flex-grow: 1;
   border: 1px solid black;
+  color: #ff4800;
 }

@@ -19,7 +19,7 @@
 }
 
 .FormHeading {
-  color: rgb(99, 99, 161);
+  color: #6363a1;
 }
 
 .FormHeading h1 {
@@ -73,7 +73,6 @@
 
 
 .QueryResultsDisplay {
-  padding: 1rem;
   border: 1px solid rgb(99, 99, 161);
   background-color: white;
   color: rgb(0, 0, 0, 0.7);

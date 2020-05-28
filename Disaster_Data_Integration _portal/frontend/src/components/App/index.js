@@ -41,16 +41,16 @@ class App extends React.Component {
     })
   }
 
-  getGeojsonObject(geoJsonObject) {
+  getGeojsonObject(data) {
     this.setState({
-      geojson: geoJsonObject
+      geojson: data
     })
   }
 
   render() {
     return (
       <div className="full-height-grow AppContainer">
-        <div className="AppRowOne">
+        <div className={`AppRowOne ${this.state.results.length === 0 && 'AppRowOne-FullHeight'}`}>
           <FormDisplay
             hasPolygons={this.getPolygons}
             hasPoints={this.getPoints}
@@ -63,12 +63,14 @@ class App extends React.Component {
             geojson={this.state.geojson}
           />
         </div>
-        <div className="AppRowTwo">
-          <ResultsArea
-            results={this.state.results}
-            error={this.state.resultsError}
-          />
-        </div>
+        {this.state.results.length > 0 && (
+          <div className="AppRowTwo">
+            <ResultsArea
+              results={this.state.results}
+              error={this.state.resultsError}
+            />
+          </div>
+        )}
       </div>
     );
   }
