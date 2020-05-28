@@ -23,7 +23,8 @@ export default class FormDisplay extends React.Component {
       results: [],
       loading: false,
       error: '',
-      inputError: ''
+      inputError: '',
+      queryTime: ''
     };
 
     this.handleQueryChange = this.handleQueryChange.bind(this);
@@ -132,6 +133,26 @@ export default class FormDisplay extends React.Component {
     const datasources = this.compileDataSources();
     const queryToExecute = this.compileQuery();
 
+    // TIMING THE QUERY
+    let startTime, endTime;
+
+    const startTimer = () => {
+      startTime = new Date();
+    };
+
+    const endTimer = () => {
+      endTime = new Date();
+      let timeDiff = endTime - startTime; //in ms
+      // strip the ms
+      timeDiff /= 1000;
+
+      // get seconds 
+      const seconds = Math.round(timeDiff);
+      this.setState({ queryTime: `${seconds} seconds`});
+    }
+    // END OF TIMER FUNCTION
+
+
     // clear/reset results area
     // if there was an error
     if (this.state.error) {
@@ -165,6 +186,8 @@ export default class FormDisplay extends React.Component {
 
       this.setState({ loading: true, results: [] });
 
+      startTimer();
+
       axios.post('/api/query', query, {
         cancelToken: new CancelToken(function executor(c) {
           cancel = c;
@@ -173,11 +196,13 @@ export default class FormDisplay extends React.Component {
         .then(response => {
           this.setState({ loading: false, results: response.data.data });
           this.props.hasResults(this.state.error, this.state.results);
+          endTimer();
         })
         .catch(error => {
           if (axios.isCancel(error)) {
             this.setState({ loading: false, error: 'Request cancelled' });
             this.props.hasResults(this.state.error, this.state.results);
+            endTimer();
           } else {
             if (error.response.status === 400 && error.response.data.message === "Parse error") {
               this.setState({ loading: false, error: 'Parse error. Cross-check query and try again!' });
@@ -185,6 +210,7 @@ export default class FormDisplay extends React.Component {
               this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
             }
             this.props.hasResults(this.state.error, this.state.results);
+            endTimer();
           }
         });
     }
@@ -420,6 +446,15 @@ export default class FormDisplay extends React.Component {
           {this.state.error && (
             <div className="InputError">
               {this.state.error}
+            </div>
+          )}
+
+          {this.state.results > 0 && (
+            <div className="CounterContainer">
+              <div className="CounterInfo">
+                <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>
+                <p><span>Time Taken:</span>&nbsp;{this.state.queryTime}</p>
+              </div>
             </div>
           )}
 

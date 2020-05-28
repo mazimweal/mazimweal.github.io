@@ -25,7 +25,8 @@
 .FormHeading h1 {
   font-weight: 900;
   font-size: 2rem;
-  text-transform: capitalize;
+  color: rgb(32, 32, 32);
+  text-transform: uppercase;
 }
 
 .FormDataSourceArea {
@@ -33,7 +34,8 @@
 }
 
 .FormDataSourceArea p, .FormQueryArea p {
-  color: rgb(99, 99, 161);
+  /* color: rgb(99, 99, 161); */
+  color: rgb(32, 32, 32);
   font-size: 1rem;
 }
 
@@ -102,4 +104,27 @@
 .QueryResultHeading2 {
   display: inline;
   color: blue;
+}
+
+.CounterContainer {
+  width: 100%;
+  display: flex;
+}
+
+.CounterInfo {
+  padding: 0 2rem 0 .5rem;
+  border: 2px solid #888;
+  background-color: whitesmoke;
+}
+
+.CounterInfo p {
+  display: flex;
+  height: max-content;
+  font-size: small;
+  font-style: italic;
+}
+
+.CounterInfo p span {
+  font-weight: bold;
+  color: crimson;
 }
