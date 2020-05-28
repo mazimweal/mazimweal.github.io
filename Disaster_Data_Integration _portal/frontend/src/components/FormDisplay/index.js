@@ -42,6 +42,11 @@ export default class FormDisplay extends React.Component {
         inputError: ''
       });
     }
+    if (this.state.error) {
+      this.setState({
+        error: ''
+      });
+    }
     this.setState({
       datasourceUrls: input
     });
@@ -51,6 +56,11 @@ export default class FormDisplay extends React.Component {
     if (this.state.inputError) {
       this.setState({
         inputError: ''
+      });
+    }
+    if (this.state.error) {
+      this.setState({
+        error: ''
       });
     }
     if (input !== '' && !this.state.isQuerySelected) {
@@ -79,6 +89,11 @@ export default class FormDisplay extends React.Component {
     if (this.state.inputError) {
       this.setState({
         inputError: ''
+      });
+    }
+    if (this.state.error) {
+      this.setState({
+        error: ''
       });
     }
     this.setState({
@@ -115,7 +130,7 @@ export default class FormDisplay extends React.Component {
   // send compiled query to backend
   executeQuery() {
     const datasources = this.compileDataSources();
-    const queryToExecute = this.compileQuery(); 
+    const queryToExecute = this.compileQuery();
 
     // clear/reset results area
     // if there was an error
@@ -165,7 +180,7 @@ export default class FormDisplay extends React.Component {
             this.props.hasResults(this.state.error, this.state.results);
           } else {
             if (error.response.status === 400 && error.response.data.message === "Parse error") {
-              this.setState({ loading: false, error: 'Parse error in query. Cross-check and try again!' });
+              this.setState({ loading: false, error: 'Parse error. Cross-check query and try again!' });
             } else {
               this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
             }
@@ -399,6 +414,12 @@ export default class FormDisplay extends React.Component {
           {this.state.inputError && (
             <div className="InputError">
               {this.state.inputError}
+            </div>
+          )}
+
+          {this.state.error && (
+            <div className="InputError">
+              {this.state.error}
             </div>
           )}
 
