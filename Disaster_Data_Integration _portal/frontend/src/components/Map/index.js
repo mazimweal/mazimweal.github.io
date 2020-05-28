@@ -8,14 +8,13 @@ const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym
 class LeafletMap extends React.Component {
   componentDidMount() {
     this.map = L.map('map', {
-      center: [1, 34],
-      zoom: 8,
+      center: [1.34, 32.5],
+      zoom: 7,
       zoomControl: false
     });
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
       id: 'mapbox/light-v9',
-      // attribution: ...,
       tileSize: 512,
       zoomOffset: -1
     }).addTo(this.map);
