@@ -3,7 +3,7 @@
 }
 
 .AppRowOne {
-  height: 70%;
+  height: 80%;
   display: grid;
   grid-template-columns: 2fr 5fr;
   transition: all 1s;
@@ -14,7 +14,7 @@
 }
 
 .AppRowTwo {
-  height: 30%;
+  height: 20%;
   flex-grow: 1;
   border: 1px solid black;
   color: #ff4800;

@@ -22,8 +22,8 @@ class LeafletMap extends React.Component {
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
       onEachFeature: (feature, layer) => {
-        layer.bindPopup(`${feature.properties.area} District <br> 
-          ${feature.properties.value.toLocaleString()} hazard events`)
+        layer.bindPopup(`<p><span style="font-weight: bold">Place:</span> ${feature.properties.area}</p> 
+        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.value.toLocaleString()}</p>`)
       }
     }).addTo(this.map);
 
@@ -33,7 +33,7 @@ class LeafletMap extends React.Component {
 
     legend.onAdd = () => {
       const div = L.DomUtil.create("div", "info legend");
-      const grades = [-1.3, -1.0, 0, 1.0, 1.2];
+      const grades = [-2, -1.5, -.1, 1, 1.5, 2];
       let labels = [];
       let from;
       let to;
@@ -43,7 +43,7 @@ class LeafletMap extends React.Component {
         to = parseFloat(grades[i + 1]).toFixed(1);
 
         labels.push(
-          '<div style="backround-color: white; display: flex;"><div style="margin-right: .5rem; width: 1rem; height: 1rem; background:' + this.getColor(from + 1) + '"></div> ' + from + (parseInt(to, 10) ? "&ndash;" + to : "+") + '</div>'
+          '<div style="backround-color: white; display: flex;"><div style="margin-right: .5rem; width: 1rem; height: 1rem; background:' + this.getColor(from + 1) + '"></div> ' + from + (parseFloat(to) ? " &ndash; " + to : "+") + '</div>'
         );
       }
 
@@ -66,15 +66,18 @@ class LeafletMap extends React.Component {
   }
 
   getColor(d) {
-    return d < -1.3 ? '#ffff00' :
-      d < -1 ? '#ffae00' :
-        d < 0 ? '#00ff40' :
-          d < 1 ? '#ff4800' : 'red';
+    return d < -2 ? '#FF0000' :
+      d < -1.5 ? '#FF6666' :
+        d < -1 ? '#FFB2B2' :
+          d < 1 ? '#D5F8D5' :
+            d < 1.5 ? '#81EB81' :
+              d < 2 ? '#2EDF2E' :
+                d < 3 ? '#2EDF2E' : 'red';
   }
 
   style(feature) {
     return {
-      fillColor: this.getColor(feature.properties.value),
+      fillColor: this.getColor(parseFloat(feature.properties.value)),
       weight: 2,
       opacity: 1,
       color: 'white',
