@@ -1,4 +1,4 @@
-# code and tutorial for disaster data integration portal -querying linked web of geodata
+code and tutorial for disaster data integration portal -querying linked web of geodata
 
 ## Available Scripts
 In the project directory, you can run:
