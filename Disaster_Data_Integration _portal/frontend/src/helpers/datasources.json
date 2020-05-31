@@ -1,5 +1,9 @@
 [
   {
+    "name": "Vulnerability Value Expected Losses",
+    "url": "https://mazimweal.inrupt.net/public/vulnerabilityValueExpectedLosses.ttl"
+  },
+  {
     "name": "Hazardous Events",
     "url": "https://mazimweal.inrupt.net/public/HazardousEvent.ttl"
   },

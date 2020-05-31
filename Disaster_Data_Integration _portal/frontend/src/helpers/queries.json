@@ -1,5 +1,15 @@
 [
   {
+    "name": "Drought risk areas",
+    "queryFormat": "sparql ",
+    "query": "SELECT distinct ?place ?par ?hazardous ?spi ?polygon ?o ?region ?pa ?depend ?des ?val ?exl ?exlPar\n WHERE {\n ?x  a vvd:Event;\n dr:hasPotential ?potential;\n dr:occursAtPlace ?place.\n ?potential dr:hasIndex ?index. \n ?index dr:hasSPI_Data_Value ?spi;\n dr:isParametrizedBy ?par.\n ?par dr:isParameterFor ?hazardous.\n ?c owl:sameAs ?place;\n geosparql:hasGeometry ?geom.\n ?geom geosparql:asWKT ?polygon.\n #############\n ?o vvd:participates ?x;\n vvd:hasQuality ?Qual.\n #query for quality Description and realizations\n ?Qual vvd:isDescribedBy ?io;\n vvd:hasRegion ?region.\n ?io vvd:hasDescription ?des.\n #query for region, its value and Parametrization\n ?region vvd:hasRegionDataValue ?val;\n vvd:isParametrizedBy ?pa.\n #query for quality dependence\n ?depend vvd:dependsOn ?Qual;\n vvd:hasRegion ?r.\n ?r vvd:hasRegionDataValue ?exl;\n vvd:isParametrizedBy ?exlPar\n }"
+  },
+  {
+    "name": "Damage Potential (Expected losses)",
+    "queryFormat": "sparql",
+    "query": "SELECT distinct * WHERE {\n ?o rdf:type vvd:Crops;\n vvd:participates ?ev;\n vvd:hasQuality ?Qual.\n #query for quality Description and realizations\n ?Qual vvd:isDescribedBy ?io;\n vvd:hasRegion ?region.\n ?io vvd:hasDescription ?des.\n #:isRealizedeedBy ?IR\n #query for region, its value and Parametrization\n ?region vvd:hasRegionDataValue ?val;\n vvd:isParametrizedBy ?pa.\n #query for quality dependence\n ?depend vvd:dependsOn ?Qual\n }"
+  },
+  {
     "name": "Hazardous events",
     "queryFormat": "sparql",
     "query": "SELECT distinct ?x ?place ?spi ?par ?hazardous  ?c ?polygon WHERE {\n ?x  a dr:Event;\n dr:hasPotential ?potential;\n dr:occursAtPlace ?place.\n ?potential dr:hasIndex ?index. \n?index dr:hasSPI_Data_Value ?spi;\n dr:isParametrizedBy ?par.\n ?par dr:isParameterFor ?hazardous.\n ?c owl:sameAs ?place;\n geosparql:hasGeometry ?geom.\n ?geom geosparql:asWKT ?polygon.\n }"

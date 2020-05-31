@@ -24,7 +24,8 @@ export default class FormDisplay extends React.Component {
       loading: false,
       error: '',
       inputError: '',
-      queryTime: ''
+      queryTime: '',
+      hasResults: false
     };
 
     this.handleQueryChange = this.handleQueryChange.bind(this);
@@ -160,8 +161,8 @@ export default class FormDisplay extends React.Component {
       this.props.hasResults(this.state.error, []);
     }
     // or if there were results
-    if (this.state.results.length > 0) {
-      this.setState({ results: [] });
+    if (this.state.hasResults || this.state.results.length > 0) {
+      this.setState({ results: [], hasResults: false });
       this.props.hasResults(this.state.error, []);
     }
 
@@ -184,6 +185,8 @@ export default class FormDisplay extends React.Component {
         query: queryToExecute
       }
 
+      console.log(query);
+      
       this.setState({ loading: true, results: [] });
 
       startTimer();
@@ -194,7 +197,7 @@ export default class FormDisplay extends React.Component {
         }),
       })
         .then(response => {
-          this.setState({ loading: false, results: response.data.data });
+          this.setState({ loading: false, results: response.data.data, hasResults: true });
           this.props.hasResults(this.state.error, this.state.results);
           endTimer();
         })
@@ -449,7 +452,7 @@ export default class FormDisplay extends React.Component {
             </div>
           )}
 
-          {this.state.results.length > 0 && (
+          {this.state.hasResults && (
             <div className="CounterContainer">
               <div className="CounterInfo">
                 <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>

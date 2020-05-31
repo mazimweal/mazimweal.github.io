@@ -28,7 +28,16 @@ class LeafletMap extends React.Component {
     }).addTo(this.map);
 
     this.mapGeoJson = mapGeoJson;
+  }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.geojson !== prevProps.geojson) {
+      this.mapGeoJson(this.props.geojson);
+      this.createLegend();
+    }
+  }
+
+  createLegend() {
     const legend = L.control({ position: "bottomright" });
 
     legend.onAdd = () => {
@@ -54,16 +63,6 @@ class LeafletMap extends React.Component {
     legend.addTo(this.map);
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.geojson !== prevProps.geojson) {
-      console.log(this.props.geojson)
-      this.mapGeoJson(this.props.geojson)
-    }
-
-    // if(this.props.polygonsToPlot !== prevProps.polygonsToPlot) {
-    //   this.mapGeoJson(this.props.polygonsToPlot)
-    // }
-  }
 
   getColor(d) {
     return d < -2 ? '#FF0000' :
