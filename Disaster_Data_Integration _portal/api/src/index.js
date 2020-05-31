@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
@@ -30,8 +31,8 @@ const getResult = async (datasources, query, res) => {
     const result = await myEngine.query(
       query,
       { sources: datasources }
-    );
-
+      );
+      
     let results = [];
 
     // 3. compile results
@@ -55,9 +56,8 @@ const getResult = async (datasources, query, res) => {
       res.status(400).send({
         message: 'Parse error'
       });
-      console.log('// ++ ///////////////////////////////////////////////////////');
+      console.log('// +++++++++++++++++++++++++++++++++++++++++++++++++++++ //');
       console.error(error)
-      console.log('// ++ ///////////////////////////////////////////////////////');
   }
 };
 
