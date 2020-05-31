@@ -22,8 +22,14 @@ class LeafletMap extends React.Component {
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
       onEachFeature: (feature, layer) => {
-        layer.bindPopup(`<p><span style="font-weight: bold">Place:</span> ${feature.properties.area}</p> 
-        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.value.toLocaleString()}</p>`)
+        layer.bindPopup(`<p><span style="font-weight: bold">District:</span> ${feature.properties.place}</p> 
+        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.spi.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Classification of event:</span> ${feature.properties.eventClassification.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Hazard potential:</span> ${feature.properties.hazardPotential.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Element at risk:</span> ${feature.properties.elementAtRisk.toLocaleString().split('_')[0]}</p>
+        <p><span style="font-weight: bold;">Vulnerability:</span> ${feature.properties.vulnerability.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Expected loss:</span> ${feature.properties.expectedLoss}</p>
+        <p><span style="font-weight: bold;">Damage potential:</span> ${feature.properties.damagePotential.toLocaleString()}</p>`)
       }
     }).addTo(this.map);
 
@@ -43,7 +49,7 @@ class LeafletMap extends React.Component {
     legend.onAdd = () => {
       const div = L.DomUtil.create("div", "info legend");
       const grades = [-2, -1.5, -.1, 1, 1.5, 2];
-      let labels = [];
+      let labels = ['<div style="text-align: center;"><strong>SPI Value</strong></div>'];
       let from;
       let to;
 
@@ -76,7 +82,7 @@ class LeafletMap extends React.Component {
 
   style(feature) {
     return {
-      fillColor: this.getColor(parseFloat(feature.properties.value)),
+      fillColor: this.getColor(parseFloat(feature.properties.spi)),
       weight: 2,
       opacity: 1,
       color: 'white',
