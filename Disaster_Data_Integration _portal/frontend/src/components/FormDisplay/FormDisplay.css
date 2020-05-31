@@ -1,0 +1,130 @@
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-self: center;
+  border: 1px solid black;
+  border-bottom: none;
+  background-color: #ddd;
+  overflow-y: auto;
+  resize: horizontal;
+  max-width: 600px;
+  min-width: 380px;
+}
+
+.FormContainer hr {
+  width: 100%;
+  background-color: inherit;
+	border-top: 2px dashed #8c8b8b;
+}
+
+.FormHeading {
+  color: #6363a1;
+}
+
+.FormHeading h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  color: rgb(32, 32, 32);
+  text-transform: uppercase;
+}
+
+.FormDataSourceArea {
+
+}
+
+.FormDataSourceArea p, .FormQueryArea p {
+  /* color: rgb(99, 99, 161); */
+  color: rgb(32, 32, 32);
+  font-size: 1rem;
+}
+
+.FormQueryArea {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.FormQueryAreaButtons {
+  padding: .5rem 0;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.FormQueryArea .InputError {
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgb(255, 0, 0, 0.4);
+  color: rgb(29, 26, 26);
+}
+
+.FormContainer::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+.FormContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.FormContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.FormContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.QueryResultsDisplay {
+  border: 1px solid rgb(99, 99, 161);
+  background-color: white;
+  color: rgb(0, 0, 0, 0.7);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.QueryResultsDisplay::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+.QueryResultsDisplay::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.QueryResultsDisplay::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.QueryResultsDisplay::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.QueryResultHeading1 {
+  display: inline;
+  color: red;
+}
+
+.QueryResultHeading2 {
+  display: inline;
+  color: blue;
+}
+
+.CounterContainer {
+  width: 100%;
+  display: flex;
+}
+
+.CounterInfo {
+  padding: 0 2rem 0 .5rem;
+  border: 2px solid #888;
+  background-color: whitesmoke;
+}
+
+.CounterInfo p {
+  display: flex;
+  height: max-content;
+  font-size: small;
+  font-style: italic;
+}
+
+.CounterInfo p span {
+  font-weight: bold;
+  color: crimson;
+}

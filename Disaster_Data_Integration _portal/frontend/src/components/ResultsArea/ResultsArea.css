@@ -1,0 +1,60 @@
+.ResultsArea {
+  background-color: #ddd;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.TableContainer {
+  width: 100%;
+  position: relative;
+}
+
+.TableContainer table {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+.TableContainer table thead {
+  background-color: #a8a8a8;
+  /* border: 1px solid black; */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.TableContainer table thead th {
+  background-color: #a8a8a8;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.TableContainer table tbody tr td div {
+  max-height: 1rem;
+}
+
+.TableContainer table td {
+  border: 1px solid black;
+  color: black;
+  overflow: hidden;
+}
+
+th.IndexColumn {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  background-color: #a8a8a8;
+  z-index: 2;
+}
+
+.IndexColumn {
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  background-color: white;
+}
