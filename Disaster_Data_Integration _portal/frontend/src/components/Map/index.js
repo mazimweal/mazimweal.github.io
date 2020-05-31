@@ -6,6 +6,13 @@ import './Map.css';
 const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym4ycXB3cjB6b2J6NW8ifQ.zWw1M-X6a7F2P-Eypnj61g';
 
 class LeafletMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hasLegend: false
+    }
+  }
+
   componentDidMount() {
     this.map = L.map('map', {
       center: [1.34, 32.5],
@@ -28,7 +35,7 @@ class LeafletMap extends React.Component {
         <p><span style="font-weight: bold;">Hazard potential:</span> ${feature.properties.hazardPotential.toLocaleString()}</p>
         <p><span style="font-weight: bold;">Element at risk:</span> ${feature.properties.elementAtRisk.toLocaleString().split('_')[0]}</p>
         <p><span style="font-weight: bold;">Vulnerability:</span> ${feature.properties.vulnerability.toLocaleString()}</p>
-        <p><span style="font-weight: bold;">Expected loss:</span> ${feature.properties.expectedLoss}</p>
+        <p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${feature.properties.expectedLoss}</p>
         <p><span style="font-weight: bold;">Damage potential:</span> ${feature.properties.damagePotential.toLocaleString()}</p>`)
       }
     }).addTo(this.map);
@@ -39,17 +46,20 @@ class LeafletMap extends React.Component {
   componentDidUpdate(prevProps) {
     if (this.props.geojson !== prevProps.geojson) {
       this.mapGeoJson(this.props.geojson);
-      this.createLegend();
+      if (this.state.hasLegend === false) {
+        this.createLegend();
+      }
     }
   }
 
   createLegend() {
+    this.setState({ hasLegend: true });
     const legend = L.control({ position: "bottomright" });
 
     legend.onAdd = () => {
       const div = L.DomUtil.create("div", "info legend");
       const grades = [-2, -1.5, -.1, 1, 1.5, 2];
-      let labels = ['<div style="text-align: center;"><strong>SPI Value</strong></div>'];
+      let labels = ['<div style="text-align: center;"><strong>SPI</strong></div>'];
       let from;
       let to;
 
