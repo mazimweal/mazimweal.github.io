@@ -24,7 +24,8 @@ export default class FormDisplay extends React.Component {
       loading: false,
       error: '',
       inputError: '',
-      queryTime: ''
+      queryTime: '',
+      hasResults: false
     };
 
     this.handleQueryChange = this.handleQueryChange.bind(this);
@@ -148,7 +149,7 @@ export default class FormDisplay extends React.Component {
 
       // get seconds 
       const seconds = Math.round(timeDiff);
-      this.setState({ queryTime: `${seconds} seconds`});
+      this.setState({ queryTime: `${seconds} seconds` });
     }
     // END OF TIMER FUNCTION
 
@@ -160,8 +161,8 @@ export default class FormDisplay extends React.Component {
       this.props.hasResults(this.state.error, []);
     }
     // or if there were results
-    if (this.state.results.length > 0) {
-      this.setState({ results: [] });
+    if (this.state.hasResults || this.state.results.length > 0) {
+      this.setState({ results: [], hasResults: false });
       this.props.hasResults(this.state.error, []);
     }
 
@@ -194,7 +195,7 @@ export default class FormDisplay extends React.Component {
         }),
       })
         .then(response => {
-          this.setState({ loading: false, results: response.data.data });
+          this.setState({ loading: false, results: response.data.data, hasResults: true });
           this.props.hasResults(this.state.error, this.state.results);
           endTimer();
         })
@@ -297,6 +298,12 @@ export default class FormDisplay extends React.Component {
           let coordinatesString = resultObject["?polygon"]["value"].toString();
           const spiValue = parseFloat(resultObject["?spi"]["value"]).toFixed(4);
           const areaName = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop(); // obtained by getting link in ?place.value and picking only Substring at the end
+          const classification = resultObject["?hazardous"]["value"].toString().split('HazardousEvent#').pop();
+          const hazardPotential = resultObject["?par"]["value"].toString().split('HazardousEvent#').pop();
+          const riskElement = resultObject["?o"]["value"].toString().split('VVD#').pop();
+          const vulnerability = resultObject["?pa"]["value"].toString().split('VVD#').pop();
+          const loss = parseFloat(resultObject["?exl"]["value"]).toFixed(2);
+          const damagePotential = resultObject["?exlPar"]["value"].toString().split('VVD#').pop();
 
           if (coordinatesString.includes('POLYGON')) {
             coordinatesString = `POLYGON ${coordinatesString.split("POLYGON").pop()}`;
@@ -326,8 +333,14 @@ export default class FormDisplay extends React.Component {
                   coordinates: [latLongPolygon]
                 },
                 properties: {
-                  area: areaName,
-                  value: spiValue
+                  place: areaName,
+                  spi: spiValue,
+                  eventClassification: classification,
+                  hazardPotential,
+                  elementAtRisk: riskElement,
+                  vulnerability,
+                  expectedLoss: loss,
+                  damagePotential
                 }
               }
 
@@ -449,7 +462,7 @@ export default class FormDisplay extends React.Component {
             </div>
           )}
 
-          {this.state.results.length > 0 && (
+          {this.state.hasResults && (
             <div className="CounterContainer">
               <div className="CounterInfo">
                 <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>

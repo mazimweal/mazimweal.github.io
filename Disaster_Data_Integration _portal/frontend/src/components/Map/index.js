@@ -6,6 +6,13 @@ import './Map.css';
 const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym4ycXB3cjB6b2J6NW8ifQ.zWw1M-X6a7F2P-Eypnj61g';
 
 class LeafletMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hasLegend: false
+    }
+  }
+
   componentDidMount() {
     this.map = L.map('map', {
       center: [1.34, 32.5],
@@ -22,19 +29,37 @@ class LeafletMap extends React.Component {
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
       onEachFeature: (feature, layer) => {
-        layer.bindPopup(`<p><span style="font-weight: bold">Place:</span> ${feature.properties.area}</p> 
-        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.value.toLocaleString()}</p>`)
+        layer.bindPopup(`<p><span style="font-weight: bold">District:</span> ${feature.properties.place}</p> 
+        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.spi.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Classification of event:</span> ${feature.properties.eventClassification.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Hazard potential:</span> ${feature.properties.hazardPotential.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Element at risk:</span> ${feature.properties.elementAtRisk.toLocaleString().split('_')[0]}</p>
+        <p><span style="font-weight: bold;">Vulnerability:</span> ${feature.properties.vulnerability.toLocaleString()}</p>
+        <p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${feature.properties.expectedLoss}</p>
+        <p><span style="font-weight: bold;">Damage potential:</span> ${feature.properties.damagePotential.toLocaleString()}</p>`)
       }
     }).addTo(this.map);
 
     this.mapGeoJson = mapGeoJson;
+  }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.geojson !== prevProps.geojson) {
+      this.mapGeoJson(this.props.geojson);
+      if (this.state.hasLegend === false) {
+        this.createLegend();
+      }
+    }
+  }
+
+  createLegend() {
+    this.setState({ hasLegend: true });
     const legend = L.control({ position: "bottomright" });
 
     legend.onAdd = () => {
       const div = L.DomUtil.create("div", "info legend");
       const grades = [-2, -1.5, -.1, 1, 1.5, 2];
-      let labels = [];
+      let labels = ['<div style="text-align: center;"><strong>SPI</strong></div>'];
       let from;
       let to;
 
@@ -54,16 +79,6 @@ class LeafletMap extends React.Component {
     legend.addTo(this.map);
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.geojson !== prevProps.geojson) {
-      console.log(this.props.geojson)
-      this.mapGeoJson(this.props.geojson)
-    }
-
-    // if(this.props.polygonsToPlot !== prevProps.polygonsToPlot) {
-    //   this.mapGeoJson(this.props.polygonsToPlot)
-    // }
-  }
 
   getColor(d) {
     return d < -2 ? '#FF0000' :
@@ -77,7 +92,7 @@ class LeafletMap extends React.Component {
 
   style(feature) {
     return {
-      fillColor: this.getColor(parseFloat(feature.properties.value)),
+      fillColor: this.getColor(parseFloat(feature.properties.spi)),
       weight: 2,
       opacity: 1,
       color: 'white',

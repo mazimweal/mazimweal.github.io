@@ -29,5 +29,7 @@
   "parameterregion": "http://www.ontologydesignpatterns.org/cp/owl/parameterregion.owl#",
   "cpannotationschema": "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#",
   "dr": "http://w3id.org/gicentre/onto/HazardousEvent#",
-  "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+  "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+  "vvd": "http://w3id.org/gicentre/onto/VVD#",
+  "Opla": "http://ontologydesignpatterns.org/Opla#"
 }

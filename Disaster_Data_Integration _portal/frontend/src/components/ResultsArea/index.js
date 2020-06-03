@@ -24,7 +24,6 @@ const ResultsArea = ({ results, error }) => {
                       {Object.keys(result).map((keyName, index) => (
                         <>
                           {Object.keys(result[keyName]).map((keyName2, index) => {
-                            console.log((results.indexOf(result) + 1).toString())
                             if (keyName2 === 'value') {
                               return <td><div>{result[keyName][keyName2].toString()}</div></td>
                             }
