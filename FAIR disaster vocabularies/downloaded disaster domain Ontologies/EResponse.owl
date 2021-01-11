@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY adms "http://www.w3.org/ns/adms#" >
+    <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY ns "http://creativecommons.org/ns#" >
+	<!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY om-1 "http://www.wurvoc.org/vocabularies/om-1.8/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+	<!ENTITY org "http://ontology.eil.utoronto.ca/organization.owl#" >
+	<!ENTITY sc "http://schema.org/#" >
+	<!ENTITY act "http://ontology.eil.utoronto.ca/tove/activity.owl#" >
+	<!ENTITY building "http://ontology.eil.utoronto.ca/icity/iCity-Building_v1.owl#" >
+	<!ENTITY gci "http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#" >
+	<!ENTITY gcife "http://ontology.eil.utoronto.ca/GCI/ISO37120/FireEmergency.owl#" >
+	<!ENTITY time "http://www.w3.org/2006/time#" >
+	<!ENTITY ic "http://ontology.eil.utoronto.ca/icontact.owl#">
+    <!ENTITY FBOrganization "http://ontology.eil.utoronto.ca/GCI/FireEmergency/FBOrganization.owl#" >
+	<!ENTITY EResponse "http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dalia/ontologies/2016/8/untitled-ontology-70#"
+     xml:base="http://www.semanticweb.org/dalia/ontologies/2016/8/untitled-ontology-70"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:act="http://ontology.eil.utoronto.ca/tove/activity.owl#"
+     xmlns:FBOrganization="http://ontology.eil.utoronto.ca/GCI/FireEmergency/FBOrganization.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+	 xmlns:building="http://ontology.eil.utoronto.ca/icity/iCity-Building_v1.owl#"
+	 xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:om-1="http://www.wurvoc.org/vocabularies/om-1.8/"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+	 xmlns:org="http://ontology.eil.utoronto.ca/organization.owl#"
+	 xmlns:time="http://www.w3.org/2006/time#"
+	 xmlns:ic="http://ontology.eil.utoronto.ca/icontact.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:gci="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#"
+	 xmlns:gcife="http://ontology.eil.utoronto.ca/GCI/ISO37120/FireEmergency.owl#"
+	 xmlns:EResponse="http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#">
+    <owl:Ontology rdf:about="http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#">
+        <rdfs:label xml:lang="en">Global City Indicator Fire &amp; Emergency Response Ontologies - Emergency Response Ontology</rdfs:label>
+        <owl:versionInfo>1.0 11 July 2017</owl:versionInfo>
+        <terms:creator xml:lang="en">Nadia Rauch, nadia.rauch@gmail.com
+Mark S. Fox, msf@eil.utoronto.ca</terms:creator>
+        <terms:title>Global City Indicator Fire &amp; Emergency Response Ontologies - Emergency Response Ontology</terms:title>
+        <terms:description xml:lang="en">Global City Indicator Fire Brigade Ontology developed by the Enterprise Integration Lab,  Mechanical &amp; Industrial Engineering, University of Toronto. http://eil.utoronto.ca
+
+Extends the Foundation Ontology for Global City Indicators to cover the Fire &amp; Emergency Response Indicators.
+
+See: Fox, M.S., (2013), &quot;A Foundation Ontology for Global City Indicators&quot;, Global City Institute Working Paper, Global Cities Institute, University of Toronto
+
+All papers can be found at: http://www.eil.utoronto.ca/applications/smartcities/
+
+Contact: Nadia Rauch, nadia.rauch@gmail.com
+                Mark S. Fox, msf@eil.utoronto.ca</terms:description>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <vann:preferredNamespaceUri xml:lang="en">http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#</vann:preferredNamespaceUri>
+        <adms:relatedDocumentation xml:lang="en">http://www.eil.utoronto.ca/applications/smartcities/</adms:relatedDocumentation>
+        <vann:preferredNamespacePrefix xml:lang="en">EResponse</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="&ns;license"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#creator -->
+
+    <owl:AnnotationProperty rdf:about="&EResponse;creator"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&EResponse;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#preferredNamespaceURI -->
+
+    <owl:AnnotationProperty rdf:about="&EResponse;preferredNamespaceURI"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#relatedDocumentation -->
+
+    <owl:AnnotationProperty rdf:about="&EResponse;relatedDocumentation"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#title -->
+
+    <owl:AnnotationProperty rdf:about="&EResponse;title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&terms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&terms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&terms;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#relatedDocumentation -->
+
+    <owl:AnnotationProperty rdf:about="&adms;relatedDocumentation"/>
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/alternative_label -->
+
+    <owl:AnnotationProperty rdf:about="&om-1;alternative_label"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/alternative_symbol -->
+
+    <owl:AnnotationProperty rdf:about="&om-1;alternative_symbol"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/symbol -->
+
+    <owl:AnnotationProperty rdf:about="&om-1;symbol"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/unofficial_label -->
+
+    <owl:AnnotationProperty rdf:about="&om-1;unofficial_label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_time_responder_arrived -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_time_responder_arrived">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&time;DateTimeDescription"/>
+	</owl:ObjectProperty>
+    
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#caused_by -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;caused_by">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Risk_Area"/>
+	</owl:ObjectProperty>
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_severity -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_severity">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Severity"/>
+	</owl:ObjectProperty>
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#cause -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;cause">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Cause"/>
+	</owl:ObjectProperty>	
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_ST -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_ST">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&time;DateTimeDescription"/>
+	</owl:ObjectProperty>	
+	
+	   
+	<!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_ET -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_ET">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&time;DateTimeDescription"/>
+	</owl:ObjectProperty>	
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#response_time -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;response_time">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&om-1;Duration"/>
+	</owl:ObjectProperty>	
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_speed -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_speed">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&om-1;Speed"/>
+	</owl:ObjectProperty>	
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_impact -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_impact">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Impact"/>
+	</owl:ObjectProperty>	
+
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#occurs_at -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;occurs_at">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Location"/>
+	</owl:ObjectProperty>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_address -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_address">
+		<rdfs:domain rdf:resource="&EResponse;Location"/>
+		<rdfs:range rdf:resource="&ic;Address"/>
+	</owl:ObjectProperty>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#involve -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;involve">
+		<rdfs:domain rdf:resource="&EResponse;Emergency"/>
+		<rdfs:range rdf:resource="&EResponse;Actor"/>
+	</owl:ObjectProperty>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_a_role -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_a_role">
+		<rdfs:domain rdf:resource="&EResponse;Actor"/>
+		<rdfs:range rdf:resource="&EResponse;Role"/>
+	</owl:ObjectProperty>
+	
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/EResponse.owl#has_status -->
+
+    <owl:ObjectProperty rdf:about="&EResponse;has_status">
+		<rdfs:domain rdf:resource="&EResponse;Victim"/>
+		<rdfs:range rdf:resource="&EResponse;Victim_status"/>
+	</owl:ObjectProperty>
+	
+
+    <!-- http://ontology.eil.utoronto.ca/tove/activity.owl#sub_state -->
+
+    <owl:ObjectProperty rdf:about="&act;sub_state">
+		<rdfs:domain rdf:resource="&EResponse;EmergencyRequest"/>
+		<rdfs:range>
+			 <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&EResponse;RequestByCall"/>
+					<rdf:Description rdf:about="&EResponse;RequestByText"/>
+                </owl:unionOf>
+            </owl:Class>
+		</rdfs:range>
+	</owl:ObjectProperty>
+	
+
+    <!-- http://ontology.eil.utoronto.ca/tove/activity.owl#hasResource -->
+
+    <owl:ObjectProperty rdf:about="&act;hasResource">
+		<rdfs:domain rdf:resource="&EResponse;EmergencyRequest"/>
+		<rdfs:range rdf:resource="&EResponse;Resource"/>
+	</owl:ObjectProperty>
+	
+
+    <!-- http://ontology.eil.utoronto.ca/tove/activity.owl#enables -->
+
+    <owl:ObjectProperty rdf:about="&act;enables">
+		<rdfs:domain rdf:resource="&EResponse;EmergencyRequest"/>
+		<rdfs:range rdf:resource="&EResponse;Emergency"/>
+	</owl:ObjectProperty>
+
+	
+	<!--
+	///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#PoliceEmergency -->
+
+    <owl:Class rdf:about="&EResponse;PoliceEmergency">
+        <rdfs:subClassOf rdf:resource="&EResponse;Emergency"/>
+		<rdfs:comment>Emergency that involves Police</rdfs:comment>
+	</owl:Class>
+
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#MedicalEmergency -->
+
+    <owl:Class rdf:about="&EResponse;MedicalEmergency">
+        <rdfs:subClassOf rdf:resource="&EResponse;Emergency"/>
+		<rdfs:comment>Emergency that involves Doctors or Paramedics</rdfs:comment>
+	</owl:Class>
+
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#FireEmergency -->
+
+    <owl:Class rdf:about="&EResponse;FireEmergency">
+        <rdfs:subClassOf rdf:resource="&EResponse;Emergency"/>
+		<rdfs:comment>Emergency that involves Fire Fighters </rdfs:comment>
+	</owl:Class>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Material -->
+
+    <owl:Class rdf:about="&EResponse;Material">
+        <rdfs:subClassOf rdf:resource="&EResponse;Resource"/>
+		<rdfs:comment>A resource can also be assigned to an EmergencyRequest and it can belong to one of the following specification classes: Material and Machine classes.</rdfs:comment>
+	</owl:Class>
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Machine -->
+
+    <owl:Class rdf:about="&EResponse;Machine">
+        <rdfs:subClassOf rdf:resource="&EResponse;Resource"/>
+		<rdfs:comment>A resource can also be assigned to an EmergencyRequest and it can belong to one of the following specification classes: Material and Machine classes.</rdfs:comment>
+	</owl:Class>
+
+
+    <!-- time#DateTimeDescription -->
+
+    <owl:Class rdf:about="&time;DateTimeDescription">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instatnt"/>
+	</owl:Class>
+
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Police -->
+
+    <owl:Class rdf:about="&EResponse;Police">
+        <rdfs:subClassOf rdf:resource="&EResponse;FirstResponseTeam"/>
+		<rdfs:comment>Police is considered part of the First Response Team </rdfs:comment>
+	</owl:Class>	
+		
+
+	<!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#FireFighter -->
+
+    <owl:Class rdf:about="&FBOrganization;FireFighter">
+        <rdfs:subClassOf rdf:resource="&EResponse;FirstResponseTeam"/>
+		<rdfs:comment>Fire Fighters are considered part of the First Response Team  </rdfs:comment>
+	</owl:Class>
+		
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Ambulance -->
+
+    <owl:Class rdf:about="&EResponse;Ambulance">
+        <rdfs:subClassOf rdf:resource="&EResponse;FirstResponseTeam"/>
+		<rdfs:comment>Doctor and Paramedics are considered part of the First Response Team </rdfs:comment>
+	</owl:Class>
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#RequestByText -->
+
+    <owl:Class rdf:about="&EResponse;RequestByText">
+        <rdfs:subClassOf rdf:resource="&act;State"/>
+		<rdfs:comment>An Emergency request can arrive by text </rdfs:comment>
+	</owl:Class>
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#RequestByCall -->
+
+    <owl:Class rdf:about="&EResponse;RequestByCall">
+        <rdfs:subClassOf rdf:resource="&act;State"/>
+		<rdfs:comment>An Emergency request can arrive by call </rdfs:comment>
+	</owl:Class>
+
+
+<!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Victim -->
+
+    <owl:Class rdf:about="&EResponse;Victim">
+        <rdfs:subClassOf rdf:resource="&EResponse;Actor"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_status"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Victim_status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:comment>A victim of the emergency </rdfs:comment>
+	</owl:Class>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Witness -->
+
+    <owl:Class rdf:about="&EResponse;Witness">
+        <rdfs:subClassOf rdf:resource="&EResponse;Actor"/>
+		<rdfs:comment>A witness of the emergency </rdfs:comment>
+	</owl:Class>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#FirstResponseTeam -->
+
+    <owl:Class rdf:about="&EResponse;FirstResponseTeam">
+        <rdfs:subClassOf rdf:resource="&EResponse;Actor"/>
+		<rdfs:comment>First Response Team</rdfs:comment>
+	</owl:Class>
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/GCI-FireEmergency.owl#Location -->
+
+    <owl:Class rdf:about="&EResponse;Location">
+        <rdfs:subClassOf rdf:resource="&sc;Location"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_address"/>
+                <owl:allValuesFrom rdf:resource="&ic;Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:comment>Location where the emergency happened</rdfs:comment>
+	</owl:Class>	
+	
+		
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#Emergency -->
+
+    <owl:Class rdf:about="&EResponse;Emergency">
+        <rdfs:subClassOf rdf:resource="&act;Activity"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_time_responder_arrived"/>
+                <owl:allValuesFrom rdf:resource="&time;DateTimeDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;caused_by"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Risk_Area"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_severity"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Severity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;cause"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Cause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_ST"/>
+                <owl:allValuesFrom rdf:resource="&time;DateTimeDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_ET"/>
+                <owl:allValuesFrom rdf:resource="&time;DateTimeDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_speed"/>
+                <owl:allValuesFrom rdf:resource="&om-1;Speed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;has_impact"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Impact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;occurs_at"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EResponse;involve"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:comment>The definition of the EResponse:Emergency class correspond to an extended and reviewed version of the Fire-Emergency concept that is possible to find in the BFER domain model (Nunavath et al., 2016). As this latter model, the Emergency class has properties that define the type of emergency: for example, the degree of its severity, the escalation of the emergency speed, the date and time in which the emergency has started, the cause of the emergency. The Emergency class also has a property to help to define the ISO 37120 indicators that are the Responder_TimeArrive class which represents the date and time in which the assigned First Response Team arrives at the emergency location (represented by the Location and Address classes). </rdfs:comment>
+    </owl:Class>
+		
+	
+	
+    <!-- http://ontology.eil.utoronto.ca/GCI/FireEmergency/EResponse.owl#EmergencyRequest -->
+
+    <owl:Class rdf:about="&EResponse;EmergencyRequest">
+        <rdfs:subClassOf rdf:resource="&act;State"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&act;enables"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Emergency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&act;sub_state"/>
+                <owl:allValuesFrom rdf:resource="&act;State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&act;hasResource"/>
+                <owl:allValuesFrom rdf:resource="&EResponse;Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:comment>An emergency request can be received by text or by call and the classes refer to this two method have been defined as substate of the primary request. </rdfs:comment>
+	</owl:Class>	
+			
+		
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+	
+	
+</rdf:RDF>
