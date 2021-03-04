@@ -1,0 +1,102 @@
+  AGROVOC
+ ALOCOM  
+ 
+GeologicalHazardDomainOntology   
+ UNU-EHS-glossary
+ AustralianEmergencyManagement-Thesaurus
+GEMET  tsunamis-glossary
+wildLandFires-glossary
+CRED-glossary
+Munich-RE-glossary 
+EM-DAT-glossary
+
+     MONITOR  
+  EmergencyCrisisCommunication-Vocabulary   EMO-glossary  NIMS-glossary  ICDRM-glossary    ICS-glossary 
+ 
+DOLCE  CDOEmergency-Management
+
+SUMO
+ABC   
+DOLCE
+OWL-Time  W3CGeospatial-Vocabulary  SSN
+EDxL
+GeoSPARQL
+FOAF
+ SWEET 
+SSN 
+
+ MOAC    HXL geo-ontology  dbpedia   
+ 
+skos
+  
+ 
+PROTON
+ 
+
+SWEET
+UFO  DisasterManagementCoreOntology
+ 
+weatherOntology
+  DisasterOntology
+ TimeOntology
+   Places-LocationOntology 
+ 
+FOAF
+  SIOC
+  BasicGeo(WGS84)
+  HXL  SEM  SCOT  RDFG   LODE  MA-Ont iContact  EM-DAT-glossary
+  DC-Terms CiTO SKOS  CAP-standard 
+  SWEET   SUMO    DOLCE      UNHCR-terminology
+ 
+ISDR-glossary  
+   Geonames    
+OWL-Time  
+OWL-Time
+  SIIM  
+GeoSPARQL
+
+DOLCE
+BFO  CCO
+
+GeoSPARQL
+
+OWL-Time  DOLCE
+BFO 
+SIIM   
+MOAC   SoKNOS  OASIS  
+ DOLCE  Provenance-O
+DOLCE
+ SSN
+ Event-Model-F
+
+UFO OWL-S 
+Dbpedia
+communityBasedOntology
+volcanicSystemOntology
+SUMO  DOLCE
+GeoSPARQL
+OWL-Time
+SSN 
+SWEET 
+BFO
+SoKNOS 
+SWEET
+DOLCE
+
+SWEET
+EDxL
+DOLCE   FOAF   WAI  SKOS
+DOLCE
+SUMO
+DOLCE
+FOAF  SIOC  Geonames  BasicGeo(WGS84)
+
+PESCaDO  MOAC  SoKNOS
+BFO  CCO
+ Em-DAT-glossary  MOAC  HXL  FEMA-glossary 
+ Geonames 
+MA-ont 
+ FOAF   DC-terms
+ SKOS  LODE  SIOC
+ icontact
+DOLCE  ODPs
