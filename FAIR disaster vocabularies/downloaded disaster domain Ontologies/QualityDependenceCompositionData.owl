@@ -1,0 +1,1842 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/gicentre/onto/VVD#"
+     xml:base="http://w3id.org/gicentre/onto/VVD"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vvd="http://w3id.org/gicentre/onto/VVD#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Opla="http://www.ontologydesignpatterns.org/Opla#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://w3id.org/gicentre/onto/VVD">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allan mazimwe V.1.0 30th may 2020</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/Opla#isNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/Opla#isNativeTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#hasQuality">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#hasRegion">
+        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/VVD#isRegionFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#isAbout"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#isDescribedBy">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#isParametrizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#isParametrizedBy"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#isRealizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#isRealizedBy">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#isRegionFor -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#isRegionFor">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#participates -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gicentre/onto/VVD#participates">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/VVD#hasDescription"/>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#hasRegionDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/gicentre/onto/VVD#hasRegionDataValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Crops">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Element that can be exposed to hazardous event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DamageIndex -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#DamageIndex">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region for representing expected losses calculated from the value of an object and Vulnerability</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damage Index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DamagePotential -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#DamagePotential">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This represents expected losses</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damage potential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Event -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Event">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <Opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/participation.owl</Opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme weather event happening in a particular location and time. the event has a particular hazard potential, magnitude/intensity</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#InformationObject -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#InformationObject">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isRealizedBy"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isRealizedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasDescription"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <Opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/informationobject.owl</Opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provides description of quality in this ontology</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#InformationRealisation -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#InformationRealisation">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isAbout"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implementation of information object e.g Formula, conceptual framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Livestock -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Livestock">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Element that can be exposed to hazardous event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Object -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Object">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#participates"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasQuality"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#participates"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <Opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/participation.owl</Opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Element that can be exposed to hazardous event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Parameter -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Parameter">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <Opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/parameterregion.owl</Opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parametrizes regions such vulnerabilityindex, value and damage potential into low, medium,high, very high etc</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Quality -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Quality">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasRegion"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isDescribedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://w3id.org/gicentre/onto/VVD#isAbout"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:comment>For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
+For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
+On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as &apos;anomalies&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Region -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Region">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isParametrizedBy"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isRegionFor"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasRegionDataValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Opla:isNativeTo>http://www.ontologydesignpatterns.org/cp/owl/parameterregion.owl</Opla:isNativeTo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
+Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Risk -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Risk">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#SocialEconomicValue -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Considered to be the social economic value of the object</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#ValueCostIndex -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#ValueCostIndex">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the region representing socio economic value of an object that participates in an event</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex -->
+
+    <owl:Class rdf:about="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region for representing Vulnerability known as the Vulnerability index</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability Index</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_Livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_Livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1789</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4954</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">520</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8740</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3478</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7891</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2601</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1560</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1963</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Amount_livestock_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#ValueCostIndex"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1414</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Amudat"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Amudat"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Amudat"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Kitgum"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Kitgum"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kitgum"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Moroto"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_moroto"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Moroto"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Napak"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Napak"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Napak"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Otuke"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Otuke"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Otuke"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Crops_kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Crops_kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Crops"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_Crops_Kotido"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_kotido"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kotido"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Amudat"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Amudat"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Kitgum"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kitgum"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Kitgum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_kotido"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kotido"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Kotido"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_moroto"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Moroto"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Napak"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Napak"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Napak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_Crops_Otuke"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Otuke"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_Crops_Otuke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Abim"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Abim"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_livestock_Abim"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Agago"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Agago"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_livestock_Agago"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Kaabong"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Kaabong"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_livestock_Kaabong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Nakapipirit"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Nakapipirit"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_livestock_Nakapipirit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#DP_livestock_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#DP_livestock_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_pader"/>
+        <dependsOn rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Pader"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#EL_livestock_Pader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryLow"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">990.8000000000001</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryLow"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">260</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#high"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5244</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#medium"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3130.2000000000003</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#high"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4734.599999999999</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#medium"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2470.95</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#low"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1395.42</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#low"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#low"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1248</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#low"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1570.4</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EL_livestock_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EL_livestock_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#DamageIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryLow"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">282.8</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE1">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE10 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE10">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE11 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE11">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE2">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE3">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE4">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE5">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE6">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE7">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE8">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#EWE9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#EWE9">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#HolisticApproach -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#HolisticApproach">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#IO_Dp_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#IO_Dp_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product of Vulnerability and economic value</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#InformModel -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#InformModel">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 200 us dollars per animal </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per animal </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per hectare</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 70 us dollars per animal </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per Arcre</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 20 us dollars per acre</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per acre </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 152 us dollars per animal </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per acre </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value adjusted to 200 us dollars per acre</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Iovalue_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Iovalue_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approximate value computed 100 us dollars per animal and 50 usd per goat </hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryLow"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#medium"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#medium"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryHigh"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#medium"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryHigh"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#high"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.78</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#low"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#high"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_livestock_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_livestock_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#high"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#VI_livestock_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#VI_livestock_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#VulnerabilityIndex"/>
+        <isParametrizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#veryLow"/>
+        <hasRegionDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</hasRegionDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Kitgum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Napak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Otuke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Kotido"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_Crops_moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_Crops_moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_crops_Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_Livestock_Abim"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_Agago"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Kaabong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Nakapipirit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Value_livestock_pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Value_livestock_pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#SocialEconomicValue"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#Amount_livestock_Pader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Amudat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Kitgum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Kotido"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Moroto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Napak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_Crops_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_Crops_Otuke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_livestock_Abim"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_livestock_Agago"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_livestock_Kaabong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_livestock_Kotido"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability"/>
+        <hasRegion rdf:resource="http://w3id.org/gicentre/onto/VVD#VI_livestock_Pader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#high -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#high">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#pressureAndRelease"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#HolisticApproach"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Amudat -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Amudat">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#pressureAndRelease"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#InformModel"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Kitgum">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#pressureAndRelease"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Kotido -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Kotido">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#pressureAndRelease"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Moroto -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Moroto">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#HolisticApproach"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#InformModel"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Napak -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Napak">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#InformModel"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Otuke -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Otuke">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#HolisticApproach"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#infomationOV_Pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#infomationOV_Pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <isRealizedBy rdf:resource="http://w3id.org/gicentre/onto/VVD#HolisticApproach"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social economic vulnerability computed based on holistic approach for</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#livestock_Abim -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#livestock_Abim">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Livestock"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_livestock_Abim"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Abim"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Abim"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#livestock_Agago -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#livestock_Agago">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Livestock"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_livestock_Agago"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Agago"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Agago"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#livestock_Kaabong -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#livestock_Kaabong">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Livestock"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_livestock_Kaabong"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Kaabong"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Kaabong"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#livestock_Nakapipirit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#livestock_Nakapipirit">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Livestock"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_livestock_Nakapipirit"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_Nakapipirit"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Nakapipirit"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#livestock_pader -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#livestock_pader">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Livestock"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#DP_livestock_Pader"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Value_livestock_pader"/>
+        <hasQuality rdf:resource="http://w3id.org/gicentre/onto/VVD#Vulnerability_livestock_Pader"/>
+        <participates rdf:resource="http://w3id.org/gicentre/onto/VVD#EWE4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#low -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#low">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#medium -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#medium">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#pressureAndRelease -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#pressureAndRelease">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#veryHigh -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#veryHigh">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/gicentre/onto/VVD#veryLow -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gicentre/onto/VVD#veryLow">
+        <rdf:type rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#DamagePotential"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Risk"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#dependsOn"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasQuality"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasRegion"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isAbout"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isDescribedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Quality"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isParametrizedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#isRealizedBy"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationRealisation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#participates"/>
+        <owl:someValuesFrom rdf:resource="http://w3id.org/gicentre/onto/VVD#Event"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Object"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasDescription"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#InformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://w3id.org/gicentre/onto/VVD#hasRegionDataValue"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gicentre/onto/VVD#Region"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

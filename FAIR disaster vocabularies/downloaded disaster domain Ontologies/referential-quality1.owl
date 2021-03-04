@@ -1,0 +1,135 @@
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: dol: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#>
+Prefix: : <http://www.w3.org/2002/07/owl#>
+Prefix: edns: <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rq: <http://www.jensortmann.de/ontologies/referential-quality1.owl#>
+
+
+
+Ontology: <http://www.jensortmann.de/ontologies/referential-quality1.owl>
+
+Import: <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl>
+Import: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl>
+Import: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl>
+
+Annotations: 
+    owl:versionInfo "1.0",
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> "Allows modelling referential qualities. Facilitates the modelling of ecological systems. Commits to the DOLCE model of qualities."@en,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> "Allows modelling extrinsic non-relational qualities, i.e. qualities that have one host but constantly depend on an additional external entity. These qualities occur frequently in ecological systems."@en,
+    rdfs:label "Ontology Design Pattern for Refernetial Qualities"@en,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "How to model a quality Q of an entity X taken with reference to another entity R?"@en,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "1) An affordance taken with reference to an observer or her quality, like the affordance to climb a step with reference to a person's leg-length. 2) The resilience of a system or object taken with reference to an external factor, like the resilience of a coastal system to sea-level rise. 3) The vulnerability of a system or obkect to an external factor, like the resilience of a society to earthquakes."@en,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> "This pattern is related to the pattern to model qualities in DOLCE (Endurant, Quality, Quale, Space) and in special cases to the Object-Role pattern."@en,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality>,
+    <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality>,
+    owl:versionInfo "Version 1.0 of this pattern has been described in a paper: Ortmann, J. and Daniel, D. (2011) An Ontology Design Pattern for Referential Qualities. Accepted to the International Semantic Web Conference (ISWC) 2011."@en
+
+AnnotationProperty: rdfs:seeAlso
+
+    
+AnnotationProperty: owl:versionInfo
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences>
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios>
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent>
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements>
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf>
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs>
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: edns:classifies
+
+    
+ObjectProperty: edns:classified-by
+
+    
+ObjectProperty: edns:plays
+
+    
+ObjectProperty: rq:plays-ref
+
+    Annotations: 
+        rdfs:comment "The property that relates a referent-role to the entity that play the referent role. This relations is necessary in addition to the role property because the range of the plays-ref property allows also non-endurants to play the role as referent."
+    
+    SubPropertyOf: 
+        edns:classified-by
+    
+    Range: 
+        rq:referent-role
+    
+    InverseOf: 
+        rq:ref-played-by
+    
+    
+ObjectProperty: dol:specifically-constantly-dependent-on
+
+    
+ObjectProperty: rq:ref-played-by
+
+    SubPropertyOf: 
+        edns:classifies
+    
+    Domain: 
+        rq:referent-role
+    
+    InverseOf: 
+        rq:plays-ref
+    
+    
+Class: rq:referent-role
+
+    Annotations: 
+        rdfs:comment "A role played by an endurant, perdurant or quality that serves as a referent for some other entity. In particular the role played by the endurant that serves as referent for a referential quality. The plays relation can not be used due to its cardinality restriction, therefore we have implemented an extra proprty plays-ref.",
+        rdfs:seeAlso "plays-ref
+referential-quality"
+    
+    SubClassOf: 
+        edns:role
+    
+    
+Class: rq:referential-quality
+
+    Annotations: 
+        rdfs:seeAlso "referent-role
+plays-ref",
+        rdfs:comment "A referential quality is a quality Q that inheres in some entity E taken with reference to an external entity R. The external entity plays a referent role for the quality."
+    
+    SubClassOf: 
+        dol:quality
+         and (dol:specifically-constantly-dependent-on some (rq:plays-ref some rq:referent-role))
+    
+    
+Class: edns:role
+
+    
+Class: dol:quality
+
+    
