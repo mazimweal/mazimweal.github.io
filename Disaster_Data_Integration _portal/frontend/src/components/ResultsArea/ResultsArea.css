@@ -20,16 +20,13 @@
 
 .TableContainer table thead {
   background-color: #a8a8a8;
-  /* border: 1px solid black; */
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
 }
 
 .TableContainer table thead th {
   background-color: #a8a8a8;
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
 }
 
@@ -45,7 +42,6 @@
 
 th.IndexColumn {
   position: sticky;
-  position: -webkit-sticky;
   left: 0;
   background-color: #a8a8a8;
   z-index: 2;
@@ -54,7 +50,6 @@ th.IndexColumn {
 .IndexColumn {
   text-align: center;
   position: sticky;
-  position: -webkit-sticky;
   left: 0;
   background-color: white;
 }

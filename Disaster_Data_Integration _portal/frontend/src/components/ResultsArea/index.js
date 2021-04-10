@@ -25,7 +25,13 @@ const ResultsArea = ({ results, error }) => {
                         <>
                           {Object.keys(result[keyName]).map((keyName2, index) => {
                             if (keyName2 === 'value') {
-                              return <td><div>{result[keyName][keyName2].toString()}</div></td>
+                              let valueString = result[keyName][keyName2].toString();
+                              
+                              if (valueString.includes('http')) {
+                                valueString = valueString.split('#')[1];
+                              }
+                              
+                              return <td><div>{valueString}</div></td>
                             }
                           })}
                         </>
