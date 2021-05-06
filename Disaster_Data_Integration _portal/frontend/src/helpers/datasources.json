@@ -8,14 +8,6 @@
     "url": "https://mazimweal.inrupt.net/public/HazardousEvent.ttl"
   },
   {
-    "name": "Uganda Hospitals",
-    "url": "https://mazimweal.inrupt.net/public/Hospitals.ttl"
-  },
-  {
-    "name": "geodata",
-    "url": "https://mazimweal.inrupt.net/public/realgeosparql.ttl"
-  },
-  {
     "name": "DBpedia 2016-04",
     "url": "http://fragments.dbpedia.org/2016-04/en"
   },
