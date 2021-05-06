@@ -29,14 +29,25 @@ class LeafletMap extends React.Component {
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
       onEachFeature: (feature, layer) => {
-        layer.bindPopup(`<p><span style="font-weight: bold">District:</span> ${feature.properties.place}</p> 
-        <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.spi.toLocaleString()}</p>
-        <p><span style="font-weight: bold;">Classification of event:</span> ${feature.properties.eventClassification.toLocaleString()}</p>
-        <p><span style="font-weight: bold;">Hazard potential:</span> ${feature.properties.hazardPotential.toLocaleString()}</p>
-        <p><span style="font-weight: bold;">Element at risk:</span> ${feature.properties.elementAtRisk.toLocaleString().split('_')[0]}</p>
-        <p><span style="font-weight: bold;">Vulnerability:</span> ${feature.properties.vulnerability.toLocaleString()}</p>
-        <p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${feature.properties.expectedLoss}</p>
-        <p><span style="font-weight: bold;">Damage potential:</span> ${feature.properties.damagePotential.toLocaleString()}</p>`)
+        const place = feature.properties.toLocaleString();
+        const spi = feature.properties.toLocaleString();
+        const eventClassification = feature.properties.toLocaleString();
+        const hazardPotential = feature.properties.toLocaleString();
+        const elementAtRisk = feature.properties.toLocaleString();
+        const vulnerability = feature.properties.toLocaleString();
+        const expectedLoss = feature.properties.toLocaleString();
+        const damagePotential = feature.properties.toLocaleString();
+
+        layer.bindPopup(`
+        ${(place !== "") && <p><span style="font-weight: bold">District:</span> ${feature.properties.place}</p> }
+        ${(spi !== "") && <p><span style="font-weight: bold;">SPI:</span> ${feature.properties.spi.toLocaleString()}</p>}
+        ${(eventClassification !== "") && <p><span style="font-weight: bold;">Classification of event:</span> ${feature.properties.eventClassification.toLocaleString()}</p>}
+        ${(hazardPotential !== "") && <p><span style="font-weight: bold;">Hazard potential:</span> ${feature.properties.hazardPotential.toLocaleString()}</p>}
+        ${(elementAtRisk !== "") && <p><span style="font-weight: bold;">Element at risk:</span> ${feature.properties.elementAtRisk.toLocaleString().split('_')[0]}</p>}
+        ${(vulnerability !== "") && <p><span style="font-weight: bold;">Vulnerability:</span> ${feature.properties.vulnerability.toLocaleString()}</p>}
+        ${(expectedLoss !== "") && <p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${feature.properties.expectedLoss}</p>}
+        ${(damagePotential !== "") && <p><span style="font-weight: bold;">Damage potential:</span> ${feature.properties.damagePotential.toLocaleString()}</p>}
+        `)
       }
     }).addTo(this.map);
 

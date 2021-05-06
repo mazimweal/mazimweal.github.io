@@ -295,15 +295,17 @@ export default class FormDisplay extends React.Component {
 
         // FOR CHOROPLETHS WITH POLYGONS
         if (resultObject.hasOwnProperty("?polygon") && resultObject.hasOwnProperty("?spi")) {
+          console.log(resultObject);
+
           let coordinatesString = resultObject["?polygon"]["value"].toString();
           const spiValue = parseFloat(resultObject["?spi"]["value"]).toFixed(4);
           const areaName = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop(); // obtained by getting link in ?place.value and picking only Substring at the end
           const classification = resultObject["?hazardous"]["value"].toString().split('HazardousEvent#').pop();
           const hazardPotential = resultObject["?par"]["value"].toString().split('HazardousEvent#').pop();
-          const riskElement = resultObject["?o"]["value"].toString().split('VVD#').pop();
-          const vulnerability = resultObject["?pa"]["value"].toString().split('VVD#').pop();
-          const loss = parseFloat(resultObject["?exl"]["value"]).toFixed(2);
-          const damagePotential = resultObject["?exlPar"]["value"].toString().split('VVD#').pop();
+          const riskElement = resultObject.hasOwnProperty("?o") ? resultObject["?o"]["value"].toString().split('VVD#').pop() : "";
+          const vulnerability = resultObject.hasOwnProperty("?pa") ? resultObject["?pa"]["value"].toString().split('VVD#').pop() : "";
+          const loss = resultObject.hasOwnProperty("?exl") ? parseFloat(resultObject["?exl"]["value"]).toFixed(2) : "";
+          const damagePotential = resultObject.hasOwnProperty("?exlPar") ? resultObject["?exlPar"]["value"].toString().split('VVD#').pop() : "";
 
           if (coordinatesString.includes('POLYGON')) {
             coordinatesString = `POLYGON ${coordinatesString.split("POLYGON").pop()}`;

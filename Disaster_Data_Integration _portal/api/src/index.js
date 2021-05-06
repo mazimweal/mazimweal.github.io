@@ -38,8 +38,6 @@ const getResult = async (datasources, query, res) => {
     // 3. compile results
     result.bindingsStream.on('data', (data) => {
       results.push(data);
-      console.log(data.toObject());
-      console.log('/////////////////////////////////////////////////////////');
     });
 
     // 4. send results in response
@@ -64,8 +62,6 @@ const getResult = async (datasources, query, res) => {
 
 router.post('/api/query', (req, res) => {
   const { datasources, query } = req.body;
-  console.log(query, datasources);
-  console.log('/////////////////////////////////////////////////////////');
   getResult(datasources, query, res);
 });
 

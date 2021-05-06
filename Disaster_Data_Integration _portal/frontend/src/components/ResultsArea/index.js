@@ -28,7 +28,7 @@ const ResultsArea = ({ results, error }) => {
                               let valueString = result[keyName][keyName2].toString();
                               
                               if (valueString.includes('http')) {
-                                valueString = valueString.split('#')[1];
+                                valueString = valueString.split('#').pop();
                               }
                               
                               return <td><div>{valueString}</div></td>
