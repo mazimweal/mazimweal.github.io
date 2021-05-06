@@ -40,11 +40,15 @@ const getResult = async (datasources, query, res) => {
       results.push(data);
     });
 
+    console.log("RESULTS", results)
+
     // 4. send results in response
     result.bindingsStream.on('end', () => {
       res.send({
         data: results
       });
+
+      console.log("RESULTS", results)
     });
 
     result.bindingsStream.on('error', (error) => {

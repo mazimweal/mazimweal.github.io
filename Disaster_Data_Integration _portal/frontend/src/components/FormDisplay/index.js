@@ -4,7 +4,7 @@ import MultiSearch from '../MultiSearch';
 import SingleSearch from '../SingleSearch';
 import QueryTextArea from '../QueryTextArea';
 import Button from '../Button';
-import { FaPlay, FaStopCircle, FaMapPin } from 'react-icons/fa';
+import { FaPlay, FaStopCircle, FaMapPin, FaChevronDown } from 'react-icons/fa';
 import wkt from 'terraformer-wkt-parser';
 import prefixes from '../../helpers/prefixes.json';
 import './FormDisplay.css';
@@ -25,7 +25,8 @@ export default class FormDisplay extends React.Component {
       error: '',
       inputError: '',
       queryTime: '',
-      hasResults: false
+      hasResults: false,
+      showQuery: false
     };
 
     this.handleQueryChange = this.handleQueryChange.bind(this);
@@ -36,6 +37,7 @@ export default class FormDisplay extends React.Component {
     this.compileDataSources = this.compileDataSources.bind(this);
     this.mapQuery = this.mapQuery.bind(this);
     this.stopQuery = this.stopQuery.bind(this);
+    this.toggleShowQuery = this.toggleShowQuery.bind(this);
   }
 
   handleDatasourceChange(input) {
@@ -84,6 +86,12 @@ export default class FormDisplay extends React.Component {
     this.setState({
       isQuerySelected: false
     });
+  }
+  
+  toggleShowQuery() {
+    this.setState({
+      showQuery: !this.state.showQuery
+    })
   }
 
   handleTextInputChange(e) {
@@ -402,78 +410,95 @@ export default class FormDisplay extends React.Component {
           <hr />
         </div>
 
-        <div className="FormDataSourceArea">
-          <p>1. Select Datasource(s)</p>
-          <MultiSearch
-            onDatasourceChange={this.handleDatasourceChange}
-          />
-        </div>
-
-        <div className="FormQueryArea">
-          <p>2. Select a Query...</p>
-          <SingleSearch
-            onQueryChange={this.handleQueryChange}
-          />
-
-          <p>...Or type a query below</p>
-          <QueryTextArea
-            name="query"
-            value={this.state.isQuerySelected ? this.state.query : this.state.query}
-            onChange={(e) => this.handleTextInputChange(e)}
-          />
-
-          <div className="FormQueryAreaButtons">
-            <Button
-              disable={false}
-              loading={this.state.loading}
-              styleType='Execute'
-              onClick={this.executeQuery}
-              label='run'
-              iconComponent={<FaPlay />}
-            />
-
-            {
-              this.state.loading &&
-              <Button
-                disable={false}
-                styleType='Stop'
-                onClick={this.stopQuery}
-                label='stop'
-                iconComponent={<FaStopCircle />}
-              />
-            }
-
-            <Button
-              disable={this.state.results.length > 0 ? false : true}
-              styleType='Map'
-              onClick={this.mapQuery}
-              label='map'
-              iconComponent={<FaMapPin />}
+        <div className="Form">
+          <div className="FormDataSourceArea">
+            <div className="Label">1. Select Datasource(s)</div>
+            <MultiSearch
+              onDatasourceChange={this.handleDatasourceChange}
             />
           </div>
 
-          {this.state.inputError && (
-            <div className="InputError">
-              {this.state.inputError}
-            </div>
-          )}
+          <div className="FormQueryArea">
+            <div className="Label">2. Select a Query...</div>
+            <SingleSearch
+              onQueryChange={this.handleQueryChange}
+            />
 
-          {this.state.error && (
-            <div className="InputError">
-              {this.state.error}
+          <div className="QuerySection">
+            <div className="ShowQueryBtn"
+              role="presentation"
+              onClick={this.toggleShowQuery}
+            >
+              <>{this.state.showQuery ? 'hide query' : 'show query'}</>
+              <FaChevronDown className={`ChevronIcon ${this.state.showQuery && 'Rotate'}`} />
             </div>
-          )}
 
-          {this.state.hasResults && (
-            <div className="CounterContainer">
-              <div className="CounterInfo">
-                <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>
-                <p><span>Time Taken:</span>&nbsp;{this.state.queryTime}</p>
+          {this.state.showQuery && (
+            <>
+            <div>You can edit the query below</div>
+
+            <QueryTextArea
+              name="query"
+              value={this.state.isQuerySelected ? this.state.query : this.state.query}
+              onChange={(e) => this.handleTextInputChange(e)}
+            />
+            </>
+          )}
+          </div>
+
+            <div className="FormQueryAreaButtons">
+              <Button
+                disable={false}
+                loading={this.state.loading}
+                styleType='Execute'
+                onClick={this.executeQuery}
+                label='run'
+                iconComponent={<FaPlay />}
+              />
+
+              {
+                this.state.loading &&
+                <Button
+                  disable={false}
+                  styleType='Stop'
+                  onClick={this.stopQuery}
+                  label='stop'
+                  iconComponent={<FaStopCircle />}
+                />
+              }
+
+              <Button
+                disable={this.state.results.length > 0 ? false : true}
+                styleType='Map'
+                onClick={this.mapQuery}
+                label='map'
+                iconComponent={<FaMapPin />}
+              />
+            </div>
+
+            {this.state.inputError && (
+              <div className="InputError">
+                {this.state.inputError}
               </div>
-            </div>
-          )}
+            )}
 
-          <hr />
+            {this.state.error && (
+              <div className="InputError">
+                {this.state.error}
+              </div>
+            )}
+
+            {this.state.hasResults && (
+              <div className="CounterContainer">
+                <div className="CounterInfo">
+                  <p><span>Result Count:</span>&nbsp;{this.state.results.length}</p>
+                  <p><span>Time Taken:</span>&nbsp;{this.state.queryTime}</p>
+                </div>
+              </div>
+            )}
+
+            <hr />
+          </div>
         </div>
       </div>
     )

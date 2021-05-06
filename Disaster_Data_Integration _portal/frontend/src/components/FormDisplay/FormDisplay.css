@@ -29,20 +29,47 @@
   text-transform: uppercase;
 }
 
-.FormDataSourceArea {
-
+.Form {
+  display: grid;
+  gap: 1rem;
 }
 
-.FormDataSourceArea p, .FormQueryArea p {
+.FormDataSourceArea div.Label, .FormQueryArea div.Label {
   /* color: rgb(99, 99, 161); */
   color: rgb(32, 32, 32);
   font-size: 1rem;
 }
 
+.FormDataSourceArea {
+  display: grid;
+  gap: 1rem;
+}
+
 .FormQueryArea {
   display: grid;
+  gap: 1rem;
   grid-template-columns: 1fr;
   width: 100%;
+}
+
+.QuerySection {
+  display: grid;
+  gap: 1rem;
+  color:  #666666;
+}
+
+.ShowQueryBtn {
+  border: 2px solid #999999;
+  background: #cccccc;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: .3rem .5rem;
+  color:  #666666;
+}
+
+.ChevronIcon.Rotate {
+  transform: rotate(180deg);
 }
 
 .FormQueryAreaButtons {
