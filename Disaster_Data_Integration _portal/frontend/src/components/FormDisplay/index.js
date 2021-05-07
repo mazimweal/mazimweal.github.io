@@ -500,9 +500,9 @@ export default class FormDisplay extends React.Component {
             {(this.state.hasResults && this.state.results.length > 0) && (
             <div className="ShowTableBtn"
               role="presentation"
-              onClick={this.toggleShowQuery}
+              onClick={this.props.toggleShowTable}
             >
-              <>{this.state.showQuery ? 'hide table' : 'view table of results'}</>
+              <>{this.props.showTable ? 'hide table' : 'view table of results'}</>
               <FaTable />
             </div>
             )}
