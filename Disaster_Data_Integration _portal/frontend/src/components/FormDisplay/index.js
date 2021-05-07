@@ -4,7 +4,7 @@ import MultiSearch from '../MultiSearch';
 import SingleSearch from '../SingleSearch';
 import QueryTextArea from '../QueryTextArea';
 import Button from '../Button';
-import { FaPlay, FaStopCircle, FaMapPin, FaChevronDown } from 'react-icons/fa';
+import { FaPlay, FaStopCircle, FaMapPin, FaChevronDown, FaTable } from 'react-icons/fa';
 import wkt from 'terraformer-wkt-parser';
 import prefixes from '../../helpers/prefixes.json';
 import './FormDisplay.css';
@@ -87,7 +87,7 @@ export default class FormDisplay extends React.Component {
       isQuerySelected: false
     });
   }
-  
+
   toggleShowQuery() {
     this.setState({
       showQuery: !this.state.showQuery
@@ -424,27 +424,27 @@ export default class FormDisplay extends React.Component {
               onQueryChange={this.handleQueryChange}
             />
 
-          <div className="QuerySection">
-            <div className="ShowQueryBtn"
-              role="presentation"
-              onClick={this.toggleShowQuery}
-            >
-              <>{this.state.showQuery ? 'hide query' : 'show query'}</>
-              <FaChevronDown className={`ChevronIcon ${this.state.showQuery && 'Rotate'}`} />
+            <div className="QuerySection">
+              <div className="ShowQueryBtn"
+                role="presentation"
+                onClick={this.toggleShowQuery}
+              >
+                <>{this.state.showQuery ? 'hide query' : 'show query'}</>
+                <FaChevronDown className={`ChevronIcon ${this.state.showQuery && 'Rotate'}`} />
+              </div>
+
+              {this.state.showQuery && (
+                <>
+                  <div>You can edit the query below</div>
+
+                  <QueryTextArea
+                    name="query"
+                    value={this.state.isQuerySelected ? this.state.query : this.state.query}
+                    onChange={(e) => this.handleTextInputChange(e)}
+                  />
+                </>
+              )}
             </div>
-
-          {this.state.showQuery && (
-            <>
-            <div>You can edit the query below</div>
-
-            <QueryTextArea
-              name="query"
-              value={this.state.isQuerySelected ? this.state.query : this.state.query}
-              onChange={(e) => this.handleTextInputChange(e)}
-            />
-            </>
-          )}
-          </div>
 
             <div className="FormQueryAreaButtons">
               <Button
@@ -495,6 +495,16 @@ export default class FormDisplay extends React.Component {
                   <p><span>Time Taken:</span>&nbsp;{this.state.queryTime}</p>
                 </div>
               </div>
+            )}
+
+            {(this.state.hasResults && this.state.results.length > 0) && (
+            <div className="ShowTableBtn"
+              role="presentation"
+              onClick={this.toggleShowQuery}
+            >
+              <>{this.state.showQuery ? 'hide table' : 'view table of results'}</>
+              <FaTable />
+            </div>
             )}
 
             <hr />

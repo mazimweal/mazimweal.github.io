@@ -8,8 +8,8 @@
   background-color: #ddd;
   overflow-y: auto;
   resize: horizontal;
-  max-width: 600px;
-  min-width: 380px;
+  max-width: 450px;
+  min-width: 450px;
 }
 
 .FormContainer hr {
@@ -58,7 +58,8 @@
   color:  #666666;
 }
 
-.ShowQueryBtn {
+.ShowQueryBtn, .ShowTableBtn {
+  cursor: pointer;
   border: 2px solid #999999;
   background: #cccccc;
   text-transform: capitalize;
