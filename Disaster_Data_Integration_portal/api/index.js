@@ -58,8 +58,8 @@ const getResult = async (datasources, query, res) => {
       res.status(400).send({
         message: 'Parse error'
       });
-      console.log('// +++++++++++++++++++++++++++++++++++++++++++++++++++++ //');
-      console.error(error)
+      // console.log('// +++++++++++++++++++++++++++++++++++++++++++++++++++++ //');
+      // console.error(error)
   }
 };
 
