@@ -304,7 +304,7 @@ export default class FormDisplay extends React.Component {
 
         // FOR CHOROPLETHS WITH POLYGONS
         if (resultObject.hasOwnProperty("?polygon") && resultObject.hasOwnProperty("?spi")) {
-          console.log(resultObject);
+          // console.log(resultObject);
 
           let coordinatesString = resultObject["?polygon"]["value"].toString();
           const spiValue = parseFloat(resultObject["?spi"]["value"]).toFixed(4);
