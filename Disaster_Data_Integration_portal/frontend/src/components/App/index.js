@@ -88,9 +88,10 @@ class App extends React.Component {
               results={this.state.results}
               error={this.state.resultsError}
             />
-            <Matrix
-            />
           </div>
+        )}
+        {(this.state.results.length > 0) && (
+          <Matrix />
         )}
       </div>
     );

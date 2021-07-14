@@ -5,9 +5,10 @@
   position: relative;
   color: black;
   font-size: small;
-  right: 1rem;
+  right: .5rem;
   position: absolute;
-  top: calc(-100vh + 5rem);
+  top: 5rem;
+  z-index: 3;
 }
 
 .MatrixBG {
