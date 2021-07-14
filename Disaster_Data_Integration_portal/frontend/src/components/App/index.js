@@ -2,6 +2,7 @@ import React from 'react';
 import LeafletMap from '../Map';
 import FormDisplay from '../FormDisplay';
 import ResultsArea from '../ResultsArea';
+import Matrix from '../Matrix';
 import "./App.css";
 
 class App extends React.Component {
@@ -86,6 +87,8 @@ class App extends React.Component {
             <ResultsArea
               results={this.state.results}
               error={this.state.resultsError}
+            />
+            <Matrix
             />
           </div>
         )}
