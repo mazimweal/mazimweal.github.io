@@ -37,7 +37,6 @@ class SingleSearch extends React.Component {
     return (
       <div>
         <Select
-          // isDisabled={false}
           isClearable
           isSearchable
           className="SelectComponent"

@@ -1,10 +1,10 @@
 .ResultsArea {
   background-color: #ddd;
   height: 100%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   color: black;
+  font-size: small;
 }
 
 .TableContainer {
@@ -15,17 +15,13 @@
 .TableContainer table {
   width: 100%;
   overflow: auto;
-  border: 1px solid black;
+  border: 1px solid #001429;
 }
 
-.TableContainer table thead {
-  background-color: #a8a8a8;
-  position: sticky;
-  top: 0;
-}
-
+.TableContainer table thead,
 .TableContainer table thead th {
-  background-color: #a8a8a8;
+  background-color: #001429;
+  color: #fff;
   position: sticky;
   top: 0;
 }
@@ -35,7 +31,8 @@
 }
 
 .TableContainer table td {
-  border: 1px solid black;
+  border-bottom: 1px solid #001429;
+  border-right: 1px solid #001429;
   color: black;
   overflow: hidden;
 }

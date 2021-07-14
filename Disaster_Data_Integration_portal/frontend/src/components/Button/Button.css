@@ -1,19 +1,16 @@
 .ButtonDefault {
   text-transform: uppercase;
-  background-color: rgb(99, 99, 161);
+  background-color: #1890ff;
   color: white;
   font-size: normal;
-  /* font-weight: bold; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: .5rem 2rem;
   border: none;
   cursor: pointer;
   height: 2rem;
   display: flex;
-}
-
-.ButtonExecute {
-  background-color: rgb(99, 99, 161);
+  outline: none;
+  align-items: center;
 }
 
 .ButtonStop {
@@ -21,7 +18,7 @@
 }
 
 .ButtonDisabled {
-  border: 2px solid #999999;
+  border: 2px solid #cccccc;
   background-color: #cccccc;
   color: #666666;
 }

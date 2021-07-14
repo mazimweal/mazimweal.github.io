@@ -1,6 +1,5 @@
 import React from 'react';
 import L from 'leaflet';
-import statesData from '../../helpers/us-states.geo.json'
 import './Map.css';
 
 const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym4ycXB3cjB6b2J6NW8ifQ.zWw1M-X6a7F2P-Eypnj61g';

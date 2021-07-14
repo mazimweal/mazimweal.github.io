@@ -33,6 +33,7 @@ const ResultsArea = ({ results, error }) => {
                               
                               return <td><div>{valueString}</div></td>
                             }
+                            return null;
                           })}
                         </>
                       ))}

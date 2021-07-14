@@ -177,7 +177,7 @@ export default class FormDisplay extends React.Component {
     // input validation
     if (!this.state.query && !datasources.length > 0) {
       this.setState({
-        inputError: 'Datasource(s) and a query are required'
+        inputError: 'Datasources and query are required*'
       });
     } else if (this.state.query && !datasources.length > 0) {
       this.setState({
@@ -406,21 +406,22 @@ export default class FormDisplay extends React.Component {
   render() {
     return (
       <div className="FormContainer">
-        <div className="FormHeading">
-          <h1>query the web of linked data</h1>
+        {/* <div className="FormHeading">
+          <div className="Heading">early warning system</div>
+          <div className="SubHeading">querying multi-agency data sources</div>
           <hr />
-        </div>
+        </div> */}
 
         <div className="Form">
           <div className="FormDataSourceArea">
-            <div className="Label">1. Select Datasource(s)</div>
+            <div className="Label">1. Select Datasources:</div>
             <MultiSearch
               onDatasourceChange={this.handleDatasourceChange}
             />
           </div>
 
           <div className="FormQueryArea">
-            <div className="Label">2. Select a Query...</div>
+            <div className="Label">2. Select a Query:</div>
             <SingleSearch
               onQueryChange={this.handleQueryChange}
             />
@@ -508,7 +509,7 @@ export default class FormDisplay extends React.Component {
             </div>
             )}
 
-            <hr />
+            {/* <hr /> */}
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ class App extends React.Component {
     });
   }
 
-  
+
   toggleShowTable() {
     this.setState({
       showTable: !this.state.showTable
@@ -59,6 +59,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="full-height-grow AppContainer">
+        <div className="Header">
+          <div className="FormHeading">
+            <div className="Heading">early warning system</div>
+            <div className="SubHeading">querying multi-agency data sources</div>
+            {/* <hr /> */}
+          </div>
+        </div>
         <div className="AppRowOne">
           <FormDisplay
             hasPolygons={this.getPolygons}
