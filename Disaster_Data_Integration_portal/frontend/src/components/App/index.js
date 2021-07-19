@@ -17,7 +17,14 @@ class App extends React.Component {
       geojson: null,
       showTable: false,
       showMatrix: false,
-      matrixResults: []
+      matrixResults: [],
+      activeLocation: {
+        place: '',
+        damagePotential: '',
+        hazardPotential: '',
+        damageNumValue: 0,
+        hazardNumValue: 0,
+      }
     };
 
     this.getPolygons = this.getPolygons.bind(this);
@@ -28,6 +35,7 @@ class App extends React.Component {
     this.getMatrixData = this.getMatrixData.bind(this);
     this.getDamageNum = this.getDamageNum.bind(this);
     this.getHazardNum = this.getHazardNum.bind(this);
+    this.setActiveLocation = this.setActiveLocation.bind(this);
   }
 
   getPolygons(polygons) {
@@ -97,32 +105,22 @@ class App extends React.Component {
   }
 
   getMatrixData() {
-    let extractedMatrixResults = [];
-
     this.setState({
       showMatrix: !this.state.showMatrix
     });
-    
-    this.state.results.forEach(resultObject => {
-      let place = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop();
-      let damagePotential = resultObject["?exlPar"]["value"].toString().split('VVD#').pop();
-      let hazardPotential = resultObject["?hazardous"]["value"].toString().split('HazardousEvent#').pop();
-      // hazardPotential: resultObject["?par"]["value"].toString().split('HazardousEvent#').pop(),
+  }
 
-      let matrixObj = {
+  setActiveLocation({ place, damagePotential, eventClassification }) {
+    this.setState((prevState) => ({
+      activeLocation: {
+        ...prevState.activeLocation,
         place,
         damagePotential,
-        hazardPotential,
+        hazardPotential: eventClassification,
         damageNumValue: this.getDamageNum(damagePotential),
-        hazardNumValue: this.getHazardNum(hazardPotential)
-      };
-
-      extractedMatrixResults.push(matrixObj);      
-    });
-
-    // console.log(extractedMatrixResults);
-
-    this.setState({ matrixResults: extractedMatrixResults });
+        hazardNumValue: this.getHazardNum(eventClassification)
+      },
+    }))
   }
 
   render() {
@@ -149,6 +147,7 @@ class App extends React.Component {
             polygonsToPlot={this.state.polygon}
             pointsToPlot={this.state.points}
             geojson={this.state.geojson}
+            setActive={this.setActiveLocation}
           />
         </div>
         {(this.state.results.length > 0 && this.state.showTable) && (
@@ -162,7 +161,7 @@ class App extends React.Component {
         {/* {(this.state.results.length > 0) && ( */}
         {(true) && (
           <Matrix
-            matrixData={this.state.matrixResults}
+            matrixData={this.state.activeLocation}
           />
         )}
       </div>

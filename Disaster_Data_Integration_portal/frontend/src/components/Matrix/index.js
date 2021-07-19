@@ -11,17 +11,11 @@ const Matrix = ({ matrixData }) => {
     { x: 4, y: 4 },
   ];
 
-  let data = [];
+  let data = [{
+    x: matrixData.hazardNumValue,
+    y: matrixData.damageNumValue
+  }];
 
-  matrixData.forEach((item) => {
-    let x = item.hazardNumValue;
-    let y = item.damageNumValue;
-    
-
-    let coord = { x, y };
-
-    data.push(coord);      
-  });
 
   return (
     <div className="MatrixContainer">

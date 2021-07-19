@@ -50,7 +50,7 @@ class LeafletMap extends React.Component {
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
       onEachFeature: (feature, layer) => {
-        console.log(feature);
+        // console.log(feature);
         const place = feature.properties.place.toLocaleString();
         const spi = feature.properties.spi.toLocaleString();
         const eventClassification = feature.properties.eventClassification.toLocaleString();
@@ -71,7 +71,13 @@ class LeafletMap extends React.Component {
           ${expectedLoss && `<p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${expectedLoss}</p>`}
           ${damagePotential && `<p><span style="font-weight: bold;">Damage potential:</span> ${damagePotential}</p>`}
           `),
-          layer.on('click', () => console.log("HELLO"))
+          layer.on('click', () => {
+            this.props.setActive({
+              place,
+              eventClassification,
+              damagePotential
+            })
+          })
         );
       }
     }).addTo(this.map);
