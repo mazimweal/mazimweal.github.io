@@ -2,7 +2,8 @@ import React from 'react';
 import L from 'leaflet';
 import './Map.css';
 
-const mapboxAccessToken = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym4ycXB3cjB6b2J6NW8ifQ.zWw1M-X6a7F2P-Eypnj61g';
+const mapboxUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=';
+const token = 'pk.eyJ1Ijoic3RlcGhlbmFyYWthIiwiYSI6ImNrYXBvbWppYzA0Ym4ycXB3cjB6b2J6NW8ifQ.zWw1M-X6a7F2P-Eypnj61g';
 
 class LeafletMap extends React.Component {
   constructor(props) {
@@ -13,17 +14,38 @@ class LeafletMap extends React.Component {
   }
 
   componentDidMount() {
-    this.map = L.map('map', {
-      center: [1.34, 34.5],
-      zoom: 7,
-      zoomControl: false
-    });
-
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
+    const grayscale = L.tileLayer(mapboxUrl + token, {
       id: 'mapbox/light-v9',
       tileSize: 512,
       zoomOffset: -1
-    }).addTo(this.map);
+    });
+    const streets = L.tileLayer(mapboxUrl + token, {
+      id: 'mapbox/streets-v9',
+      tileSize: 512,
+      zoomOffset: -1
+    });
+    const dark = L.tileLayer(mapboxUrl + token, {
+      id: 'mapbox/dark-v9',
+      tileSize: 512,
+      zoomOffset: -1
+    });
+
+    const baseMaps = {
+      "Grayscale": grayscale,
+      "Dark": dark,
+      "Streets": streets,
+    };
+
+    this.map = L.map('map', {
+      center: [2.54, 35.0],
+      zoom: 7.5,
+      maxZoom: 9,
+      minZoom: 7,
+      zoomControl: true,
+      layers: [grayscale, streets, dark]
+    });
+
+    L.control.layers(baseMaps, null, { position: 'topleft'} ).addTo(this.map);
 
     const mapGeoJson = (data) => L.geoJson(data, {
       style: (feature) => this.style(feature),
@@ -40,7 +62,7 @@ class LeafletMap extends React.Component {
 
         return (
           layer.bindPopup(`
-          ${place &&  `<p><span style="font-weight: bold">District:</span> ${place}</p>`}
+          ${place && `<p><span style="font-weight: bold">District:</span> ${place}</p>`}
           ${spi && `<p><span style="font-weight: bold;">SPI:</span> ${spi}</p>`}
           ${eventClassification && `<p><span style="font-weight: bold;">Classification of event:</span> ${eventClassification}</p>`}
           ${hazardPotential && `<p><span style="font-weight: bold;">Hazard potential:</span> ${hazardPotential}</p>`}

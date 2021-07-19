@@ -90,7 +90,8 @@ class App extends React.Component {
             />
           </div>
         )}
-        {(this.state.results.length > 0) && (
+        {/* {(this.state.results.length > 0) && ( */}
+        {(true) && (
           <Matrix />
         )}
       </div>

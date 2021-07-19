@@ -197,8 +197,8 @@ export default class FormDisplay extends React.Component {
 
       startTimer();
 
-      axios.post('https://dewapibullet.herokuapp.com/api/query', query, {
-      // axios.post('/api/query', query, {
+      // axios.post('https://dewapibullet.herokuapp.com/api/query', query, {
+      axios.post('/api/query', query, {
         cancelToken: new CancelToken(function executor(c) {
           cancel = c;
         }),

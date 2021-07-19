@@ -22,8 +22,8 @@ const Matrix = () => {
       
       <div className="MatrixBG"/>
       
-      <div className="LabelY">Damage Potential</div>
-      <div className="LabelX">Vulnerability</div>
+      <div className="LabelY">Damage Potential <br/> (Expected loss)</div>
+      <div className="LabelX">Hazard potential</div>
       
       <div className="AxisLabelsY">
         <div>very low</div>
