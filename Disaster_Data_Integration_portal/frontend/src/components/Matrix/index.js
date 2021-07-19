@@ -56,7 +56,7 @@ const Matrix = ({ matrixData }) => {
           <YAxis type="number" dataKey="y" name="Damage Potential" unit="" tickFormatter={() => ``}/>
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
           <Scatter className="ScatterHidden" name="A school" data={boundaryData} />
-          <Scatter data={data} fill="white" stroke="#000" />
+          {(!(data[0].x === 0 && data[0].y === 0)) && <Scatter data={data} fill="white" stroke="#000" />}
         </ScatterChart>
       </>
     </div>

@@ -158,8 +158,7 @@ class App extends React.Component {
             />
           </div>
         )}
-        {/* {(this.state.results.length > 0) && ( */}
-        {(true) && (
+        {(this.state.showMatrix) && (
           <Matrix
             matrixData={this.state.activeLocation}
           />
