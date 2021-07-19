@@ -316,6 +316,10 @@ export default class FormDisplay extends React.Component {
           const loss = resultObject.hasOwnProperty("?exl") ? parseFloat(resultObject["?exl"]["value"]).toFixed(2) : "";
           const damagePotential = resultObject.hasOwnProperty("?exlPar") ? resultObject["?exlPar"]["value"].toString().split('VVD#').pop() : "";
 
+          if (!!(classification.trim() && damagePotential.trim())) {
+            this.props.hasMatrix();
+          }
+
           if (coordinatesString.includes('POLYGON')) {
             coordinatesString = `POLYGON ${coordinatesString.split("POLYGON").pop()}`;
             const formattedPolygon = wkt.parse(coordinatesString);

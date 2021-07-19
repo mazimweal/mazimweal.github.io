@@ -70,10 +70,13 @@ class LeafletMap extends React.Component {
           ${vulnerability && `<p><span style="font-weight: bold;">Vulnerability:</span> ${vulnerability}</p>`}
           ${expectedLoss && `<p><span style="font-weight: bold;">Expected loss (million UGX):</span> ${expectedLoss}</p>`}
           ${damagePotential && `<p><span style="font-weight: bold;">Damage potential:</span> ${damagePotential}</p>`}
-          `)
+          `),
+          layer.on('click', () => console.log("HELLO"))
         );
       }
     }).addTo(this.map);
+
+    // this.map.layer on('click')
 
     this.mapGeoJson = mapGeoJson;
   }

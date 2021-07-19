@@ -15,7 +15,9 @@ class App extends React.Component {
       results: [],
       resultsError: '',
       geojson: null,
-      showTable: false
+      showTable: false,
+      showMatrix: false,
+      matrixResults: []
     };
 
     this.getPolygons = this.getPolygons.bind(this);
@@ -23,6 +25,9 @@ class App extends React.Component {
     this.getResults = this.getResults.bind(this);
     this.getGeojsonObject = this.getGeojsonObject.bind(this);
     this.toggleShowTable = this.toggleShowTable.bind(this);
+    this.getMatrixData = this.getMatrixData.bind(this);
+    this.getDamageNum = this.getDamageNum.bind(this);
+    this.getHazardNum = this.getHazardNum.bind(this);
   }
 
   getPolygons(polygons) {
@@ -57,6 +62,69 @@ class App extends React.Component {
     })
   }
 
+  getDamageNum(stringVal) {
+    let numValue = 0;
+    stringVal = stringVal.toLowerCase().trim();
+
+    if (stringVal === 'verylow') {
+      numValue = 0.5;
+    } else if (stringVal === 'low') {
+      numValue = 1.5;
+    } else if (stringVal === 'medium') {
+      numValue = 2.5;
+    } else if (stringVal === 'high') {
+      numValue = 3.5;
+    }
+
+    return numValue;
+  }
+
+  getHazardNum(stringVal) {
+    let numValue = 0;
+    stringVal = stringVal.toLowerCase().trim();
+
+    if (stringVal === 'wetseason') {
+      numValue = 0.5;
+    } else if (stringVal === 'normal') {
+      numValue = 1.5;
+    } else if (stringVal === 'dryspell') {
+      numValue = 2.5;
+    } else if (stringVal === 'drought') {
+      numValue = 3.5;
+    }
+
+    return numValue;
+  }
+
+  getMatrixData() {
+    let extractedMatrixResults = [];
+
+    this.setState({
+      showMatrix: !this.state.showMatrix
+    });
+    
+    this.state.results.forEach(resultObject => {
+      let place = resultObject["?place"]["value"].toString().split('HazardousEvent#').pop();
+      let damagePotential = resultObject["?exlPar"]["value"].toString().split('VVD#').pop();
+      let hazardPotential = resultObject["?hazardous"]["value"].toString().split('HazardousEvent#').pop();
+      // hazardPotential: resultObject["?par"]["value"].toString().split('HazardousEvent#').pop(),
+
+      let matrixObj = {
+        place,
+        damagePotential,
+        hazardPotential,
+        damageNumValue: this.getDamageNum(damagePotential),
+        hazardNumValue: this.getHazardNum(hazardPotential)
+      };
+
+      extractedMatrixResults.push(matrixObj);      
+    });
+
+    // console.log(extractedMatrixResults);
+
+    this.setState({ matrixResults: extractedMatrixResults });
+  }
+
   render() {
     return (
       <div className="full-height-grow AppContainer">
@@ -72,6 +140,7 @@ class App extends React.Component {
             hasPolygons={this.getPolygons}
             hasPoints={this.getPoints}
             hasResults={this.getResults}
+            hasMatrix={this.getMatrixData}
             hasChoropleth={this.getGeojsonObject}
             toggleShowTable={this.toggleShowTable}
             showTable={this.state.showTable}
@@ -92,7 +161,9 @@ class App extends React.Component {
         )}
         {/* {(this.state.results.length > 0) && ( */}
         {(true) && (
-          <Matrix />
+          <Matrix
+            matrixData={this.state.matrixResults}
+          />
         )}
       </div>
     );
