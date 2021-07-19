@@ -1,0 +1,12 @@
+.Tooltip {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  display: grid;
+  gap: .2rem;
+}
+
+.TooltipItem span {
+  color: crimson;
+  font-weight: bold;
+}

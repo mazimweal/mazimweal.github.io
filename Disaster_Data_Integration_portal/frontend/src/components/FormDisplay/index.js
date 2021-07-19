@@ -176,16 +176,34 @@ export default class FormDisplay extends React.Component {
 
     // input validation
     if (!this.state.query && !datasources.length > 0) {
-      this.setState({
-        inputError: 'Datasources and query are required*'
+      this.setState(() => ({
+        error: 'Datasources and query are required*'
+      }), () => {
+        setTimeout(() => {
+            this.setState(() => ({
+              error: ''
+          }));
+        }, 2000);
       });
     } else if (this.state.query && !datasources.length > 0) {
-      this.setState({
-        inputError: 'Please select at least one datasource'
+      this.setState(() => ({
+        error: 'Please select at least one datasource'
+      }), () => {
+        setTimeout(() => {
+            this.setState(() => ({
+              error: ''
+          }));
+        }, 2000);
       });
     } else if (!this.state.query && datasources.length > 0) {
-      this.setState({
-        inputError: 'Please select or type a query'
+      this.setState(() => ({
+        error: 'Please select or type a query'
+      }), () => {
+        setTimeout(() => {
+            this.setState(() => ({
+              error: ''
+          }));
+        }, 2000);
       });
     } else {
       const query = {
@@ -210,12 +228,32 @@ export default class FormDisplay extends React.Component {
         })
         .catch(error => {
           if (axios.isCancel(error)) {
-            this.setState({ loading: false, error: 'Request cancelled' });
+            this.setState(() => ({
+              loading: false,
+              error: 'Request cancelled'
+            }), () => {
+              setTimeout(() => {
+                  this.setState(() => ({
+                    error: ''
+                }));
+              }, 2000);
+            });
+
             this.props.hasResults(this.state.error, this.state.results);
             endTimer();
           } else {
             if (error.response.status === 400 && error.response.data.message === "Parse error") {
-              this.setState({ loading: false, error: 'Parse error. Cross-check query and try again!' });
+              // this.setState({ loading: false, error: 'Parse error. Cross-check query and try again!' });
+              this.setState(() => ({
+                loading: false,
+                error: 'Parse error. Cross-check query and try again!'
+              }), () => {
+                setTimeout(() => {
+                    this.setState(() => ({
+                      error: ''
+                  }));
+                }, 2000);
+              });
             } else {
               this.setState({ loading: false, error: 'ERROR occured: TIMEOUT - cross-check query and try again!' });
             }

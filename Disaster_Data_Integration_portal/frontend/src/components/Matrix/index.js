@@ -1,8 +1,9 @@
 import React from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import TooltipInfo from '../Tooltip';
 import './Matrix.css';
 
-const Matrix = ({ matrixData }) => {  
+const Matrix = ({ matrixData }) => {
 
   const boundaryData = [
     { x: 1, y: 1 },
@@ -21,12 +22,12 @@ const Matrix = ({ matrixData }) => {
     <div className="MatrixContainer">
 
       <div className></div>
-      
-      <div className="MatrixBG"/>
-      
-      <div className="LabelY">Damage Potential <br/> (Expected loss)</div>
+
+      <div className="MatrixBG" />
+
+      <div className="LabelY">Damage Potential <br /> (Expected loss)</div>
       <div className="LabelX">Hazard potential</div>
-      
+
       <div className="AxisLabelsY">
         <div>very low</div>
         <div>low</div>
@@ -53,8 +54,15 @@ const Matrix = ({ matrixData }) => {
         >
           <CartesianGrid />
           <XAxis type="number" dataKey="x" name="Vulnerability" unit="" tickFormatter={() => ``} />
-          <YAxis type="number" dataKey="y" name="Damage Potential" unit="" tickFormatter={() => ``}/>
-          <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+          <YAxis type="number" dataKey="y" name="Damage Potential" unit="" tickFormatter={() => ``} />
+          <Tooltip
+            content={
+              <TooltipInfo
+                place={matrixData.place}
+                damage={matrixData.damagePotential}
+                hazard={matrixData.hazardPotential}
+              />}
+              cursor={{ strokeDasharray: '3 3' }} />
           <Scatter className="ScatterHidden" name="A school" data={boundaryData} />
           {(!(data[0].x === 0 && data[0].y === 0)) && <Scatter data={data} fill="white" stroke="#000" />}
         </ScatterChart>
