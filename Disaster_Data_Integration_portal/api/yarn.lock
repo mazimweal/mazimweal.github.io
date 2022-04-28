@@ -1786,11 +1786,11 @@ cors@^2.8.5:
     vary "^1"
 
 cross-fetch@^3.0.5, cross-fetch@^3.0.6:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.3.tgz#b8e7d5f19161c4a0ca916f707978848786043afb"
-  integrity sha512-2i6v88DTqVBNODyjD9U6Ycn/uSZNvyHe25cIbo2fFnAACAsaLTJsd23miRWiR5NuiGXR9wpJ9d40/9WAhjDIrw==
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
   dependencies:
-    node-fetch "2.6.1"
+    node-fetch "2.6.7"
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
@@ -2554,10 +2554,12 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-node-fetch@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+node-fetch@2.6.7:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
 
 nodemon@^2.0.4:
   version "2.0.7"
@@ -3209,6 +3211,11 @@ touch@^3.1.0:
   dependencies:
     nopt "~1.0.10"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
 triple-beam@^1.2.0, triple-beam@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/triple-beam/-/triple-beam-1.3.0.tgz#a595214c7298db8339eeeee083e4d10bd8cb8dd9"
@@ -3317,6 +3324,19 @@ web-streams-ponyfill@^1.4.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/web-streams-ponyfill/-/web-streams-ponyfill-1.4.2.tgz#0ae863cc5f7493903679f16b08cbf14d432b62f4"
   integrity sha512-LCHW+fE2UBJ2vjhqJujqmoxh1ytEDEr0dPO3CabMdMDJPKmsaxzS90V1Ar6LtNE5VHLqxR4YMEj1i4lzMAccIA==
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 widest-line@^3.1.0:
   version "3.1.0"
